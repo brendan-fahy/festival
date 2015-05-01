@@ -1,7 +1,7 @@
 # Rename all packages
 -flattenpackagehierarchy
 
-# Keep boo model classes
+# Keep model classes
 -keep class com.model.**.** {
   *;
 }

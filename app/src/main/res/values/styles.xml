@@ -1,8 +1,33 @@
 <resources>
 
 	<!-- Base application theme. -->
-	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-		<!-- Customize your theme here. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorPrimaryDark">@color/primaryDark</item>
+		<item name="colorAccent">@color/accent</item>
+		<item name="android:windowBackground">@color/window_background</item>
+	</style>
+
+	<style name="Toolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<item name="android:background">@color/primary</item>
+	</style>
+
+	<style name="ToolbarOverlay" parent="ThemeOverlay.AppCompat.Light">
+		<item name="android:background">@color/primary</item>
+	</style>
+
+	<style name="ToolbarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/textSlashIcons</item>
+		<item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title
+		</item>
+	</style>
+
+	<style name="drawerMenuItem">
+		<item name="android:paddingLeft">@dimen/drawerPaddingStart</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">@dimen/drawerMenuItemTextSize</item>
+		<item name="android:textColor">@drawable/selector_navdrawer_text</item>
+		<item name="android:drawablePadding">@dimen/drawerPaddingStart</item>
 	</style>
 
 </resources>

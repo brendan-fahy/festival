@@ -17,6 +17,11 @@
 -keep class com.breadbin.festival.api.ContentRestClient {
 	*;
 }
+
+-keepattributes InnerClasses
+-keep class com.breadbin.festival.api.ContentRestClient$* {
+	*;
+}
 -keep class com.breadbin.festival.api.googlecalendar.CalendarCallback
 
 -dontwarn com.breadbin.festival.api.GsonRequest
