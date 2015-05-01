@@ -1,0 +1,35 @@
+############
+# IntelliJ #
+############
+
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+
+##########
+# Gradle #
+##########
+
+.gradle/
+build/
+gradlew.bat
+
+##################
+# Android Studio #
+##################
+
+local.properties
+
+##########
+# Mac OS #
+##########
+
+.DS_Store
+
+##########################
+# Linux temporary files #
+##########################
+
+*~
