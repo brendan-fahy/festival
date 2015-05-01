@@ -20,7 +20,14 @@ android {
 }
 
 dependencies {
+    // Other modules
+    compile project(':model')
+
     // Google dependencies
     compile 'com.android.support:appcompat-v7:22.1.0'
     compile 'com.android.support:cardview-v7:22.1.0'
+
+    // Third-party dependencies
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.3.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
 }
