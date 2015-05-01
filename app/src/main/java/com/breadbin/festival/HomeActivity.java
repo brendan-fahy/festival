@@ -15,12 +15,18 @@ import android.support.v4.widget.DrawerLayout;
 
 import com.breadbin.festival.api.ContentRestClient;
 import com.breadbin.festival.api.googlecalendar.CalendarCallback;
+import com.breadbin.festival.storage.CalendarDataStorage;
 import com.model.error.ErrorResponse;
 import com.model.googlecalendarapi.CalendarResponse;
 
 
 public class HomeActivity extends BaseActivity
 		implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+	public static final String CALENDAR_DATA_KEY = "calendar_data";
+	public static final String CALENDAR_STORAGE_NAME = "calendar_storage";
+
+	private CalendarDataStorage storage;
 
 	/**
 	 * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -46,7 +52,18 @@ public class HomeActivity extends BaseActivity
 				R.id.navigation_drawer,
 				(DrawerLayout) findViewById(R.id.drawer_layout));
 
-		getCalendarEvents();
+		storage = new CalendarDataStorage(this, CALENDAR_STORAGE_NAME);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+
+		if (storage.find(CALENDAR_DATA_KEY) != null) {
+			Log.d("onCreate", "Storage has: " + storage.find(CALENDAR_DATA_KEY).getItems().size() + " items.");
+		} else {
+			getCalendarEvents();
+		}
 	}
 
 	private void getCalendarEvents() {
@@ -60,6 +77,7 @@ public class HomeActivity extends BaseActivity
 		return new CalendarCallback() {
 			@Override
 			public void onSuccess(CalendarResponse calendarResponse) {
+				storage.save(CALENDAR_DATA_KEY, calendarResponse.getData());
 				Log.d("CalendarCallback", "Number of items retrieved: " + calendarResponse.getData().getItems().size());
 			}
 

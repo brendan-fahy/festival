@@ -15,12 +15,20 @@ public class ContentRestClient {
 
 	private RssHandler rssHandler;
 
-	public ContentRestClient(Context context, String calendarEndpoint, String rssEndpoint) {
-		calendarConnector = new GoogleCalendarConnector(context, calendarEndpoint);
+	public ContentRestClient(Context context, ContentRestClientConfig config) {
+		calendarConnector = new GoogleCalendarConnector(context, config.getCalendarEndpoint());
 	}
 
 	public void getCalendarEvents(CalendarCallback callback) {
 		calendarConnector.getCalendarEvents(callback);
+	}
+
+	public interface ContentRestClientConfig {
+
+		String getCalendarEndpoint();
+
+		String getRssEndpoint();
+
 	}
 
 }
