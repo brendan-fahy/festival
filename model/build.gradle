@@ -1,5 +1,5 @@
 apply plugin: 'java'
 
 dependencies {
-
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.3.0'
 }

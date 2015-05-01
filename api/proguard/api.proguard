@@ -1,0 +1,25 @@
+# Required for all library projects!
+-dontshrink
+
+# Rename all packages
+-flattenpackagehierarchy
+
+# Keep model classes
+-keep class com.model.**.** {
+  *;
+}
+
+# Keep API classes
+-keep class com.breadbin.festival.api.**.** {
+  *;
+}
+
+-keep class com.breadbin.festival.api.ContentRestClient {
+	*;
+}
+-keep class com.breadbin.festival.api.googlecalendar.CalendarCallback
+
+-dontwarn com.breadbin.festival.api.GsonRequest
+-dontwarn com.breadbin.festival.api.GoogleCalendarConnector
+
+

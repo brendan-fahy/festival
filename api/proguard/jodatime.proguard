@@ -1,0 +1,9 @@
+# Keep these classes to prevent runtime error when calculating Periods
+-keep class org.joda.convert.FromString.** { *; }
+-keep class org.joda.convert.ToString.** { *; }
+
+-keepclassmembers public class org.joda.time.DateTime { *; }
+-keepclassmembers public class org.joda.time.DateTimeUtils { *; }
+
+-dontwarn org.joda.convert.ToString
+-dontwarn org.joda.convert.FromString

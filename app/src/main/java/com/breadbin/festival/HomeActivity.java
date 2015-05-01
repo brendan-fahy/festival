@@ -1,22 +1,22 @@
 package com.breadbin.festival;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
+
+import com.breadbin.festival.api.ContentRestClient;
+import com.breadbin.festival.api.googlecalendar.CalendarCallback;
+import com.model.error.ErrorResponse;
+import com.model.googlecalendarapi.CalendarResponse;
 
 
 public class HomeActivity extends BaseActivity
@@ -45,6 +45,34 @@ public class HomeActivity extends BaseActivity
 		mNavigationDrawerFragment.setUp(
 				R.id.navigation_drawer,
 				(DrawerLayout) findViewById(R.id.drawer_layout));
+
+		getCalendarEvents();
+	}
+
+	private void getCalendarEvents() {
+		String googleCalendarEndpoint = "http://www.google.com/calendar/feeds/volunteers@ejc2014.org/public/basic?alt=jsonc&max-results=2000";
+		String rssEndpoint = "http://www.ejc2014.org/?option=com_content&view=category&layout=blog&id=43&format=fe%20ed&type=rss&utm_campaign=apps&utm_medium=android&utm_source=rss_feed";
+		ContentRestClient restClient = new ContentRestClient(this, googleCalendarEndpoint, rssEndpoint);
+		restClient.getCalendarEvents(getCalendarCallback());
+	}
+
+	private CalendarCallback getCalendarCallback() {
+		return new CalendarCallback() {
+			@Override
+			public void onSuccess(CalendarResponse calendarResponse) {
+				Log.d("CalendarCallback", "Number of items retrieved: " + calendarResponse.getData().getItems().size());
+			}
+
+			@Override
+			public void onFailure(ErrorResponse errorResponse) {
+
+			}
+
+			@Override
+			public void onFinish() {
+
+			}
+		};
 	}
 
 	@Override

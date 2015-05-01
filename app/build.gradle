@@ -13,21 +13,30 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
     }
 }
 
 dependencies {
     // Other modules
-    compile project(':model')
+    compile project(':api')
 
     // Google dependencies
     compile 'com.android.support:appcompat-v7:22.1.0'
     compile 'com.android.support:cardview-v7:22.1.0'
 
     // Third-party dependencies
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.3.0'
     compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.jakewharton:disklrucache:2.0.2'
 }
