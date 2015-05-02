@@ -7,7 +7,7 @@
 
 	<include layout="@layout/toolbar"/>
 
-	<com.breadbin.festival.views.SlidingTabLayout
+	<com.breadbin.festival.views.google.SlidingTabLayout
 		android:id="@+id/slidingTabLayout"
 		android:layout_width="match_parent"
 		android:layout_height="48dp"

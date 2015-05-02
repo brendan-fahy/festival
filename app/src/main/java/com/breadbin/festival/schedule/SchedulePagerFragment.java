@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import com.breadbin.festival.BaseActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
-import com.breadbin.festival.views.SlidingTabLayout;
+import com.breadbin.festival.views.google.SlidingTabLayout;
 import com.model.events.Schedule;
 
 import org.joda.time.format.DateTimeFormat;

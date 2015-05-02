@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.breadbin.festival.views;
+package com.breadbin.festival.views.google;
 
 
 import android.content.Context;

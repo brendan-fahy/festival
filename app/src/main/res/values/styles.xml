@@ -33,7 +33,6 @@
 	<style name="cardPrimaryText">
 		<item name="android:textSize">@dimen/cardTextSize</item>
 		<item name="android:textColor">@color/primaryText</item>
-		<item name="android:fontFamily">sans-serif</item>
 		<item name="android:textStyle">normal</item>
 	</style>
 
