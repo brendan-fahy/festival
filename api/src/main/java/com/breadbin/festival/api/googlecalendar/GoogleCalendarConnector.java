@@ -10,7 +10,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
 import com.model.error.ErrorResponse;
+import com.model.events.Event;
 import com.model.googlecalendarapi.CalendarResponse;
+
+import java.util.List;
 
 public class GoogleCalendarConnector {
 
@@ -42,7 +45,8 @@ public class GoogleCalendarConnector {
 		return new Response.Listener<CalendarResponse>() {
 			@Override
 			public void onResponse(CalendarResponse calendarResponse) {
-				callback.onSuccess(calendarResponse);
+				List<Event> eventList = CalendarConverter.convertToEvents(calendarResponse.getData());
+				callback.onSuccess(eventList);
 				callback.onFinish();
 			}
 		};

@@ -4,42 +4,39 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.breadbin.festival.api.googlecalendar.CalendarConverter;
+import com.breadbin.festival.busevents.EventsListUpdatedEvent;
 import com.breadbin.festival.views.EventCard;
 import com.model.events.Event;
-import com.model.googlecalendarapi.CalendarData;
-import com.model.googlecalendarapi.CalendarItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import de.greenrobot.event.EventBus;
+
 public class CalendarEventsListFragment extends Fragment {
 
-	public static final String CALENDAR_DATA_ARG = "calendarData";
+	public static final String EVENTS_ARG = "events";
 
 	private ListView listView;
 
 	private Toolbar toolbar;
 
-	public static CalendarEventsListFragment newInstance(CalendarData calendarData) {
+	private List<Event> events;
+
+	public static CalendarEventsListFragment newInstance(List<Event> events) {
 		Bundle bundle = new Bundle();
-		bundle.putSerializable(CALENDAR_DATA_ARG, calendarData);
+		bundle.putSerializable(EVENTS_ARG, new ArrayList<>(events));
 
 		CalendarEventsListFragment fragment = new CalendarEventsListFragment();
 		fragment.setArguments(bundle);
 
 		return fragment;
-	}
-
-	public CalendarEventsListFragment() {
-
 	}
 
 	@Nullable
@@ -49,25 +46,33 @@ public class CalendarEventsListFragment extends Fragment {
 		listView = (ListView) viewGroup.findViewById(R.id.listView);
 		toolbar = (Toolbar) viewGroup.findViewById(R.id.toolbar);
 
-		listView.setAdapter(new EventsAdapter(getEventsFromCalendarData()));
+		events = (List<Event>) getArguments().getSerializable(EVENTS_ARG);
+		showListOfEvents();
 
 		return viewGroup;
 	}
 
-	private List<Event> getEventsFromCalendarData() {
-		CalendarData calendarData = (CalendarData) getArguments().getSerializable(CALENDAR_DATA_ARG);
+	private void showListOfEvents() {
+		listView.setAdapter(new EventsAdapter(events));
+	}
 
-		List<Event> allEvents = new ArrayList<>();
+	public void onEvent(EventsListUpdatedEvent event) {
+		events = event.getEventList();
+		showListOfEvents();
+	}
 
-		for (CalendarItem item: calendarData.getItems()) {
-			try {
-				allEvents.add(CalendarConverter.convertToEvent(item));
-			} catch (Exception ex) {
-				Log.w("CalendarEventsList", "Exception converting CalendarItem to Event: " + ex.getMessage());
-			}
-		}
+	@Override
+	public void onStart() {
+		super.onStart();
 
-		return allEvents;
+		EventBus.getDefault().register(this);
+	}
+
+	@Override
+	public void onStop() {
+		super.onStop();
+
+		EventBus.getDefault().unregister(this);
 	}
 
 	private class EventsAdapter extends BaseAdapter {

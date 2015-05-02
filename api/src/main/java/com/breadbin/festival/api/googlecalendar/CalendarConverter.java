@@ -3,6 +3,7 @@ package com.breadbin.festival.api.googlecalendar;
 import android.text.Html;
 
 import com.model.events.Event;
+import com.model.googlecalendarapi.CalendarData;
 import com.model.googlecalendarapi.CalendarItem;
 
 import org.joda.time.DateTime;
@@ -11,6 +12,8 @@ import org.joda.time.format.DateTimeFormatter;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class CalendarConverter {
@@ -48,6 +51,13 @@ public class CalendarConverter {
 			"true beginners because they require already a certain level of strength, balance, body-tension and experience. " +
 			"This series will be a good choice for participants who have acrobatics experience already.";
 
+	public static List<Event> convertToEvents(CalendarData calendarData) {
+		List<Event> eventList = new ArrayList<>();
+		for (CalendarItem item: calendarData.getItems()) {
+			eventList.add(convertToEvent(item));
+		}
+		return eventList;
+	}
 
 	public static Event convertToEvent(CalendarItem item) {
     String itemDetails = item.getDetails();
