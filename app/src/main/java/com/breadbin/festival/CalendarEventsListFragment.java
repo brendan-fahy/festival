@@ -1,27 +1,21 @@
 package com.breadbin.festival;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.breadbin.festival.api.googlecalendar.CalendarConverter;
 import com.breadbin.festival.views.EventCard;
 import com.model.events.Event;
 import com.model.googlecalendarapi.CalendarData;
 import com.model.googlecalendarapi.CalendarItem;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;

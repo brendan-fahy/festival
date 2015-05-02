@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.util.Log;
 
 import com.breadbin.festival.api.ContentRestClient;
+import com.breadbin.festival.api.DefaultContentRestClient;
 import com.breadbin.festival.api.googlecalendar.CalendarCallback;
 import com.breadbin.festival.storage.CalendarDataStorage;
 import com.model.error.ErrorResponse;
@@ -44,7 +45,7 @@ public class HomeActivity extends NavigationDrawerActivity {
 	private void getCalendarEvents() {
 		final String googleCalendarEndpoint = "http://www.google.com/calendar/feeds/volunteers@ejc2014.org/public/basic?alt=jsonc&max-results=2000";
 		final String rssEndpoint = "http://www.ejc2014.org/?option=com_content&view=category&layout=blog&id=43&format=fe%20ed&type=rss&utm_campaign=apps&utm_medium=android&utm_source=rss_feed";
-		ContentRestClient restClient = new ContentRestClient(this, new ContentRestClient.ContentRestClientConfig() {
+		ContentRestClient restClient = new DefaultContentRestClient(this, new ContentRestClient.ContentRestClientConfig() {
 			@Override
 			public String getCalendarEndpoint() {
 				return googleCalendarEndpoint;
