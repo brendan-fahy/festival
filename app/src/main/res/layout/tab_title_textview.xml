@@ -3,5 +3,5 @@
 					android:id="@+id/tabTitleText"
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
-					style="@style/tabTitleText"
+					style="@style/TabTitleText"
 	/>

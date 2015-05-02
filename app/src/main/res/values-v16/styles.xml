@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<style name="cardPrimaryText">
+	<style name="CardPrimaryText">
 		<item name="android:textSize">@dimen/cardTextSize</item>
 		<item name="android:textColor">@color/primaryText</item>
 		<item name="android:fontFamily">sans-serif</item>

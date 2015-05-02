@@ -20,7 +20,7 @@
 			android:id="@+id/title"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textAppearance="@style/cardTitleText"
+			android:textAppearance="@style/CardTitleText"
 			tools:text="Event Title Goes Here"
 			/>
 
@@ -35,7 +35,7 @@
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="2"
-				android:textAppearance="@style/cardSecondaryText"
+				android:textAppearance="@style/CardSecondaryText"
 				tools:text="Main Hall"
 				/>
 			<TextView
@@ -44,7 +44,7 @@
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
 				android:gravity="right"
-				android:textAppearance="@style/cardSecondaryText"
+				android:textAppearance="@style/CardSecondaryText"
 				tools:Text="15:00"/>
 
 		</LinearLayout>
@@ -53,7 +53,7 @@
 			android:id="@+id/description"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textAppearance="@style/cardPrimaryText"
+			android:textAppearance="@style/CardPrimaryText"
 			tools:text="This is a description of the event. It is a few sentences long to give us an idea in the layout Design/Preview pane what the View will look like with real content. But obviously this isn't real content, and we use the 'tools' namespace so that we can put this text here and never have to worry about it showing in the running app."
 			/>
 

@@ -37,7 +37,7 @@ public class ScheduleDayFragment extends Fragment {
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_listview_for_cards, container, false);
+		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.listview_for_cards, container, false);
 		listView = (ListView) viewGroup.findViewById(R.id.listView);
 
 		scheduleDay = (ScheduleDay) getArguments().getSerializable(EVENT_LIST_ARG);

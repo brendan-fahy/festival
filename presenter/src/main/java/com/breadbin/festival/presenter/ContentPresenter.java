@@ -5,11 +5,15 @@ import android.content.Context;
 import com.breadbin.festival.api.ContentRestClient;
 import com.breadbin.festival.api.DefaultContentRestClient;
 import com.breadbin.festival.api.googlecalendar.CalendarCallback;
+import com.breadbin.festival.api.rss.ArticleCallback;
+import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
 import com.breadbin.festival.presenter.busevents.ScheduleRetrievedEvent;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
+import com.breadbin.festival.presenter.storage.ArticlesStorage;
 import com.breadbin.festival.presenter.storage.EventsStorage;
 import com.model.error.ErrorResponse;
 import com.model.events.Event;
+import com.model.news.Article;
 
 import java.util.List;
 
@@ -45,8 +49,12 @@ public class ContentPresenter {
 		checkNetworkForEventsList();
 	}
 
-	private void checkNetworkForEventsList() {
-		restClient.getCalendarEvents(calendarCallback);
+	/**
+	 * Public method for asynchronous retrieval of List of Article objects. Will read from storage, post results, then read from network, and post results.
+	 */
+	public void fetchRssArticlesList() {
+		checkStorageForRssArticlesList();
+		checkNetworkForRssArticlesList();
 	}
 
 	private void checkStorageForEventsList() {
@@ -54,6 +62,17 @@ public class ContentPresenter {
 		if (eventList != null && !eventList.isEmpty()) {
 			postEventsListDeliveredEvent(eventList);
 		}
+	}
+
+	private void checkStorageForRssArticlesList() {
+		List<Article> articleList = ArticlesStorage.getInstance(context).readArticles();
+		if (articleList != null && !articleList.isEmpty()) {
+			postArticlesListRetrievedEvent(articleList);
+		}
+	}
+
+	private void checkNetworkForEventsList() {
+		restClient.getCalendarEvents(calendarCallback);
 	}
 
 	private CalendarCallback calendarCallback = new CalendarCallback() {
@@ -89,6 +108,36 @@ public class ContentPresenter {
 
 	private void postEventsListUpdatedEvent(List<Event> events) {
 		EventBus.getDefault().post(new ScheduleUpdatedEvent(ScheduleTransformer.getOrderedSchedule(events)));
+	}
+
+	private void checkNetworkForRssArticlesList() {
+		restClient.getNewsArticles(articlesCallback);
+	}
+
+	private ArticleCallback articlesCallback = new ArticleCallback() {
+		@Override
+		public void onSuccess(List<Article> articleList) {
+			onRssSuccess(articleList);
+		}
+
+		@Override
+		public void onFailure(ErrorResponse errorResponse) {
+			// TODO
+		}
+
+		@Override
+		public void onFinish() {
+			// TODO
+		}
+	};
+
+	private void onRssSuccess(List<Article> retrievedArticles) {
+		ArticlesStorage.getInstance(context).saveArticles(retrievedArticles);
+		postArticlesListRetrievedEvent(retrievedArticles);
+	}
+
+	private void postArticlesListRetrievedEvent(List<Article> retrievedArticles) {
+		EventBus.getDefault().post(new ArticlesListRetrievedEvent(retrievedArticles));
 	}
 
 	private ContentRestClient.ContentRestClientConfig restClientConfig = new ContentRestClient.ContentRestClientConfig() {

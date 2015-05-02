@@ -22,7 +22,7 @@
 		</item>
 	</style>
 
-	<style name="drawerMenuItem">
+	<style name="DrawerMenuItem">
 		<item name="android:paddingLeft">@dimen/drawerPaddingStart</item>
 		<item name="android:gravity">center_vertical</item>
 		<item name="android:textSize">@dimen/drawerMenuItemTextSize</item>
@@ -30,27 +30,35 @@
 		<item name="android:drawablePadding">@dimen/drawerPaddingStart</item>
 	</style>
 
-	<style name="cardPrimaryText">
+	<style name="CardPrimaryText">
 		<item name="android:textSize">@dimen/cardTextSize</item>
 		<item name="android:textColor">@color/primaryText</item>
 		<item name="android:textStyle">normal</item>
 	</style>
 
-	<style name="cardTitleText" parent="cardPrimaryText">
+	<style name="CardTitleText" parent="CardPrimaryText">
 		<item name="android:textSize">@dimen/cardTitleTextSize</item>
 	</style>
 
-	<style name="cardSecondaryText" parent="cardPrimaryText">
+	<style name="CardSecondaryText" parent="CardPrimaryText">
 		<item name="android:textColor">@color/secondaryText</item>
 	</style>
 
-	<style name="tabTitleText">
+	<style name="TabTitleText">
 		<item name="android:textSize">@dimen/tabTitleTextSize</item>
 		<item name="android:textColor">@color/textSlashIcons</item>
 		<item name="android:textStyle">bold</item>
 		<item name="android:textAllCaps">true</item>
 		<item name="android:padding">@dimen/tabTitleTextPadding</item>
 		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="CardListView">
+		<item name="android:background">@color/primaryLight</item>
+		<item name="android:divider">@android:color/transparent</item>
+		<item name="android:dividerHeight">@dimen/card_list_padding</item>
+		<item name="android:paddingLeft">@dimen/card_list_padding</item>
+		<item name="android:paddingRight">@dimen/card_list_padding</item>
 	</style>
 
 </resources>
