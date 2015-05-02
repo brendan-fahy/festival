@@ -154,7 +154,6 @@ public class NavigationDrawerActivity extends BaseActivity implements Navigation
 	}
 
 	private DrawerLayout drawerLayout;
-	public static final String USER_LEARNED_DRAWER_PREF = "USER_LEARNED_DRAWER";
 	private boolean userLearnedDrawer;
 
 	public void updateToolbarForNavDrawer(Toolbar toolbar, int titleStringId) {
@@ -163,14 +162,11 @@ public class NavigationDrawerActivity extends BaseActivity implements Navigation
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		setTitle(titleStringId);
 
-		ActionBarDrawerToggle drawerToggle = getActionBarDrawerToggle(toolbar, titleStringId);
-		drawerLayout.setDrawerListener(drawerToggle);
-		drawerToggle.syncState();
-
-	}
+		getActionBarDrawerToggle(toolbar, titleStringId);
+		}
 
 	private ActionBarDrawerToggle getActionBarDrawerToggle(Toolbar toolbar, int stringId) {
-		userLearnedDrawer = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this).getBoolean(USER_LEARNED_DRAWER_PREF, false);
+		userLearnedDrawer = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this).getBoolean(NavigationDrawerFragment.PREF_USER_LEARNED_DRAWER, false);
 
 		ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(
 				this,
@@ -186,12 +182,13 @@ public class NavigationDrawerActivity extends BaseActivity implements Navigation
 					// the navigation drawer automatically in the future.
 					userLearnedDrawer = true;
 					SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this);
-					sp.edit().putBoolean(USER_LEARNED_DRAWER_PREF, true).apply();
+					sp.edit().putBoolean(NavigationDrawerFragment.PREF_USER_LEARNED_DRAWER, true).apply();
 				}
 			}
 		};
 
 		drawerLayout.setDrawerListener(drawerToggle);
+		drawerToggle.syncState();
 
 		return drawerToggle;
 	}
