@@ -1,12 +1,14 @@
 package com.breadbin.festival;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 
 import com.breadbin.festival.api.ContentRestClient;
 import com.breadbin.festival.api.googlecalendar.CalendarCallback;
 import com.breadbin.festival.storage.CalendarDataStorage;
 import com.model.error.ErrorResponse;
+import com.model.googlecalendarapi.CalendarData;
 import com.model.googlecalendarapi.CalendarResponse;
 
 
@@ -27,8 +29,13 @@ public class HomeActivity extends NavigationDrawerActivity {
 	protected void onResume() {
 		super.onResume();
 
-		if (storage.find(CALENDAR_DATA_KEY) != null) {
-			Log.d("onCreate", "Storage has: " + storage.find(CALENDAR_DATA_KEY).getItems().size() + " items.");
+		CalendarData calendarData = storage.find(CALENDAR_DATA_KEY);
+		if (calendarData != null) {
+
+			FragmentManager fragmentManager = getSupportFragmentManager();
+			fragmentManager.beginTransaction()
+					.replace(R.id.container, CalendarEventsListFragment.newInstance(calendarData))
+					.commit();
 		} else {
 			getCalendarEvents();
 		}

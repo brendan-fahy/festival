@@ -12,6 +12,7 @@
 
 	<dimen name="default_card_padding">16dp</dimen>
 	<dimen name="card_list_padding">8dp</dimen>
+	<dimen name="inside_card_padding">16dp</dimen>
 	<dimen name="text_view_padding">8dp</dimen>
 	<dimen name="default_text_view_small_padding">4dp</dimen>
 	<dimen name="fab_margin">24dp</dimen>
@@ -27,4 +28,8 @@
 	<dimen name="drawerLogoPaddingBottom">24dp</dimen>
 
 	<dimen name="status_bar_padding">0dp</dimen>
+
+	<dimen name="cardTextSize">16sp</dimen>
+	<dimen name="cardTitleTextSize">24sp</dimen>
+
 </resources>

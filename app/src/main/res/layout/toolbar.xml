@@ -6,6 +6,6 @@
 	android:layout_height="wrap_content"
 	android:paddingTop="@dimen/status_bar_padding"
 	app:titleTextAppearance="@style/ToolbarTitleText"
-	app:theme="@style/Toolbar"
+	android:theme="@style/Toolbar"
 	app:popupTheme="@style/ToolbarOverlay"
 	/>

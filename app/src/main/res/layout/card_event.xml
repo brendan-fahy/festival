@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+																		xmlns:app="http://schemas.android.com/apk/res-auto"
+																		xmlns:tools="http://schemas.android.com/tools"
+																		android:orientation="vertical"
+																		android:layout_width="match_parent"
+																		android:layout_height="wrap_content"
+																		app:cardCornerRadius="2dp"
+																		app:cardElevation="4dp"
+																		app:cardUseCompatPadding="true"
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="@dimen/inside_card_padding"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="@style/cardTitleText"
+			tools:text="Event Title Goes Here"
+			/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/card_list_padding"
+			android:paddingBottom="@dimen/card_list_padding"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/date"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:textAppearance="@style/cardSecondaryText"
+				tools:text="Fri 15 Jul 2015"
+				/>
+			<TextView
+				android:id="@+id/time"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="right"
+				android:textAppearance="@style/cardSecondaryText"
+				tools:Text="15:00"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="@style/cardPrimaryText"
+			tools:text="This is a description of the event. It is a few sentences long to give us an idea in the layout Design/Preview pane what the View will look like with real content. But obviously this isn't real content, and we use the 'tools' namespace so that we can put this text here and never have to worry about it showing in the running app."
+			/>
+
+	</LinearLayout>
+
+</android.support.v7.widget.CardView>
