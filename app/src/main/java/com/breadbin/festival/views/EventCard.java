@@ -21,7 +21,7 @@ public class EventCard extends LinearLayout {
 
 	private TextView descriptionView;
 
-	private TextView dateView;
+	private TextView locationView;
 
 	private TextView timeView;
 
@@ -53,19 +53,15 @@ public class EventCard extends LinearLayout {
 		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.card_event, this, true);
 		titleView = (TextView) viewGroup.findViewById(R.id.title);
 		descriptionView = (TextView) viewGroup.findViewById(R.id.description);
-		dateView = (TextView) viewGroup.findViewById(R.id.date);
+		locationView = (TextView) viewGroup.findViewById(R.id.location);
 		timeView = (TextView) viewGroup.findViewById(R.id.time);
 	}
 
 	public void bindTo(Event event) {
 		titleView.setText(event.getTitle());
 		descriptionView.setText(event.getDescription());
-		dateView.setText(getDateForDisplay(event.getTime()));
+		locationView.setText(event.getLocation());
 		timeView.setText(getTimeForDisplay(event.getTime()));
-	}
-
-	private String getDateForDisplay(DateTime dateTime) {
-		return CalendarConverter.DATETIME_NO_TIME_FORMATTER.print(dateTime);
 	}
 
 	private String getTimeForDisplay(DateTime dateTime) {

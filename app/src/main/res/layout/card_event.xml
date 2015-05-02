@@ -31,12 +31,12 @@
 			android:paddingBottom="@dimen/card_list_padding"
 			android:orientation="horizontal">
 			<TextView
-				android:id="@+id/date"
+				android:id="@+id/location"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="2"
 				android:textAppearance="@style/cardSecondaryText"
-				tools:text="Fri 15 Jul 2015"
+				tools:text="Main Hall"
 				/>
 			<TextView
 				android:id="@+id/time"

@@ -66,8 +66,8 @@ public class CalendarConverter {
     event.setTime(getDate(itemDetails));
 		event.setAllDayEvent(isAllDayEvent(itemDetails));
 		try {
-			event.setLocation(URLDecoder.decode(getLocation(itemDetails), "UTF-8"));
-			event.setTitle(URLDecoder.decode(item.getTitle(), "UTF-8"));
+			event.setLocation(Html.fromHtml(URLDecoder.decode(getLocation(itemDetails), "UTF-8")).toString());
+			event.setTitle(Html.fromHtml(URLDecoder.decode(item.getTitle(), "UTF-8")).toString());
 			if (hasDescription(item.getDetails())) {
 				event.setDescription(Html.fromHtml(getDescription(URLDecoder.decode(itemDetails, "UTF-8"))).toString());
 			}
