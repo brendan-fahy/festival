@@ -1,4 +1,4 @@
-package com.breadbin.festival.storage;
+package com.breadbin.festival.presenter.storage;
 
 import android.content.Context;
 

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles fileTree(dir: 'proguard')
+        }
+    }
+}
+
+dependencies {
+    // In-house dependencies
+    compile project(':api')
+
+    // Google dependencies
+    compile 'com.android.support:appcompat-v7:22.1.0'
+
+    // Third-party dependencies
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+}

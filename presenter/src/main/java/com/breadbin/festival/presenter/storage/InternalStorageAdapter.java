@@ -1,4 +1,4 @@
-package com.breadbin.festival.storage;
+package com.breadbin.festival.presenter.storage;
 
 import android.content.Context;
 import android.util.Log;
@@ -107,7 +107,7 @@ public class InternalStorageAdapter<T> {
    * @throws IOException
    */
   private void initCache(Context context) throws IOException {
-    File f = getCacheFile(context, cacheName);;
+    File f = getCacheFile(context, cacheName);
 
     diskCache = DiskLruCache.open(f, STORAGE_SCHEMA_VERSION, VALUE_COUNT, DISK_CACHE_SIZE);
   }

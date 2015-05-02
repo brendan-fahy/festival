@@ -32,4 +32,8 @@
 	<dimen name="cardTextSize">16sp</dimen>
 	<dimen name="cardTitleTextSize">24sp</dimen>
 
+	<dimen name="tabsElevation">2dp</dimen>
+	<dimen name="tabTitleTextSize">12sp</dimen>
+	<dimen name="tabTitleTextPadding">16dp</dimen>
+
 </resources>

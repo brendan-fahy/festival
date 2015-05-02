@@ -45,4 +45,13 @@
 		<item name="android:textColor">@color/secondaryText</item>
 	</style>
 
+	<style name="tabTitleText">
+		<item name="android:textSize">@dimen/tabTitleTextSize</item>
+		<item name="android:textColor">@color/textSlashIcons</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:padding">@dimen/tabTitleTextPadding</item>
+		<item name="android:gravity">center</item>
+	</style>
+
 </resources>

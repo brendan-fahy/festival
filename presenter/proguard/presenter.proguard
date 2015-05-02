@@ -1,0 +1,9 @@
+# Required for all library projects!
+-dontshrink
+
+-keep class com.breadbin.festival.presenter.busevents.** {
+	*;
+}
+-keep class com.breadbin.festival.presenter.ContentPresenter {
+	*;
+}

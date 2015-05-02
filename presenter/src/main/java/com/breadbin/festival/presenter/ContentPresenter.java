@@ -5,9 +5,9 @@ import android.content.Context;
 import com.breadbin.festival.api.ContentRestClient;
 import com.breadbin.festival.api.DefaultContentRestClient;
 import com.breadbin.festival.api.googlecalendar.CalendarCallback;
-import com.breadbin.festival.busevents.EventsListRetrievedEvent;
-import com.breadbin.festival.busevents.EventsListUpdatedEvent;
-import com.breadbin.festival.storage.EventsStorage;
+import com.breadbin.festival.presenter.busevents.ScheduleRetrievedEvent;
+import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
+import com.breadbin.festival.presenter.storage.EventsStorage;
 import com.model.error.ErrorResponse;
 import com.model.events.Event;
 
@@ -84,11 +84,11 @@ public class ContentPresenter {
 	}
 
 	private void postEventsListDeliveredEvent(List<Event> events) {
-		EventBus.getDefault().post(new EventsListRetrievedEvent(events));
+		EventBus.getDefault().post(new ScheduleRetrievedEvent(ScheduleTransformer.getOrderedSchedule(events)));
 	}
 
 	private void postEventsListUpdatedEvent(List<Event> events) {
-		EventBus.getDefault().post(new EventsListUpdatedEvent(events));
+		EventBus.getDefault().post(new ScheduleUpdatedEvent(ScheduleTransformer.getOrderedSchedule(events)));
 	}
 
 	private ContentRestClient.ContentRestClientConfig restClientConfig = new ContentRestClient.ContentRestClientConfig() {
