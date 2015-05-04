@@ -52,9 +52,9 @@ public class ContentPresenter {
 	/**
 	 * Public method for asynchronous retrieval of List of Article objects. Will read from storage, post results, then read from network, and post results.
 	 */
-	public void fetchRssArticlesList() {
-		checkStorageForRssArticlesList();
-		checkNetworkForRssArticlesList();
+	public void fetchNewsArticlesList() {
+		checkStorageForNewsArticlesList();
+		checkNetworkForNewsArticlesList();
 	}
 
 	private void checkStorageForEventsList() {
@@ -64,10 +64,10 @@ public class ContentPresenter {
 		}
 	}
 
-	private void checkStorageForRssArticlesList() {
+	private void checkStorageForNewsArticlesList() {
 		List<Article> articleList = ArticlesStorage.getInstance(context).readArticles();
 		if (articleList != null && !articleList.isEmpty()) {
-			postArticlesListRetrievedEvent(articleList);
+			postArticlesListDeliveredEvent(articleList);
 		}
 	}
 
@@ -110,7 +110,7 @@ public class ContentPresenter {
 		EventBus.getDefault().post(new ScheduleUpdatedEvent(ScheduleTransformer.getOrderedSchedule(events)));
 	}
 
-	private void checkNetworkForRssArticlesList() {
+	private void checkNetworkForNewsArticlesList() {
 		restClient.getNewsArticles(articlesCallback);
 	}
 
@@ -133,10 +133,10 @@ public class ContentPresenter {
 
 	private void onRssSuccess(List<Article> retrievedArticles) {
 		ArticlesStorage.getInstance(context).saveArticles(retrievedArticles);
-		postArticlesListRetrievedEvent(retrievedArticles);
+		postArticlesListDeliveredEvent(retrievedArticles);
 	}
 
-	private void postArticlesListRetrievedEvent(List<Article> retrievedArticles) {
+	private void postArticlesListDeliveredEvent(List<Article> retrievedArticles) {
 		EventBus.getDefault().post(new ArticlesListRetrievedEvent(retrievedArticles));
 	}
 

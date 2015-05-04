@@ -27,7 +27,7 @@
 						android:layout_width="@dimen/navigation_drawer_width"
 						android:layout_height="match_parent"
 						android:layout_gravity="start"
-						android:name="com.breadbin.festival.NavigationDrawerFragment"
+						android:name="com.breadbin.festival.navdrawer.NavigationDrawerFragment"
 						tools:layout="@layout/fragment_navigation_drawer"
 						android:fitsSystemWindows="true"
 		/>

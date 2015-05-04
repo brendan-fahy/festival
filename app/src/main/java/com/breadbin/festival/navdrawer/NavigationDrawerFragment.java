@@ -1,27 +1,21 @@
-package com.breadbin.festival;
+package com.breadbin.festival.navdrawer;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
+import com.breadbin.festival.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
@@ -46,19 +40,26 @@ public class NavigationDrawerFragment extends Fragment {
 	 */
 	private NavigationDrawerCallbacks mCallbacks;
 
-	/**
-	 * Helper component that ties the action bar to the navigation drawer.
-	 */
-	private ActionBarDrawerToggle mDrawerToggle;
-
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerListView;
 	private View mFragmentContainerView;
-	private Toolbar toolbar;
 
 	private int mCurrentSelectedPosition = 0;
 	private boolean mFromSavedInstanceState;
 	private boolean mUserLearnedDrawer;
+
+	public enum NavDrawerItem {
+		DEFAULT,
+		NEWS,
+		SCHEDULE;
+
+		public static String[] getTitleStringIds(Context context) {
+			return new String[] {
+				context.getString(R.string.nav_drawer_news),
+				context.getString(R.string.nav_drawer_schedule)
+			};
+		}
+	}
 
 	public NavigationDrawerFragment() {
 	}
@@ -93,6 +94,7 @@ public class NavigationDrawerFragment extends Fragment {
 													 Bundle savedInstanceState) {
 		mDrawerListView = (ListView) inflater.inflate(
 				R.layout.fragment_navigation_drawer, container, false);
+		mDrawerListView.addHeaderView(inflater.inflate(R.layout.header_navigation_drawer, mDrawerListView, false), null, false);
 		mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -103,11 +105,7 @@ public class NavigationDrawerFragment extends Fragment {
 				getActivity(),
 				android.R.layout.simple_list_item_activated_1,
 				android.R.id.text1,
-				new String[]{
-						getString(R.string.title_section1),
-						getString(R.string.title_section2),
-						getString(R.string.title_section3),
-				}));
+				NavDrawerItem.getTitleStringIds(getActivity())));
 		mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 		return mDrawerListView;
 	}
@@ -129,8 +127,6 @@ public class NavigationDrawerFragment extends Fragment {
 		// set a custom shadow that overlays the main content when the drawer opens
 		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 		// set up the drawer's list view with items and click listener
-
-		toolbar = (Toolbar) mDrawerLayout.findViewById(R.id.toolbar);
 
 		// If the user hasn't 'learned' about the drawer, open it to introduce them to the drawer,
 		// per the navigation drawer design guidelines.
@@ -172,53 +168,6 @@ public class NavigationDrawerFragment extends Fragment {
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		outState.putInt(STATE_SELECTED_POSITION, mCurrentSelectedPosition);
-	}
-
-	@Override
-	public void onConfigurationChanged(Configuration newConfig) {
-		super.onConfigurationChanged(newConfig);
-		// Forward the new configuration the drawer toggle component.
-		mDrawerToggle.onConfigurationChanged(newConfig);
-	}
-
-	@Override
-	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		// If the drawer is open, show the global app actions in the action bar. See also
-		// showGlobalContextActionBar, which controls the top-left area of the action bar.
-		if (mDrawerLayout != null && isDrawerOpen()) {
-			inflater.inflate(R.menu.global, menu);
-			showGlobalContextActionBar();
-		}
-		super.onCreateOptionsMenu(menu, inflater);
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		if (mDrawerToggle.onOptionsItemSelected(item)) {
-			return true;
-		}
-
-		if (item.getItemId() == R.id.action_example) {
-			Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
-			return true;
-		}
-
-		return super.onOptionsItemSelected(item);
-	}
-
-	/**
-	 * Per the navigation drawer design guidelines, updates the action bar to show the global app
-	 * 'context', rather than just what's in the current screen.
-	 */
-	private void showGlobalContextActionBar() {
-		ActionBar actionBar = getActionBar();
-		actionBar.setDisplayShowTitleEnabled(true);
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-		actionBar.setTitle(R.string.app_name);
-	}
-
-	private ActionBar getActionBar() {
-		return ((AppCompatActivity) getActivity()).getSupportActionBar();
 	}
 
 	/**

@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.breadbin.festival.BaseActivity;
-import com.breadbin.festival.NavigationDrawerActivity;
+import com.breadbin.festival.HomeActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
 import com.breadbin.festival.views.google.SlidingTabLayout;
@@ -101,7 +101,7 @@ public class SchedulePagerFragment extends Fragment {
 	public void onStart() {
 		super.onStart();
 
-		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
+		((HomeActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
 		EventBus.getDefault().register(this);
 	}

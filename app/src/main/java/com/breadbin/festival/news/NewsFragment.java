@@ -1,4 +1,4 @@
-package com.breadbin.festival.rss;
+package com.breadbin.festival.news;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.breadbin.festival.NavigationDrawerActivity;
+import com.breadbin.festival.HomeActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
 import com.breadbin.festival.views.ArticleCard;
@@ -21,13 +21,25 @@ import java.util.List;
 
 import de.greenrobot.event.EventBus;
 
-public class RssFragment extends Fragment {
+public class NewsFragment extends Fragment {
+
+	private static final String ARTICLES_ARG = "articles_arg";
 
 	private Toolbar toolbar;
 
 	private ListView listView;
 
 	private List<Article> articlesList = new ArrayList<>();
+
+	public static NewsFragment newInstance(List<Article> articles) {
+		Bundle bundle = new Bundle();
+		bundle.putSerializable(ARTICLES_ARG, new ArrayList<>(articles));
+
+		NewsFragment newsFragment = new NewsFragment();
+		newsFragment.setArguments(bundle);
+
+		return newsFragment;
+	}
 
 	@Nullable
 	@Override
@@ -36,8 +48,10 @@ public class RssFragment extends Fragment {
 		toolbar = (Toolbar) viewGroup.findViewById(R.id.toolbar);
 		listView = (ListView) viewGroup.findViewById(R.id.listView);
 
-		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
+		((HomeActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
+		articlesList = (List<Article>) getArguments().getSerializable(ARTICLES_ARG);
+		articlesAdapter.notifyDataSetChanged();
 		listView.setAdapter(articlesAdapter);
 
 		return viewGroup;
