@@ -28,17 +28,17 @@ public class ContentPresenter {
 	private static ContentPresenter instance;
 
 	// Singleton accessor method
-	public static ContentPresenter getInstance(Context context) {
+	public static ContentPresenter getInstance(Context context, ContentRestClient.ContentRestClientConfig clientConfig) {
 		if (instance == null) {
-			instance = new ContentPresenter(context);
+			instance = new ContentPresenter(context, clientConfig);
 		}
 		return instance;
 	}
 
 	// Private constructor
-	private ContentPresenter(Context context) {
+	private ContentPresenter(Context context, ContentRestClient.ContentRestClientConfig clientConfig) {
 		this.context = context;
-		this.restClient = new DefaultContentRestClient(context, restClientConfig);
+		this.restClient = new DefaultContentRestClient(context, clientConfig);
 	}
 
 	/**
@@ -140,19 +140,4 @@ public class ContentPresenter {
 		EventBus.getDefault().post(new ArticlesListRetrievedEvent(retrievedArticles));
 	}
 
-	private ContentRestClient.ContentRestClientConfig restClientConfig = new ContentRestClient.ContentRestClientConfig() {
-		@Override
-		public String getCalendarEndpoint() {
-			return googleCalendarEndpoint;
-		}
-
-		@Override
-		public String getRssEndpoint() {
-			return rssEndpoint;
-		}
-	};
-
-	//TODO EXTRACT FOR BETTER CONFIGURABILITY
-	final String googleCalendarEndpoint = "http://www.google.com/calendar/feeds/volunteers@ejc2014.org/public/basic?alt=jsonc&max-results=2000";
-	final String rssEndpoint = "http://www.ejc2014.org/?option=com_content&view=category&layout=blog&id=43&format=fe%20ed&type=rss&utm_campaign=apps&utm_medium=android&utm_source=rss_feed";
 }

@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPattern": ".*type=rss*"
+    "urlPattern": ".*type=rss.*"
   },
   "response": {
     "status": 200,

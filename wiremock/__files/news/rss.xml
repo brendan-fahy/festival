@@ -11,14 +11,11 @@
 		<atom:link rel="self" type="application/rss+xml" href="http://www.ejc2014.org/component/content/category/43-blog?layout=blog&amp;format=feed&amp;type=rss&amp;utm_campaign=apps&amp;utm_medium=android&amp;utm_source=rss_feed" />
 		<language>en-gb</language>
 		<item>
-			<title>Performers Without Borders visit the EJC</title>
-			<link>http://www.ejc2014.org/blog/154-performers-without-borders-visit-the-ejc</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/blog/154-performers-without-borders-visit-the-ejc</guid>
+			<title>Brendan Creates Generic Version of App!</title>
+			<link>http://i1.kym-cdn.com/photos/images/facebook/000/234/765/b7e.jpg</link>
+			<guid isPermaLink="true">http://i1.kym-cdn.com/photos/images/facebook/000/234/765/b7e.jpg</guid>
 			<description>
-				<![CDATA[<div class="feed-description"><p><img src="http://www.ejc2014.org/images/pwb.jpg" border="0" alt="Performers Without Borders" title="Performers Without Borders" align="right" style="float: right; border: 0; margin-left: 10px; margin-right: 10px;" />Performers Without Borders (PWB) teaches performing arts to vulnerable children in countries of high child poverty. We interviewed<strong> Emily Ball</strong> who has worked with Performers without borders since 2007 and is an avid EJC fan. Emily and her colleagues will be recruiting performers for their organisation and will be answering your questions at EJC 2014 in Millstreet.</p>
-				<h3>1. What is Performers Without Borders (PWB) and where did this all start?</h3>
-				<p>The idea for Performers Without Borders (PWB) was first developed by two hobby jugglers and students of social development, Jonny Forbes and Matt Morris. During the Spring of 2006 whilst Jonny Forbes was studying in India and Matt Morris was finishing a voluntary project they meet up in the city of Varanasi. Sweltering in the summer heat they formed the idea to fuse their shared interests in performance skills and community development.</p>
-				<p>The first PWB tour took place in 2007-2008, a 6 month long trip to India with 4 month long projects at various locations across the country with an intrepid team of 8 performers and teachers including Matt and Jonny.  Since then, PWB have returned to India 5 more times, each time with a different team of performers, teachers, jugglers and artists determined to help make a difference. The last 4 tours being annual, something which we aim to continue in 2015.  In 2013 PWB started another project, this time in Nicaragua, Central America.  This tour was created by Rob Thorburn, who's family have been working with charities in Nicaragua for 8 years.  In 2014 PWB added another tour to this, our first ever in Sierra Leone, Africa - set up by Peachi Pete who is currently living there.</p>
+				<![CDATA[<div class="feed-description"><p><img src="http://www.ejc2014.org/images/pwb.jpg" border="0" alt="Performers Without Borders" title="Performers Without Borders" align="right" style="float: right; border: 0; margin-left: 10px; margin-right: 10px;" />Following a pretty rushed version of the original EJC 2014 app back in July of last year, Brendan finally got around to what he's been meaning to do, which is to extract the EJC-specific configuration from the rest of the code. Through the use of dependencies and product flavours (or 'flavors', as these crazy Americans say), it should now be possible to spin up new versions of the app, configured for entirely different events with different calendars and RSS feeds.</p>
 				</div>]]>
 			</description>
 			<author>ultan@ejc2014.org (Sharkey)</author>
@@ -26,122 +23,27 @@
 			<pubDate>Mon, 14 Jul 2014 10:16:01 +0100</pubDate>
 		</item>
 		<item>
-			<title>Interview with Samuel Roy, Cirque du Soleil talent scout</title>
-			<link>http://www.ejc2014.org/blog/151-interview-with-samuel-roy-cirque-du-soleil-talent-scout</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/blog/151-interview-with-samuel-roy-cirque-du-soleil-talent-scout</guid>
+			<title>Future Enhancements Planned</title>
+			<link>http://img.izismile.com/img/img5/20120417/640/i_have_no_idea_what_im_doing_meme_640_16.jpg</link>
+			<guid isPermaLink="true">http://img.izismile.com/img/img5/20120417/640/i_have_no_idea_what_im_doing_meme_640_16.jpg</guid>
 			<description>
-				<![CDATA[<div class="feed-description"><p>Samuel Roy of <em>Cirque du Soleil</em> will be attending the EJC to talk to our attendees about careers are circus professionals, his process with <em>Cirque du Soleil</em> and his own experiences. We interviewed Samuel so you can get to know a little about him before he arrives.</p>
-				<ol>
-				<li>
-				<h3>What you do for Cirque du Soleil and how did you get started?</h3>
-				</li>
-				</ol>
-				<p><img src="http://www.ejc2014.org/images/samuel-roy-cirque-du-soleil-casting.jpg" border="0" alt="Samuel Roy Cirque du Soleil Casting Agent" title="Samuel Roy Cirque du Soleil Casting Agent" align="right" />I am a juggler and a talent scout at <em>Cirque du Soleil</em>. I started to juggle at the age of 7 because my older sister was doing circus at Verdun Circus School in Montreal. After learning to juggle on my own, I also joined this circus school. I trained in many disciplines but juggling was and stayed my favourite one. After 10 years at Verdun Circus School, I got accepted at the National circus school of Montreal where I continued my training in circus arts with a speciality in juggling. My juggling partner, Nicolas Boivin-Gravel and I, graduated in 2005. For many years our duo, Throw2catch, performed all over the world with many different companies. Later on, this duo became our own circus company. In 2010, I started to teach juggling at the National circus school of Montreal. This was a really good experience and a great opportunity to work with amazing people. I joined Cirque du Soleil casting team 2 months ago as an acrobatic talent scout.</p>
-				<p>The Casting team is seeking new talent all over the world for <em>Cirque du Soleil</em> current shows and upcoming creations. To do so, we are holding auditions in many different countries all year round.  We are also traveling to attend shows, festivals, conventions and multidisciplinary events so we can witness the non-stop evolution of a variety of disciplines. To access our audition calendar and get all the details about upcoming events or job openings, people can visit <a href="http://www.cirquedusoleil.com/jobs" target="_blank">cirquedusoleil.com/jobs</a>.</p>
-				</div>]]>
-			</description>
-			<author>ultan@ejc2014.org (Sharkey)</author>
-			<category>Blog</category>
-			<pubDate>Thu, 10 Jul 2014 14:20:02 +0100</pubDate>
-		</item>
-		<item>
-			<title>Official site map</title>
-			<link>http://www.ejc2014.org/blog/149-official-site-map</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/blog/149-official-site-map</guid>
-			<description>
-				<![CDATA[<div class="feed-description"><p><a href="http://www.ejc2014.org/images/EJC2014sitemap-large.jpg" target="_blank" title="Click to download"><img src="http://www.ejc2014.org/images/EJC2014sitemap-small.jpg" border="0" alt="European Juggling Convention 2014 Sitemap" title="European Juggling Convention 2014 Sitemap" style="display: block; margin-left: 10px; margin-right: 10px; border: 0; float: right;" /></a>Here is the official site map for EJC 2014 wqher you will find all of the convention areas marked including:</p>
-				<ul>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=147&amp;amp;catid=53&amp;amp;Itemid=506">Camping</a> areas</li>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=146&amp;amp;catid=53&amp;amp;Itemid=506">EJC Bar and The Hub</a></li>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=145&amp;amp;catid=53&amp;amp;Itemid=506">Lazy Juggler Games Area</a></li>
-				<li>Main Stage</li>
-				<li>24hr Juggling Hall</li>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=138&amp;amp;catid=53&amp;amp;Itemid=506">Fire area</a></li>
-				<li>The Massacre (Renegade) tent</li>
-				<li>Youth Circus: <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=122&amp;amp;catid=51&amp;amp;Itemid=447">Youth Circus Programme</a> &amp;amp; <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=132&amp;amp;catid=51&amp;amp;Itemid=447">Advanced Youth Circus</a></li>
-				<li>Onsite Shop  </li>
-				<li>First Aid tent</li>
-				</ul>
-				<p style="text-align: left;">Click on the map for a larger version.</p>
-				<p style="text-align: left;">This site map and a map of the local area is available in your convention booklet which you get when you arrive on site. In Millstreet town, within walking distance there are backs and automated cash machines, pharmacies, supermarkets, doctors offices, hardware (camping gas) suppliers, fuel stations, a post office, bars and restaurants and everything you need.</p>
-				<p style="text-align: left;"> </p></div>]]>
+				<![CDATA[<div class="feed-description">This is a project that could really grow legs. At the moment only Google Calendar and RSS feeds are supported, for schedule and news, respectively. But support for other feed types/sources could easily be added. A button to add events from the schedule to the user's calendar (a la Google I/O app) would be good. A generic Twitter feed page could be good too, with sharing options and all. Plenty of room to grow.</div>]]>
 			</description>
 			<author>ultan@ejc2014.org (Sharkey)</author>
 			<category>Blog</category>
 			<pubDate>Thu, 10 Jul 2014 10:54:38 +0100</pubDate>
 		</item>
 		<item>
-			<title>Top 5 things to see and do in County Cork</title>
-			<link>http://www.ejc2014.org/blog/110-top-5-things-to-see-and-do-in-county-cork</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/blog/110-top-5-things-to-see-and-do-in-county-cork</guid>
+			<title>Breaking News: Brendan Not A Designer</title>
+			<link>http://i0.kym-cdn.com/photos/images/facebook/000/234/739/fa5.jpg</link>
+			<guid isPermaLink="true">http://i0.kym-cdn.com/photos/images/facebook/000/234/739/fa5.jpg</guid>
 			<description>
-				<![CDATA[<div class="feed-description"><p><em><img src="http://www.ejc2014.org/images/stories/banbireland-logo.png" border="0" alt="" align="left" style="padding-right: 10px;" />B&amp;amp;B Ireland has over forty years experience and dedication in the promotion of bed and breakfast accommodation in Ireland. Guests enjoy comfortable surroundings, wonderful food and the opportunity to meet the real locals - your hosts. This is a guest blog post from Claire at B&amp;amp;B Ireland.</em></p>
-				<p><img src="http://www.ejc2014.org/images/stories/cobh-cork-ejc.jpg" border="0" alt="Visit Cobh, Co. Cork" title="Cobh, Co. Cork" align="right" style="padding-left: 10px;" />With summer just beginning and the weather brightening up, there is no better place to plan a holiday to than Ireland. <strong>The Emerald Isle</strong> boasts so many fascinating things to do and see for all the family to enjoy. <strong>County Cork</strong> is renowned for its natural beauty, friendly atmosphere and great events. Cork is the ideal location for families who want to enjoy a relaxing and fun-filled vacation, but without breaking the bank! There is such a wealth of <strong>historical</strong> attractions, <strong>festivals</strong> and <strong>events</strong>, and stunning <strong>landscapes</strong>, all of which <strong>cost very little or nothing</strong> to appreciate!</p>
-				</div>]]>
-			</description>
-			<author>ultan@ejc2014.org (BandBIreland)</author>
-			<category>Blog</category>
-			<pubDate>Sat, 10 May 2014 09:47:54 +0100</pubDate>
-		</item>
-		<item>
-			<title>Overview schedule</title>
-			<link>http://www.ejc2014.org/programme</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/programme</guid>
-			<description>
-				<![CDATA[<div class="feed-description"><p><img src="http://www.ejc2014.org/images/calendar.jpg" border="0" align="right" style="float: right; border: 0; margin-left: 5px;" />Here is our current schedule to help you plan your convention.  This schedule highlights the larger events, there are workshops and skill sharing sessions happening constantly throughout the week.</p>
-				<h3>Superb events for families and visitors</h3>
-				<ul>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=136&amp;amp;catid=47&amp;amp;Itemid=496">Free Circus Workshops</a></li>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=135&amp;amp;catid=47&amp;amp;Itemid=495">Family Day &amp;amp; Free Street Shows - Tues 22nd</a></li>
-				<li><a href="http://www.ejc2014.org/programme/the-legends-stage" target="_self">The Legend Stage</a> - Sat 26th</li>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=131&amp;amp;catid=47&amp;amp;Itemid=484">Parade &amp;amp; Games - Sat 26th</a></li>
-				<li><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=137&amp;amp;catid=47&amp;amp;Itemid=497">Gala Show</a> - Sat 26th</li>
-				</ul>
-				<h3>Schedule of events</h3>
-				<dl class="dl-horizontal"><dt>Saturday, 19th July</dt><dd>Opening day: Registration &amp;amp; ticket sales open. Open stage event at 8 o'clock.</dd><dt>Sunday, 20th July</dt><dd>First Official Renegade, Lots of <a href="http://www.ejc2014.org/programme/masterclasses" target="_self">Masterclasses </a>begin!</dd><dt>Monday, 21st July</dt><dd><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=126&amp;amp;catid=49&amp;amp;Itemid=399">Masterclass: Viktor Kee</a> (3 day) begins, Workshops, Open Stage, Renegade and <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=138&amp;amp;catid=53&amp;amp;Itemid=506">Fire area</a></dd><dt>Tuesday, 22nd July</dt><dd><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=135&amp;amp;catid=47&amp;amp;Itemid=495">Family Day &amp;amp; Free Street Shows</a> and <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=134&amp;amp;catid=47&amp;amp;Itemid=494">Irish Day with Céilí</a>: Irish Culture, Irish Gala show, Ceilí Mór</dd><dt>Wednesday, 23th July</dt><dd>Open Stage, <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=128&amp;amp;catid=49&amp;amp;Itemid=399">Masterclass: Michael Moschen</a>, <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=139&amp;amp;catid=53&amp;amp;Itemid=506">Battlestick</a>, <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=141&amp;amp;catid=53&amp;amp;Itemid=506">Volleyclub</a>, <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=140&amp;amp;catid=53&amp;amp;Itemid=506">EJA General Assembly</a></dd><dt>Thursday, 24th July</dt><dd>Open Stage, Diabolo Battle, Fight Night, 3-Ball football</dd><dt>Friday, 25th July</dt><dd><a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=89&amp;amp;catid=48&amp;amp;Itemid=398">Legend Stage: Michael Moschen</a>, <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=125&amp;amp;catid=48&amp;amp;Itemid=398">Viktor Kee,</a> <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=88&amp;amp;catid=48&amp;amp;Itemid=398">Jochen Schell and more</a>, Last Official Renegade</dd><dt>Saturday, 26th July</dt><dd>Closing day: Monster <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=131&amp;amp;catid=47&amp;amp;Itemid=484">Parade</a> through Millstreet, The Juggling <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=131&amp;amp;catid=47&amp;amp;Itemid=484">Games</a>, <a href="http://www.ejc2014.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=137&amp;amp;catid=47&amp;amp;Itemid=497">Gala Show</a></dd><dt>Sunday, 27th July</dt><dd>Clean up and vacate site</dd></dl>
-				<p>Check out the <a href="http://www.ejc2014.org/schedule/week.listevents/2014/07/25/">full schedule on our detailed event calendar</a></p>
-				<p>You can also use this iCal link to add our public calendar to your mobile device. If any changes are made we will change this calendar too, so you're always up to date! Google how to add it to your specific device if you don't know how already - here is the link:</p>
-				<p class="info">http://www.google.com/calendar/ical/volunteers%40ejc2014.org/public/basic.ics</p></div>]]>
-			</description>
-			<author>ultan@ejc2014.org (Sharkey)</author>
-			<category>Blog</category>
-			<pubDate>Wed, 16 Apr 2014 08:59:32 +0100</pubDate>
-		</item>
-		<item>
-			<title>Transport survey</title>
-			<link>http://www.ejc2014.org/blog/98-transport-survey</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/blog/98-transport-survey</guid>
-			<description>
-				<![CDATA[<div class="feed-description"><p><img src="http://www.ejc2014.org/images/coaches.jpg" border="0" align="right" style="float: right; border: 0; margin-left: 5px;" />You may have heard our plans to run an EJC bus, direct from Ireland's main airports to the convention site. Before we make these tickets available, we would like to get some information from you on when to run these busses. As such, we would be delighted if you could take 5 minutes to <a href="http://www.sogosurvey.com/k/SsQSTTPsRTsPsPsP" target="_blank" title="complete our survey">complete our survey.</a></p>
-				</div>]]>
-			</description>
-			<author>martinquigley2003@hotmail.com (Martin Quigley)</author>
-			<category>Blog</category>
-			<pubDate>Wed, 09 Apr 2014 22:11:29 +0100</pubDate>
-		</item>
-		<item>
-			<title>Ticket prices and phases</title>
-			<link>http://www.ejc2014.org/blog/93-ticket-prices-and-phases</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/blog/93-ticket-prices-and-phases</guid>
-			<description>
-				<![CDATA[<div class="feed-description"><p><img src="http://www.ejc2014.org/images/ejc-2014-summer-prereg.png" border="0" alt="EJC tickets for sale soon!" title="EJC pre-reg opens soon!" align="right" />Our tickets are available in <strong>four phases,</strong> increasing in price until right before the convention itself. It is important to note that there are<strong> no further reductions</strong> in ticket prices for volunteering, giving workshops or helping out in other ways. The tickets are <strong>very good value</strong> and we are all expected to help out in making our conventions run smoothly. It's what makes us <strong>a community</strong> and what makes our <strong>conventions special.</strong></p>
+				<![CDATA[<div class="feed-description">So, it turns out that Brendan is not, in fact, a designer. He has a pretty good idea of the material design guidelines at this stage, and with AppCompat libraries and all the rest of it, it's easy enough to go along with, but actual visual design is not exactly Brendan's forte. As you may have guessed from the state of his face/head/clothes, presentation is not his strong suit. There's definitely room for a clothes/suit pun in there. It's planned for a future version.
 				</div>]]>
 			</description>
 			<author>ultan@ejc2014.org (Sharkey)</author>
 			<category>Blog</category>
-			<pubDate>Thu, 27 Mar 2014 14:12:01 +0000</pubDate>
-		</item>
-		<item>
-			<title>What St. Patrick's Day means</title>
-			<link>http://www.ejc2014.org/blog/91-what-st-patrick-s-day-means</link>
-			<guid isPermaLink="true">http://www.ejc2014.org/blog/91-what-st-patrick-s-day-means</guid>
-			<description>
-				<![CDATA[<div class="feed-description"><p>St. Patricks Day is the day when the world <strong>celebrates all things Irish</strong>. Less than 5 million people live on our island, but more than 70 million people call it home. For me, St. Patricks Day is about remembering those people who have left Ireland and still call it home, and those people who have come to Ireland and <strong>now call it home</strong>.</p>
-				</div>]]>
-			</description>
-			<author>ultan@ejc2014.org (Sharkey)</author>
-			<category>Blog</category>
-			<pubDate>Sat, 15 Mar 2014 14:57:05 +0000</pubDate>
+			<pubDate>Thu, 10 Jul 2014 14:20:02 +0100</pubDate>
 		</item>
 	</channel>
 </rss>

@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.breadbin.festival.api.ContentRestClient;
 import com.breadbin.festival.navdrawer.NavigationDrawerFragment;
 import com.breadbin.festival.news.NewsFragment;
 import com.breadbin.festival.presenter.ContentPresenter;
@@ -45,11 +46,11 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 	}
 
 	private void fetchNewsArticles() {
-		ContentPresenter.getInstance(this).fetchNewsArticlesList();
+		ContentPresenter.getInstance(this, restClientConfig).fetchNewsArticlesList();
 	}
 
 	private void fetchCalendarEvents() {
-		ContentPresenter.getInstance(this).fetchEventsList();
+		ContentPresenter.getInstance(this, restClientConfig).fetchEventsList();
 	}
 
 	public void onEvent(ArticlesListRetrievedEvent event) {
@@ -130,5 +131,17 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 
 		return drawerToggle;
 	}
+
+	private ContentRestClient.ContentRestClientConfig restClientConfig = new ContentRestClient.ContentRestClientConfig() {
+		@Override
+		public String getCalendarEndpoint() {
+			return getString(R.string.googleCalendarEndpoint);
+		}
+
+		@Override
+		public String getRssEndpoint() {
+			return getString(R.string.rssEndpoint);
+		}
+	};
 
 }

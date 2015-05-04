@@ -14,7 +14,16 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles fileTree(dir: 'proguard')
+        }
+    }
+
+    productFlavors {
+        ejc {
+            applicationId "com.breadbin.festival.ejc"
+        }
+        wiremock {
+            applicationId "com.breadbin.festival.mock"
         }
     }
 

@@ -5,7 +5,4 @@
 	<string name="nav_drawer_schedule">Schedule</string>
 	<string name="nav_drawer_news">News</string>
 
-	<string name="action_example">Example action</string>
-
-	<string name="action_settings">Settings</string>
 </resources>
