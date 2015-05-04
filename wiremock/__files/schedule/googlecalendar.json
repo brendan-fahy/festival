@@ -1,0 +1,2613 @@
+{
+  "apiVersion": "1.0",
+  "data": {
+    "kind": "calendar#eventFeed",
+    "id": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic",
+    "author": {
+      "displayName": "volunteers@ejc2014.org",
+      "email": "volunteers@ejc2014.org"
+    },
+    "title": "EJC2014 Volunteers",
+    "details": "EJC2014 Volunteers",
+    "updated": "2015-04-26T12:59:46.000Z",
+    "totalResults": 185,
+    "startIndex": 1,
+    "itemsPerPage": 2000,
+    "feedLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic",
+    "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic?alt=jsonc&max-results=2000",
+    "canPost": false,
+    "timeZone": "Europe/Dublin",
+    "timesCleaned": 3,
+    "items": [{
+      "kind": "calendar#event",
+      "id": "18fcr0g03f9058g5j4v9fgov6g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/18fcr0g03f9058g5j4v9fgov6g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MThmY3IwZzAzZjkwNThnNWo0djlmZ292Nmcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Games",
+      "created": "2014-07-07T18:38:37.000Z",
+      "updated": "2014-07-26T14:21:35.000Z",
+      "details": "When: Sat 26 Jul 2014 15:30 to 18:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Town Park\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Juggler Games in the Town Park",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "1vgepqvetclmjstremk7qqe5bg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/1vgepqvetclmjstremk7qqe5bg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MXZnZXBxdmV0Y2xtanN0cmVtazdxcWU1Ymcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "EJCYC",
+      "created": "2014-07-07T18:38:27.000Z",
+      "updated": "2014-07-25T11:00:18.000Z",
+      "details": "When: Fri 25 Jul 2014 12:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Mingle times, games, circus exercises, performance games, incorporating circus skills and performance, working on routines, skill share and networking, compilation of performance, youth parade around the site to draw people to the performance, youth performance to audience, final wrap up motivation talks, networking encouragement",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "nr6klde7fijkimhqac2e520i6o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/nr6klde7fijkimhqac2e520i6o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bnI2a2xkZTdmaWpraW1ocWFjMmU1MjBpNm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial HORSE Trapeze",
+      "created": "2014-07-07T18:38:28.000Z",
+      "updated": "2014-07-20T14:37:57.000Z",
+      "details": "When: Fri 25 Jul 2014 13:15 to 14:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "qdma6lu27gcrj8q8v5vjko320g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/qdma6lu27gcrj8q8v5vjko320g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cWRtYTZsdTI3Z2NyajhxOHY1dmprbzMyMGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "8-Minute Empire",
+      "created": "2014-07-20T14:37:19.000Z",
+      "updated": "2014-07-20T14:37:19.000Z",
+      "details": "When: Fri 25 Jul 2014 16:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: 2 to 5 players take turns selecting a card displayed. Cards have goods and actions on them, actions are used to take over the map and sets of goods are worth points at the end. Getting the right balance is key to victory.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ca4hvjpasimf80brsee53fnlp8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ca4hvjpasimf80brsee53fnlp8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y2E0aHZqcGFzaW1mODBicnNlZTUzZm5scDggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Ricochet Robots",
+      "created": "2014-07-20T14:37:19.000Z",
+      "updated": "2014-07-20T14:37:19.000Z",
+      "details": "When: Fri 25 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Moving robots to the target chips, when a robot sets off it goes until it hits a wall or another robot.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "iuvn2juqjpuvk1mqesa3j7pe70",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/iuvn2juqjpuvk1mqesa3j7pe70",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aXV2bjJqdXFqcHV2azFtcWVzYTNqN3BlNzAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "SET",
+      "created": "2014-07-20T14:37:18.000Z",
+      "updated": "2014-07-20T14:37:19.000Z",
+      "details": "When: Fri 25 Jul 2014 14:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Can you spot the three cards that have their features either all the same or all different?",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "9gui8mk3qes2rajs8br24s5ock",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/9gui8mk3qes2rajs8br24s5ock",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OWd1aThtazNxZXMycmFqczhicjI0czVvY2sgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Pucket - Competition",
+      "created": "2014-07-20T14:37:17.000Z",
+      "updated": "2014-07-20T14:37:18.000Z",
+      "details": "When: Thu 24 Jul 2014 22:00 to 23:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Pucket Competition starts after the open stage, a knock out tournement to determine the EJC Pucket champion.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "p366c662108ikrtbeerfhgt0l4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/p366c662108ikrtbeerfhgt0l4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cDM2NmM2NjIxMDhpa3J0YmVlcmZoZ3QwbDQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Pucket",
+      "created": "2014-07-20T14:37:16.000Z",
+      "updated": "2014-07-20T14:37:17.000Z",
+      "details": "When: Thu 24 Jul 2014 16:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Pucket is a two-player game where both players are trying to flick through their pucks (at the same time) to the other side before the opposite player can empty their side.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "pn29sne55hsk5ss6m6l0ft32kk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/pn29sne55hsk5ss6m6l0ft32kk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cG4yOXNuZTU1aHNrNXNzNm02bDBmdDMya2sgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Say bye to Villians",
+      "created": "2014-07-20T14:37:16.000Z",
+      "updated": "2014-07-20T14:37:16.000Z",
+      "details": "When: Thu 24 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: 3 to 8 players work together to share information to collectively defeat a villian, through discarding cards to learn hidden information, taking special training and taking special actions can you work together to win?",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "qnltsp6df7v023p345uo6i56s4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/qnltsp6df7v023p345uo6i56s4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cW5sdHNwNmRmN3YwMjNwMzQ1dW82aTU2czQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Mascarade",
+      "created": "2014-07-20T14:37:15.000Z",
+      "updated": "2014-07-20T14:37:16.000Z",
+      "details": "When: Thu 24 Jul 2014 14:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: 2 to 13 players enter the mascarade and unmask your opponents! Assuming the role of up to 13 different characters with the ultimate goal of being the richest player by the end of the game.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "9ts9vg7tdf31k5b3dfsa5brga0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/9ts9vg7tdf31k5b3dfsa5brga0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OXRzOXZnN3RkZjMxazViM2Rmc2E1YnJnYTAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "One Night Werewolf",
+      "created": "2014-07-20T14:37:14.000Z",
+      "updated": "2014-07-20T14:37:15.000Z",
+      "details": "When: Wed 23 Jul 2014 16:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: 3 to 10 players play the classic werewolf game over a one night period, no-one dies while everyone tries to work out who the werewolves are?! Kill a werewolf villagers win, kill a villager werewolves win!",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "34o1uquss1lp3vc32v1nps1g6o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/34o1uquss1lp3vc32v1nps1g6o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MzRvMXVxdXNzMWxwM3ZjMzJ2MW5wczFnNm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Hanabi",
+      "created": "2014-07-20T14:37:14.000Z",
+      "updated": "2014-07-20T14:37:14.000Z",
+      "details": "When: Wed 23 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: 2 to 5 players work together to build the best firework display possible. No-one gets to see their cards and on your go give information if you can, play or discard a card. This game won the speile des jahre 2013.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "65ruqugon021kojb2l32iskn9o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/65ruqugon021kojb2l32iskn9o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NjVydXF1Z29uMDIxa29qYjJsMzJpc2tuOW8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Splendor",
+      "created": "2014-07-20T14:37:13.000Z",
+      "updated": "2014-07-20T14:37:14.000Z",
+      "details": "When: Wed 23 Jul 2014 14:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Splendor is a 2 to 4 player game, where you try to collect gems to gain you prestrige points, by either collecting coins or buying cards.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "g1krctcavqqii93k9ltmhrf008",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/g1krctcavqqii93k9ltmhrf008",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZzFrcmN0Y2F2cXFpaTkzazlsdG1ocmYwMDggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Battle Sheep - Competition",
+      "created": "2014-07-20T14:37:13.000Z",
+      "updated": "2014-07-20T14:37:13.000Z",
+      "details": "When: Tue 22 Jul 2014 22:00 to 23:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Battle Sheep competiton starting after the Irish Gala Show, can you be the best player of the EJC?",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "1is9omr20n57ne3mgs3opaj7p4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/1is9omr20n57ne3mgs3opaj7p4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MWlzOW9tcjIwbjU3bmUzbWdzM29wYWo3cDQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Battle Sheep",
+      "created": "2014-07-20T14:37:13.000Z",
+      "updated": "2014-07-20T14:37:13.000Z",
+      "details": "When: Tue 22 Jul 2014 16:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Battle Sheep is for 2 to 4 players, guide your sheep and try and block your opponents from taking all the pastures. A lovely mixture of family fun and strategy at its best.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "4jfo29a41s2mcf7143ctu7vu1s",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/4jfo29a41s2mcf7143ctu7vu1s",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NGpmbzI5YTQxczJtY2Y3MTQzY3R1N3Z1MXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Dodekka",
+      "created": "2014-07-20T14:37:13.000Z",
+      "updated": "2014-07-20T14:37:13.000Z",
+      "details": "When: Tue 22 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Dodekka is a 2 to 6 player game where you are trying to collect the highest score of one type of element. Take a card or turn a card, just becareful if the total of cards on the table goes over 12 you have to take them all!",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "bvhqb4u9k4rs0ot44m1fl1o170",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/bvhqb4u9k4rs0ot44m1fl1o170",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YnZocWI0dTlrNHJzMG90NDRtMWZsMW8xNzAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Swish",
+      "created": "2014-07-20T14:37:13.000Z",
+      "updated": "2014-07-20T14:37:13.000Z",
+      "details": "When: Tue 22 Jul 2014 14:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Swish is a good way increasing your spatiacal IQ! Everyone tries to work put which cards go to gether to make a complete circles of all the colours on them.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "24enaffmov3jnb40toi9k2t8f8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/24enaffmov3jnb40toi9k2t8f8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MjRlbmFmZm1vdjNqbmI0MHRvaTlrMnQ4Zjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Tichu - Competition",
+      "created": "2014-07-20T14:37:12.000Z",
+      "updated": "2014-07-20T14:37:12.000Z",
+      "details": "When: Mon 21 Jul 2014 22:00 to 23:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: The Tichu competition will start tonight and carry on throughout the week. Playing in pairs you will have 4 hands per game keeping the points you win. The team that gains the most points wins.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "cou64kqgo851k0a5tmql1ogudc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/cou64kqgo851k0a5tmql1ogudc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y291NjRrcWdvODUxazBhNXRtcWwxb2d1ZGMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Tichu - Intermediates",
+      "created": "2014-07-20T14:37:12.000Z",
+      "updated": "2014-07-20T14:37:12.000Z",
+      "details": "When: Mon 21 Jul 2014 16:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Tichu for intermediates, following on from the beginners workshop and assuming you know how to play, we will go through all stages of a round explaining best practices on when to play. when not to play.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ivtiik1hrj0qe3tisn09rthvfg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ivtiik1hrj0qe3tisn09rthvfg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aXZ0aWlrMWhyajBxZTN0aXNuMDlydGh2Zmcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Tichu - Beginners",
+      "created": "2014-07-20T14:37:11.000Z",
+      "updated": "2014-07-20T14:37:11.000Z",
+      "details": "When: Mon 21 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Tichu for beginners is aim for people who have never played Tichu before. I will go through the games, describing cards and playable hands. Strategy and tatics will be discuss more in the intermediate workshop.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "6i8fhdgs72f8chqcudrqf6dn20",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/6i8fhdgs72f8chqcudrqf6dn20",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Nmk4ZmhkZ3M3MmY4Y2hxY3VkcnFmNmRuMjAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Dominion",
+      "created": "2014-07-20T14:37:11.000Z",
+      "updated": "2014-07-20T14:37:11.000Z",
+      "details": "When: Mon 21 Jul 2014 14:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Dominion is a 2 to 4 Card game where you are trying to build your own personal decks to get a mixture of actions and money to enable you to buy better land. Brilliant game that started the genre of deck building games.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "hqnu7s5l7gp4lnarbjq74i8cpk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/hqnu7s5l7gp4lnarbjq74i8cpk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aHFudTdzNWw3Z3A0bG5hcmJqcTc0aThjcGsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Elk Fest Competition",
+      "created": "2014-07-20T14:37:10.000Z",
+      "updated": "2014-07-20T14:37:11.000Z",
+      "details": "When: Sun 20 Jul 2014 22:00 to 23:59 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Starting after the Open stage, take part in the Elk Fest knock out competition, can you become the EJC Elk Fest Champion?",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "0iir4vubodj4pvba5thhifk580",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/0iir4vubodj4pvba5thhifk580",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MGlpcjR2dWJvZGo0cHZiYTV0aGhpZms1ODAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Elk Fest",
+      "created": "2014-07-20T14:37:09.000Z",
+      "updated": "2014-07-20T14:37:10.000Z",
+      "details": "When: Sun 20 Jul 2014 16:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Elk Fest, this two-player dexerity game requires you to try and get your Elk&#39;s to the opposite side of the swamp by flicking the stones in to the right place. Fun and simple.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "hub9evttmprarpapbohttdtmdg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/hub9evttmprarpapbohttdtmdg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aHViOWV2dHRtcHJhcnBhcGJvaHR0ZHRtZGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Love Letter",
+      "created": "2014-07-20T14:37:09.000Z",
+      "updated": "2014-07-20T14:37:09.000Z",
+      "details": "When: Sun 20 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Love Letter is a 2 to 4 Person game where you are trying to get your love letter to the Princess. You start with one character and draw another, playing one of them. All characters have special actions and when you play them the affect takes place. Be the last one in a round or the character closest to the Princess to win.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "8i3v036sjptpdsaai8f48ml5qo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/8i3v036sjptpdsaai8f48ml5qo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OGkzdjAzNnNqcHRwZHNhYWk4ZjQ4bWw1cW8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Citadels",
+      "created": "2014-07-20T14:37:09.000Z",
+      "updated": "2014-07-20T14:37:09.000Z",
+      "details": "When: Sun 20 Jul 2014 14:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Lazy Juggler Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Citadels is a 2 to 7 person straetgy game, where each round you choose a from a selection of available characters and try to gain gold to get 8 buildings in your district.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "54otrs8ltq3pd31bhnkk5jsqso",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/54otrs8ltq3pd31bhnkk5jsqso",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NTRvdHJzOGx0cTNwZDMxYmhua2s1anNxc28gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:38:27.000Z",
+      "updated": "2014-07-20T14:32:26.000Z",
+      "details": "When: Fri 25 Jul 2014 12:00 to 13:15 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "bgu85bv1c4031spqhnr55h8gsg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/bgu85bv1c4031spqhnr55h8gsg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Ymd1ODVidjFjNDAzMXNwcWhucjU1aDhnc2cgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Fabric",
+      "created": "2014-07-07T18:38:24.000Z",
+      "updated": "2014-07-20T14:31:21.000Z",
+      "details": "When: Fri 25 Jul 2014 10:45 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Fabric. Level: Improver &amp; Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "c22teevjjgp25jjjdlp87v5ak8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/c22teevjjgp25jjjdlp87v5ak8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YzIydGVldmpqZ3AyNWpqamRscDg3djVhazggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Cocoon",
+      "created": "2014-07-07T18:38:23.000Z",
+      "updated": "2014-07-20T14:30:57.000Z",
+      "details": "When: Fri 25 Jul 2014 09:30 to 10:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Cocoon. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "d6fdb4l5ahmkj4etr6kg2kt824",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/d6fdb4l5ahmkj4etr6kg2kt824",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZDZmZGI0bDVhaG1rajRldHI2a2cya3Q4MjQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:38:21.000Z",
+      "updated": "2014-07-20T14:28:15.000Z",
+      "details": "When: Thu 24 Jul 2014 16:45 to 18:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "e2t8vtfpmv002gb1pv1cmsvl14",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/e2t8vtfpmv002gb1pv1cmsvl14",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZTJ0OHZ0ZnBtdjAwMmdiMXB2MWNtc3ZsMTQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:38:19.000Z",
+      "updated": "2014-07-20T14:28:04.000Z",
+      "details": "When: Thu 24 Jul 2014 15:30 to 16:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop. Level: Improver &amp; Explorer",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "sdij8ur3tok4r01158jiehfvn8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/sdij8ur3tok4r01158jiehfvn8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=c2Rpajh1cjN0b2s0cjAxMTU4amllaGZ2bjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:38:17.000Z",
+      "updated": "2014-07-20T14:26:19.000Z",
+      "details": "When: Thu 24 Jul 2014 13:15 to 14:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "6458v6ibl4th462un8iqpubm6c",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/6458v6ibl4th462un8iqpubm6c",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NjQ1OHY2aWJsNHRoNDYydW44aXFwdWJtNmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:38:16.000Z",
+      "updated": "2014-07-20T14:25:06.000Z",
+      "details": "When: Thu 24 Jul 2014 12:00 to 13:15 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "91meh7eeb36jnahng8a86vhl70",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/91meh7eeb36jnahng8a86vhl70",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OTFtZWg3ZWViMzZqbmFobmc4YTg2dmhsNzAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Fabric",
+      "created": "2014-07-07T18:38:12.000Z",
+      "updated": "2014-07-20T14:23:49.000Z",
+      "details": "When: Thu 24 Jul 2014 10:45 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Fabric. Level: Improver &amp; Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "erhatevq910m3lenrll86go9cc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/erhatevq910m3lenrll86go9cc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZXJoYXRldnE5MTBtM2xlbnJsbDg2Z285Y2Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Cocoon",
+      "created": "2014-07-07T18:38:10.000Z",
+      "updated": "2014-07-20T14:22:38.000Z",
+      "details": "When: Thu 24 Jul 2014 09:30 to 10:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Cocoon with Chloe de Buyl Pisco. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "kie41msja4ds0hhq8c3kisgaok",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/kie41msja4ds0hhq8c3kisgaok",
+      "alternateLink": "http://www.google.com/calendar/event?eid=a2llNDFtc2phNGRzMGhocThjM2tpc2dhb2sgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:38:08.000Z",
+      "updated": "2014-07-20T14:22:11.000Z",
+      "details": "When: Wed 23 Jul 2014 16:45 to 18:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "93d9e61g1rmj7b61llsqq4kq28",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/93d9e61g1rmj7b61llsqq4kq28",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OTNkOWU2MWcxcm1qN2I2MWxsc3FxNGtxMjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:38:07.000Z",
+      "updated": "2014-07-20T14:21:49.000Z",
+      "details": "When: Wed 23 Jul 2014 15:30 to 16:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop. Level: Improver &amp; Explorer",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "tug23mosg2g31naf9ktakgk7po",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/tug23mosg2g31naf9ktakgk7po",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dHVnMjNtb3NnMmczMW5hZjlrdGFrZ2s3cG8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:38:05.000Z",
+      "updated": "2014-07-20T14:15:36.000Z",
+      "details": "When: Wed 23 Jul 2014 13:15 to 14:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "sqqft2pngrsdv6eatnentt603g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/sqqft2pngrsdv6eatnentt603g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=c3FxZnQycG5ncnNkdjZlYXRuZW50dDYwM2cgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:38:03.000Z",
+      "updated": "2014-07-20T14:14:47.000Z",
+      "details": "When: Wed 23 Jul 2014 12:00 to 13:15 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "gimkdvg0nqd6s8ac6jrgqio9vc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/gimkdvg0nqd6s8ac6jrgqio9vc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Z2lta2R2ZzBucWQ2czhhYzZqcmdxaW85dmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Fabric",
+      "created": "2014-07-07T18:38:00.000Z",
+      "updated": "2014-07-20T14:14:30.000Z",
+      "details": "When: Wed 23 Jul 2014 10:45 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Fabric. Level: Improver &amp; Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "cbu2d7bkps37ckv41unufuj0sk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/cbu2d7bkps37ckv41unufuj0sk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y2J1MmQ3YmtwczM3Y2t2NDF1bnVmdWowc2sgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Cocoon",
+      "created": "2014-07-07T18:37:57.000Z",
+      "updated": "2014-07-20T14:14:16.000Z",
+      "details": "When: Wed 23 Jul 2014 09:30 to 10:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Cocoon. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "cpr14ld0ijjgro30mmfeetrme8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/cpr14ld0ijjgro30mmfeetrme8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y3ByMTRsZDBpampncm8zMG1tZmVldHJtZTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Cocoon",
+      "created": "2014-07-07T18:37:44.000Z",
+      "updated": "2014-07-20T14:13:35.000Z",
+      "details": "When: Tue 22 Jul 2014 09:30 to 10:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Cocoon . Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "fdk8rrlmle43m9onutn1mgjkq4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/fdk8rrlmle43m9onutn1mgjkq4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZmRrOHJybG1sZTQzbTlvbnV0bjFtZ2prcTQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:37:41.000Z",
+      "updated": "2014-07-20T14:12:36.000Z",
+      "details": "When: Mon 21 Jul 2014 16:45 to 18:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "c7tv7eqddmeae49he0f8b195d8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/c7tv7eqddmeae49he0f8b195d8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Yzd0djdlcWRkbWVhZTQ5aGUwZjhiMTk1ZDggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:37:39.000Z",
+      "updated": "2014-07-20T14:11:42.000Z",
+      "details": "When: Mon 21 Jul 2014 13:15 to 14:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "rdlb3la8l87nra6nh0qhd59ngg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/rdlb3la8l87nra6nh0qhd59ngg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cmRsYjNsYThsODducmE2bmgwcWhkNTluZ2cgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:37:38.000Z",
+      "updated": "2014-07-20T14:11:16.000Z",
+      "details": "When: Mon 21 Jul 2014 12:00 to 13:15 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "pt370tae2jne6o77m4i3gllbr8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/pt370tae2jne6o77m4i3gllbr8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cHQzNzB0YWUyam5lNm83N200aTNnbGxicjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Fabric",
+      "created": "2014-07-07T18:37:35.000Z",
+      "updated": "2014-07-20T14:11:00.000Z",
+      "details": "When: Mon 21 Jul 2014 10:45 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Fabric. Level: Improver &amp; Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "focqd6ovig1dt5vvntlgf50koo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/focqd6ovig1dt5vvntlgf50koo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Zm9jcWQ2b3ZpZzFkdDV2dm50bGdmNTBrb28gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:37:29.000Z",
+      "updated": "2014-07-20T14:04:28.000Z",
+      "details": "When: Sun 20 Jul 2014 14:00 to 19:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Areas 1 and 2\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ejg66dmk5iif37i006uo5kmd6o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ejg66dmk5iif37i006uo5kmd6o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZWpnNjZkbWs1aWlmMzdpMDA2dW81a21kNm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Cocoon",
+      "created": "2014-07-07T18:37:32.000Z",
+      "updated": "2014-07-20T13:20:46.000Z",
+      "details": "When: Mon 21 Jul 2014 09:30 to 10:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Cocoon with Chloe de Buyl Pisco. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "6ua0rtts78o10ai7e6vvaqgdgc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/6ua0rtts78o10ai7e6vvaqgdgc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NnVhMHJ0dHM3OG8xMGFpN2U2dnZhcWdkZ2Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T13:20:41.000Z",
+      "updated": "2014-07-20T13:19:32.000Z",
+      "details": "When: Thu 24 Jul 2014 12:00 to 13:15 \nIST\u003cbr /\u003e\n\u003cbr /\u003eWho: volunteers@ejc2014.org\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "7p2jkiq0ebqg0nll16hoh6n4bc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/7p2jkiq0ebqg0nll16hoh6n4bc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=N3AyamtpcTBlYnFnMG5sbDE2aG9oNm40YmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Staff Masterclass with MCP",
+      "created": "2014-07-07T18:37:37.000Z",
+      "updated": "2014-07-19T19:03:01.000Z",
+      "details": "When: Mon 21 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Staff Masterclass with MCP",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ulo49sut7dnkdfiu0bbrs5055o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ulo49sut7dnkdfiu0bbrs5055o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dWxvNDlzdXQ3ZG5rZGZpdTBiYnJzNTA1NW8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Juggling Masterclass with Marco Paoletti",
+      "created": "2014-07-07T18:37:36.000Z",
+      "updated": "2014-07-19T19:02:59.000Z",
+      "details": "When: Mon 21 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Juggling Masterclass with Marco Paoletti",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ljkbbrol3cir8098n0e1ts6ih4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ljkbbrol3cir8098n0e1ts6ih4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bGprYmJyb2wzY2lyODA5OG4wZTF0czZpaDQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Handstand practice",
+      "created": "2014-07-07T18:37:41.000Z",
+      "updated": "2014-07-19T19:02:02.000Z",
+      "details": "When: Mon 21 Jul 2014 15:30 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Handstand practice",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "clfrkoad2ffkji1rcmu6iernak",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/clfrkoad2ffkji1rcmu6iernak",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y2xmcmtvYWQyZmZramkxcmNtdTZpZXJuYWsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:37:40.000Z",
+      "updated": "2014-07-19T19:02:01.000Z",
+      "details": "When: Mon 21 Jul 2014 15:30 to 16:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop with Chloe de Buyl Pisco. Level: Improver &amp; Explorer",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "tr9ff9su3alup2imnss3tj169g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/tr9ff9su3alup2imnss3tj169g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dHI5ZmY5c3UzYWx1cDJpbW5zczN0ajE2OWcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: AcroYoga sequences and transitions",
+      "created": "2014-07-07T18:37:39.000Z",
+      "updated": "2014-07-19T19:01:59.000Z",
+      "details": "When: Mon 21 Jul 2014 14:00 to 15:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: AcroYoga sequences and transitions",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "6apkr2jt7qci27h8a9m1v5ofbc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/6apkr2jt7qci27h8a9m1v5ofbc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NmFwa3IyanQ3cWNpMjdoOGE5bTF2NW9mYmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Advanced Series 2",
+      "created": "2014-07-07T18:37:37.000Z",
+      "updated": "2014-07-19T19:01:56.000Z",
+      "details": "When: Mon 21 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Advanced Series 2",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ibeqmg6el3fej7ke483bcljd1c",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ibeqmg6el3fej7ke483bcljd1c",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aWJlcW1nNmVsM2ZlajdrZTQ4M2JjbGpkMWMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Beginners Series 2",
+      "created": "2014-07-07T18:37:35.000Z",
+      "updated": "2014-07-19T19:00:59.000Z",
+      "details": "When: Mon 21 Jul 2014 10:30 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Beginners Series 2",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "mv8is22dsvjhb8igqcovrb0o58",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/mv8is22dsvjhb8igqcovrb0o58",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bXY4aXMyMmRzdmpoYjhpZ3Fjb3ZyYjBvNTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Lonesome George",
+      "created": "2014-07-07T18:37:43.000Z",
+      "updated": "2014-07-19T19:00:58.000Z",
+      "details": "When: Mon 21 Jul 2014 22:00 to 23:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Lonesome George [style of music/ent?]",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "u43dokkn2lh7nvmqcgiim1gers",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/u43dokkn2lh7nvmqcgiim1gers",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dTQzZG9ra24ybGg3bnZtcWNnaWltMWdlcnMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Open Stage",
+      "created": "2014-07-07T18:37:43.000Z",
+      "updated": "2014-07-19T19:00:56.000Z",
+      "details": "When: Mon 21 Jul 2014 20:00 to 22:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Open Stage",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "c0a0oppe681sl0fdjelrprcnbs",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/c0a0oppe681sl0fdjelrprcnbs",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YzBhMG9wcGU2ODFzbDBmZGplbHJwcmNuYnMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:37:40.000Z",
+      "updated": "2014-07-19T19:00:55.000Z",
+      "details": "When: Mon 21 Jul 2014 14:00 to 19:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Areas 1 and 2\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "6ufj97pojjhomhgkoa6pon381o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/6ufj97pojjhomhgkoa6pon381o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NnVmajk3cG9qamhvbWhna29hNnBvbjM4MW8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Circus Game Fare",
+      "created": "2014-07-07T18:37:37.000Z",
+      "updated": "2014-07-19T19:00:09.000Z",
+      "details": "When: Mon 21 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Circus Game Fare (outreach): (Ages 10 to 77 yrs)\nPlay circus and clown games based on cooperation, strategy and \noverall sillyness. Be sure to come with comfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "gns0ctlr0rgs3ggv4p84388kbc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/gns0ctlr0rgs3ggv4p84388kbc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Z25zMGN0bHIwcmdzM2dndjRwODQzODhrYmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Toddler Circus",
+      "created": "2014-07-07T18:37:33.000Z",
+      "updated": "2014-07-19T19:00:08.000Z",
+      "details": "When: Mon 21 Jul 2014 10:00 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Toddler Circus: (Ages 6 months to 3 yrs, with an adult)\nPlay games, sing songs, experience balance and explore movement. Be sure to come with comfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "5obdb60qjrne22hgjle519b0v0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/5obdb60qjrne22hgjle519b0v0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NW9iZGI2MHFqcm5lMjJoZ2psZTUxOWIwdjAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Café Cabaret",
+      "created": "2014-07-07T18:37:40.000Z",
+      "updated": "2014-07-19T18:59:59.000Z",
+      "details": "When: Mon 21 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Chillout Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Café Cabaret",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "55lc8004ts59l8q05l95nrhj6o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/55lc8004ts59l8q05l95nrhj6o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NTVsYzgwMDR0czU5bDhxMDVsOTVucmhqNm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Acrobatics Masterclass with Felicia O&#39;Brien",
+      "created": "2014-07-07T18:37:38.000Z",
+      "updated": "2014-07-19T18:59:58.000Z",
+      "details": "When: Mon 21 Jul 2014 13:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Acrobatics Masterclass with Felicia O&#39;Brien",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "f6uiv0crt6479i4ltsnnujnils",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/f6uiv0crt6479i4ltsnnujnils",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZjZ1aXYwY3J0NjQ3OWk0bHRzbm51am5pbHMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "EJCYC",
+      "created": "2014-07-07T18:37:38.000Z",
+      "updated": "2014-07-19T18:59:57.000Z",
+      "details": "When: Mon 21 Jul 2014 12:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Introductions, icebreaking games, team work games, circus exercises, fun/silly games, skill share, networking opportunities.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "o2jvfcjbhuc0emid6j4i32elt0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/o2jvfcjbhuc0emid6j4i32elt0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bzJqdmZjamJodWMwZW1pZDZqNGkzMmVsdDAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "BCCS",
+      "created": "2014-07-07T18:37:34.000Z",
+      "updated": "2014-07-19T18:59:56.000Z",
+      "details": "When: Mon 21 Jul 2014 10:00 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: A taste of some serious circus for young people interested in undertaking intensive training in the future: tumbling and adagio masterclasses for 13-18 year olds",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "mbo259qhppf063mum4d1pns3hg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/mbo259qhppf063mum4d1pns3hg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bWJvMjU5cWhwcGYwNjNtdW00ZDFwbnMzaGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Poi Masterclass with Ronan McLoughlin",
+      "created": "2014-07-07T18:37:34.000Z",
+      "updated": "2014-07-19T18:59:19.000Z",
+      "details": "When: Mon 21 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Poi Masterclass with Ronan McLoughlin",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "0nd358jobhcm9sjoq6fqfdnvi8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/0nd358jobhcm9sjoq6fqfdnvi8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MG5kMzU4am9iaGNtOXNqb3E2ZnFmZG52aTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Hoop Masterclass with Henna",
+      "created": "2014-07-07T18:37:39.000Z",
+      "updated": "2014-07-19T18:59:07.000Z",
+      "details": "When: Mon 21 Jul 2014 13:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Hoop Masterclass with Henna",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "8b4l21ihqnhk7co3tt35lsmpco",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/8b4l21ihqnhk7co3tt35lsmpco",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OGI0bDIxaWhxbmhrN2NvM3R0MzVsc21wY28gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Eccentric performing Masterclass with Iman Lizarazu",
+      "created": "2014-07-07T18:37:36.000Z",
+      "updated": "2014-07-19T18:59:05.000Z",
+      "details": "When: Mon 21 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Eccentric performing Masterclass with Iman Lizarazu",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "3tp9op6ii4aj1frgkt5g80k9ns",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/3tp9op6ii4aj1frgkt5g80k9ns",
+      "alternateLink": "http://www.google.com/calendar/event?eid=M3RwOW9wNmlpNGFqMWZyZ2t0NWc4MGs5bnMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Diabolo Masterclass with Priam",
+      "created": "2014-07-07T18:37:34.000Z",
+      "updated": "2014-07-19T18:59:04.000Z",
+      "details": "When: Mon 21 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Diabolo Masterclass with Priam",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "194jiof8cigpkv05ce1utvscn8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/194jiof8cigpkv05ce1utvscn8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MTk0amlvZjhjaWdwa3YwNWNlMXV0dnNjbjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Handstand practice",
+      "created": "2014-07-07T18:37:30.000Z",
+      "updated": "2014-07-19T18:58:58.000Z",
+      "details": "When: Sun 20 Jul 2014 15:30 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Handstand practice",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "osa96pdbno8tmcvavvkucl68to",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/osa96pdbno8tmcvavvkucl68to",
+      "alternateLink": "http://www.google.com/calendar/event?eid=b3NhOTZwZGJubzh0bWN2YXZ2a3VjbDY4dG8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Café Cabaret",
+      "created": "2014-07-07T18:37:30.000Z",
+      "updated": "2014-07-19T18:58:57.000Z",
+      "details": "When: Sun 20 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Chillout Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Café Cabaret",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "2ostotubre3kuut73o283efcns",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/2ostotubre3kuut73o283efcns",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Mm9zdG90dWJyZTNrdXV0NzNvMjgzZWZjbnMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Washing Machines 1",
+      "created": "2014-07-07T18:37:29.000Z",
+      "updated": "2014-07-19T18:58:56.000Z",
+      "details": "When: Sun 20 Jul 2014 14:00 to 15:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Washing Machines 1",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "pcdje0d04128jhfp54iin9urmg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/pcdje0d04128jhfp54iin9urmg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cGNkamUwZDA0MTI4amhmcDU0aWluOXVybWcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Free training",
+      "created": "2014-07-07T18:37:31.000Z",
+      "updated": "2014-07-19T18:57:36.000Z",
+      "details": "When: Sun 20 Jul 2014 18:00 to 19:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Free training",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "0i16o3cc60ghqnduqhavh6hlp8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/0i16o3cc60ghqnduqhavh6hlp8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MGkxNm8zY2M2MGdocW5kdXFoYXZoNmhscDggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "The Joy Project",
+      "created": "2014-07-07T18:37:32.000Z",
+      "updated": "2014-07-19T18:57:32.000Z",
+      "details": "When: Sun 20 Jul 2014 21:30 to 23:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: The Hub\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: The Joy Project [more needed for description]",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "pnd31on60c8c8fu2u0i3g4t1n4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/pnd31on60c8c8fu2u0i3g4t1n4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cG5kMzFvbjYwYzhjOGZ1MnUwaTNnNHQxbjQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Open Stage",
+      "created": "2014-07-07T18:37:31.000Z",
+      "updated": "2014-07-19T18:57:30.000Z",
+      "details": "When: Sun 20 Jul 2014 20:00 to 22:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Open Stage",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "02jkorcf4t3j8ocr6qnndsilng",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/02jkorcf4t3j8ocr6qnndsilng",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MDJqa29yY2Y0dDNqOG9jcjZxbm5kc2lsbmcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Hoop Masterclass with Gail O&#39;Brien",
+      "created": "2014-07-07T18:37:28.000Z",
+      "updated": "2014-07-19T18:57:28.000Z",
+      "details": "When: Sun 20 Jul 2014 13:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Hoop Masterclass with Gail O&#39;Brien",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "cgeup8oehe4f10lv1ehmlle0ss",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/cgeup8oehe4f10lv1ehmlle0ss",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y2dldXA4b2VoZTRmMTBsdjFlaG1sbGUwc3Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Advanced Series 1",
+      "created": "2014-07-07T18:37:28.000Z",
+      "updated": "2014-07-19T18:57:24.000Z",
+      "details": "When: Sun 20 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Advanced Series 1",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "2u5s06c68thb3bmgngd7f6f9qs",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/2u5s06c68thb3bmgngd7f6f9qs",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MnU1czA2YzY4dGhiM2JtZ25nZDdmNmY5cXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Staff Masterclass with MCP",
+      "created": "2014-07-07T18:37:27.000Z",
+      "updated": "2014-07-19T18:57:22.000Z",
+      "details": "When: Sun 20 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Staff Masterclass with MCP",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "hgpdsonsc96c2hhfg2k5g9uuks",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/hgpdsonsc96c2hhfg2k5g9uuks",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aGdwZHNvbnNjOTZjMmhoZmcyazVnOXV1a3Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Beginners Series 1",
+      "created": "2014-07-07T18:37:26.000Z",
+      "updated": "2014-07-19T18:57:16.000Z",
+      "details": "When: Sun 20 Jul 2014 10:30 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Beginners Series 1",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "jtocvv4nhq151sa6vbgt90iams",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/jtocvv4nhq151sa6vbgt90iams",
+      "alternateLink": "http://www.google.com/calendar/event?eid=anRvY3Z2NG5ocTE1MXNhNnZiZ3Q5MGlhbXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Poi Masterclass with Ronan McLoughlin",
+      "created": "2014-07-07T18:37:26.000Z",
+      "updated": "2014-07-19T18:57:13.000Z",
+      "details": "When: Sun 20 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Poi Masterclass with Ronan McLoughlin",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ktonk0lknp2e0hksg88kqn58l0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ktonk0lknp2e0hksg88kqn58l0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=a3RvbmswbGtucDJlMGhrc2c4OGtxbjU4bDAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "DJ Jasper Mathews",
+      "created": "2014-07-07T18:37:25.000Z",
+      "updated": "2014-07-19T18:57:11.000Z",
+      "details": "When: Sat 19 Jul 2014 22:00 to 23:59 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: DJ Jasper Mathews [style of music??]",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "u4tojjtgfcv149pl37fk3rtr90",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/u4tojjtgfcv149pl37fk3rtr90",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dTR0b2pqdGdmY3YxNDlwbDM3ZmszcnRyOTAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Open Stage",
+      "created": "2014-07-07T18:37:25.000Z",
+      "updated": "2014-07-19T18:57:05.000Z",
+      "details": "When: Sat 19 Jul 2014 20:00 to 22:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Open Stage",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "o5so891qfgbm6ln7h1gma2vrq8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/o5so891qfgbm6ln7h1gma2vrq8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bzVzbzg5MXFmZ2JtNmxuN2gxZ21hMnZycTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:37:24.000Z",
+      "updated": "2014-07-19T16:06:37.000Z",
+      "details": "When: Sat 19 Jul 2014 17:00 to 20:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "l8deuf2j8plt7a3ja17uotspa4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/l8deuf2j8plt7a3ja17uotspa4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bDhkZXVmMmo4cGx0N2EzamExN3VvdHNwYTQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Site closes",
+      "created": "2014-07-09T09:06:20.000Z",
+      "updated": "2014-07-09T09:07:20.000Z",
+      "details": "When: Sun 27 Jul 2014 12:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "mfa73avbt7n509qoi8n77pvngc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/mfa73avbt7n509qoi8n77pvngc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bWZhNzNhdmJ0N241MDlxb2k4bjc3cHZuZ2Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Irish Gala",
+      "created": "2014-07-07T18:37:55.000Z",
+      "updated": "2014-07-07T18:53:02.000Z",
+      "details": "When: Tue 22 Jul 2014 17:00 to 18:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Irish Gala",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "7h2mo6qs9cug75vujb9k9gsq8s",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/7h2mo6qs9cug75vujb9k9gsq8s",
+      "alternateLink": "http://www.google.com/calendar/event?eid=N2gybW82cXM5Y3VnNzV2dWpiOWs5Z3NxOHMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Irish Gala",
+      "created": "2014-07-07T18:37:56.000Z",
+      "updated": "2014-07-07T18:52:16.000Z",
+      "details": "When: Tue 22 Jul 2014 19:30 to 21:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Irish Gala",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "84mo6kctqqaurup76vd3j4nue0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/84mo6kctqqaurup76vd3j4nue0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ODRtbzZrY3RxcWF1cnVwNzZ2ZDNqNG51ZTAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Café Cabaret",
+      "created": "2014-07-07T18:37:53.000Z",
+      "updated": "2014-07-07T18:52:12.000Z",
+      "details": "When: Tue 22 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Chillout Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Café Cabaret",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "9jf2l238mn6qurmni9122pgmp4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/9jf2l238mn6qurmni9122pgmp4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OWpmMmwyMzhtbjZxdXJtbmk5MTIycGdtcDQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Café Cabaret",
+      "created": "2014-07-07T18:38:06.000Z",
+      "updated": "2014-07-07T18:52:06.000Z",
+      "details": "When: Wed 23 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Chillout Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Café Cabaret",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "elecq4djv9o453ugof7vi7jb74",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/elecq4djv9o453ugof7vi7jb74",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZWxlY3E0ZGp2OW80NTN1Z29mN3ZpN2piNzQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Open Stage",
+      "created": "2014-07-07T18:38:09.000Z",
+      "updated": "2014-07-07T18:51:55.000Z",
+      "details": "When: Wed 23 Jul 2014 20:00 to 22:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Open Stage",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ap10h5n4tfh8512si2utb4cga4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ap10h5n4tfh8512si2utb4cga4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YXAxMGg1bjR0Zmg4NTEyc2kydXRiNGNnYTQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Open Stage",
+      "created": "2014-07-07T18:38:22.000Z",
+      "updated": "2014-07-07T18:51:49.000Z",
+      "details": "When: Thu 24 Jul 2014 20:00 to 22:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Open Stage",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "dkcahahkfd7v30qehk26kcss40",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/dkcahahkfd7v30qehk26kcss40",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZGtjYWhhaGtmZDd2MzBxZWhrMjZrY3NzNDAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Café Cabaret",
+      "created": "2014-07-07T18:38:18.000Z",
+      "updated": "2014-07-07T18:51:45.000Z",
+      "details": "When: Thu 24 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Chillout Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Café Cabaret",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "4fmdsljrc6mvhpmn9ratesan5k",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/4fmdsljrc6mvhpmn9ratesan5k",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NGZtZHNsanJjNm12aHBtbjlyYXRlc2FuNWsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Café Cabaret",
+      "created": "2014-07-07T18:38:28.000Z",
+      "updated": "2014-07-07T18:51:40.000Z",
+      "details": "When: Fri 25 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Chillout Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Café Cabaret",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "2jt6ct26ndd5sb52rulpgn2soo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/2jt6ct26ndd5sb52rulpgn2soo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Mmp0NmN0MjZuZGQ1c2I1MnJ1bHBnbjJzb28gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Legends Show",
+      "created": "2014-07-07T18:38:31.000Z",
+      "updated": "2014-07-07T18:51:26.000Z",
+      "details": "When: Fri 25 Jul 2014 18:30 to 20:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Legends Show",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "e9s7c1pp0pgrjv8t92asguiug8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/e9s7c1pp0pgrjv8t92asguiug8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZTlzN2MxcHAwcGdyanY4dDkyYXNndWl1Zzggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Legends Show",
+      "created": "2014-07-07T18:38:31.000Z",
+      "updated": "2014-07-07T18:51:23.000Z",
+      "details": "When: Fri 25 Jul 2014 21:00 to 22:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Legends Show",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "4up9g5l5dqtua0ujp4taqc4fp8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/4up9g5l5dqtua0ujp4taqc4fp8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NHVwOWc1bDVkcXR1YTB1anA0dGFxYzRmcDggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Gala Show",
+      "created": "2014-07-07T18:38:38.000Z",
+      "updated": "2014-07-07T18:51:11.000Z",
+      "details": "When: Sat 26 Jul 2014 18:00 to 20:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Gala Show",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "p1hgav5u2gcagcm88dtbf6f7qg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/p1hgav5u2gcagcm88dtbf6f7qg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cDFoZ2F2NXUyZ2NhZ2NtODhkdGJmNmY3cWcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Gala Show",
+      "created": "2014-07-07T18:38:38.000Z",
+      "updated": "2014-07-07T18:51:07.000Z",
+      "details": "When: Sat 26 Jul 2014 21:30 to 23:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Gala Show",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "gg7q0a88oa545ocuc248044qeg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/gg7q0a88oa545ocuc248044qeg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Z2c3cTBhODhvYTU0NW9jdWMyNDgwNDRxZWcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Beginners Series 7",
+      "created": "2014-07-07T18:38:35.000Z",
+      "updated": "2014-07-07T18:50:46.000Z",
+      "details": "When: Sat 26 Jul 2014 10:30 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Beginners Series 7",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "tfkss9q5kk3ae3u6mj0ds3b02o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/tfkss9q5kk3ae3u6mj0ds3b02o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dGZrc3M5cTVrazNhZTN1Nm1qMGRzM2IwMm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Advanced Series 7",
+      "created": "2014-07-07T18:38:36.000Z",
+      "updated": "2014-07-07T18:50:42.000Z",
+      "details": "When: Sat 26 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Advanced Series 7",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "2spc3o7jv17uoo0npf5pvp7fng",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/2spc3o7jv17uoo0npf5pvp7fng",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MnNwYzNvN2p2MTd1b28wbnBmNXB2cDdmbmcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Beginners Series 6",
+      "created": "2014-07-07T18:38:24.000Z",
+      "updated": "2014-07-07T18:50:29.000Z",
+      "details": "When: Fri 25 Jul 2014 10:30 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Beginners Series 6",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "a14j320b6q7ngiku7pg24h4f1s",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/a14j320b6q7ngiku7pg24h4f1s",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YTE0ajMyMGI2cTduZ2lrdTdwZzI0aDRmMXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Advanced Series 6",
+      "created": "2014-07-07T18:38:26.000Z",
+      "updated": "2014-07-07T18:50:26.000Z",
+      "details": "When: Fri 25 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Advanced Series 6",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "0egj32ko9d4edvmfbhngk7ue3g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/0egj32ko9d4edvmfbhngk7ue3g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MGVnajMya285ZDRlZHZtZmJobmdrN3VlM2cgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Washing Machines 2",
+      "created": "2014-07-07T18:38:28.000Z",
+      "updated": "2014-07-07T18:50:20.000Z",
+      "details": "When: Fri 25 Jul 2014 14:00 to 15:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Washing Machines 2",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "lh8gfddjgd22c0ar3q2gut4s9s",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/lh8gfddjgd22c0ar3q2gut4s9s",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bGg4Z2ZkZGpnZDIyYzBhcjNxMmd1dDRzOXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Handstand practice",
+      "created": "2014-07-07T18:38:30.000Z",
+      "updated": "2014-07-07T18:50:16.000Z",
+      "details": "When: Fri 25 Jul 2014 15:30 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Handstand practice",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "kkng680od8avsckime34qlvnro",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/kkng680od8avsckime34qlvnro",
+      "alternateLink": "http://www.google.com/calendar/event?eid=a2tuZzY4MG9kOGF2c2NraW1lMzRxbHZucm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Free training",
+      "created": "2014-07-07T18:38:30.000Z",
+      "updated": "2014-07-07T18:50:14.000Z",
+      "details": "When: Fri 25 Jul 2014 18:00 to 19:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Free training",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "i198i6jl2o2gn2ebo7uv5mvtkc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/i198i6jl2o2gn2ebo7uv5mvtkc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aTE5OGk2amwybzJnbjJlYm83dXY1bXZ0a2Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Beginners Series 5",
+      "created": "2014-07-07T18:38:11.000Z",
+      "updated": "2014-07-07T18:50:05.000Z",
+      "details": "When: Thu 24 Jul 2014 10:30 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Beginners Series 5",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "6n2r6phgl9iqcsco35b9dk1va0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/6n2r6phgl9iqcsco35b9dk1va0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Nm4ycjZwaGdsOWlxY3NjbzM1YjlkazF2YTAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Advanced Series 5",
+      "created": "2014-07-07T18:38:15.000Z",
+      "updated": "2014-07-07T18:50:02.000Z",
+      "details": "When: Thu 24 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Advanced Series 5",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "f9pclc5l2vsqel20du5ookcs9s",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/f9pclc5l2vsqel20du5ookcs9s",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZjlwY2xjNWwydnNxZWwyMGR1NW9va2NzOXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Dynamic acrobatics",
+      "created": "2014-07-07T18:38:18.000Z",
+      "updated": "2014-07-07T18:49:55.000Z",
+      "details": "When: Thu 24 Jul 2014 14:00 to 15:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Dynamic acrobatics",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "2ft97jmlth58lcs3s9j77hvs9k",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/2ft97jmlth58lcs3s9j77hvs9k",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MmZ0OTdqbWx0aDU4bGNzM3M5ajc3aHZzOWsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Handstand practice",
+      "created": "2014-07-07T18:38:20.000Z",
+      "updated": "2014-07-07T18:49:52.000Z",
+      "details": "When: Thu 24 Jul 2014 15:30 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Handstand practice",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "avj190i6hgj1ibrd2dainec1hk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/avj190i6hgj1ibrd2dainec1hk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YXZqMTkwaTZoZ2oxaWJyZDJkYWluZWMxaGsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Free training",
+      "created": "2014-07-07T18:38:21.000Z",
+      "updated": "2014-07-07T18:49:49.000Z",
+      "details": "When: Thu 24 Jul 2014 18:00 to 19:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Free training",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "hec833ea940tj6dn1ml5o15q1g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/hec833ea940tj6dn1ml5o15q1g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aGVjODMzZWE5NDB0ajZkbjFtbDVvMTVxMWcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Beginners Series 4",
+      "created": "2014-07-07T18:37:59.000Z",
+      "updated": "2014-07-07T18:49:38.000Z",
+      "details": "When: Wed 23 Jul 2014 10:30 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Beginners Series 4",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "kpu6kjufh066asq86ffr1idu7g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/kpu6kjufh066asq86ffr1idu7g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=a3B1NmtqdWZoMDY2YXNxODZmZnIxaWR1N2cgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Advanced Series 4",
+      "created": "2014-07-07T18:38:02.000Z",
+      "updated": "2014-07-07T18:49:35.000Z",
+      "details": "When: Wed 23 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Advanced Series 4",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "bkpebg0vjfd6r924lj0im67poo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/bkpebg0vjfd6r924lj0im67poo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YmtwZWJnMHZqZmQ2cjkyNGxqMGltNjdwb28gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Pyramids",
+      "created": "2014-07-07T18:38:06.000Z",
+      "updated": "2014-07-07T18:49:12.000Z",
+      "details": "When: Wed 23 Jul 2014 14:00 to 15:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Pyramids",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "952cjcj5ej78g5sqj7qre902r0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/952cjcj5ej78g5sqj7qre902r0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OTUyY2pjajVlajc4ZzVzcWo3cXJlOTAycjAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Handstand practice",
+      "created": "2014-07-07T18:38:08.000Z",
+      "updated": "2014-07-07T18:49:09.000Z",
+      "details": "When: Wed 23 Jul 2014 15:30 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Handstand practice",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "54kbv0su36137hov7f4pl2dg28",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/54kbv0su36137hov7f4pl2dg28",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NTRrYnYwc3UzNjEzN2hvdjdmNHBsMmRnMjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Free training",
+      "created": "2014-07-07T18:38:09.000Z",
+      "updated": "2014-07-07T18:49:04.000Z",
+      "details": "When: Wed 23 Jul 2014 18:00 to 19:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Free training",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "cm7d01sinhbe5p9ks5mmkfdulg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/cm7d01sinhbe5p9ks5mmkfdulg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y203ZDAxc2luaGJlNXA5a3M1bW1rZmR1bGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Beginners Series 3",
+      "created": "2014-07-07T18:37:45.000Z",
+      "updated": "2014-07-07T18:48:59.000Z",
+      "details": "When: Tue 22 Jul 2014 10:30 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Beginners Series 3",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "vqb0r5p15pcjsta1l4hgh9hiqs",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/vqb0r5p15pcjsta1l4hgh9hiqs",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dnFiMHI1cDE1cGNqc3RhMWw0aGdoOWhpcXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Advanced Series 3",
+      "created": "2014-07-07T18:37:48.000Z",
+      "updated": "2014-07-07T18:48:56.000Z",
+      "details": "When: Tue 22 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Advanced Series 3",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "goje3huq5455cgta3rffpj90k8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/goje3huq5455cgta3rffpj90k8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Z29qZTNodXE1NDU1Y2d0YTNyZmZwajkwazggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Hand to hand positions (flyer in handstand)",
+      "created": "2014-07-07T18:37:50.000Z",
+      "updated": "2014-07-07T18:48:48.000Z",
+      "details": "When: Tue 22 Jul 2014 14:00 to 15:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Hand to hand positions (flyer in handstand)",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "uoq4nd3k2egulhc0t9jhgj5ufg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/uoq4nd3k2egulhc0t9jhgj5ufg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dW9xNG5kM2syZWd1bGhjMHQ5amhnajV1Zmcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Handstand practice",
+      "created": "2014-07-07T18:37:55.000Z",
+      "updated": "2014-07-07T18:48:44.000Z",
+      "details": "When: Tue 22 Jul 2014 15:30 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Handstand practice",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "pdovld7sbjckq3n95tclk99ei8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/pdovld7sbjckq3n95tclk99ei8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cGRvdmxkN3NiamNrcTNuOTV0Y2xrOTllaTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Free training",
+      "created": "2014-07-07T18:37:56.000Z",
+      "updated": "2014-07-07T18:48:41.000Z",
+      "details": "When: Tue 22 Jul 2014 18:00 to 19:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Free training",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "phj68hihruutjhmvejr2vq1i28",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/phj68hihruutjhmvejr2vq1i28",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cGhqNjhoaWhydXV0amhtdmVqcjJ2cTFpMjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Partner Acrobatics: Free training",
+      "created": "2014-07-07T18:37:42.000Z",
+      "updated": "2014-07-07T18:48:13.000Z",
+      "details": "When: Mon 21 Jul 2014 18:00 to 19:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Partner Acrobatics: Free training",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "olqm4p86ik22u62quo54a1ob2o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/olqm4p86ik22u62quo54a1ob2o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=b2xxbTRwODZpazIydTYycXVvNTRhMW9iMm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial: Fabric",
+      "created": "2014-07-07T18:37:46.000Z",
+      "updated": "2014-07-07T18:46:32.000Z",
+      "details": "When: Tue 22 Jul 2014 11:00 to 12:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Fabric with Ria Murphy. Level: Improver &amp; Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "0juo70q6le0uu8cdo26ink9q1s",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/0juo70q6le0uu8cdo26ink9q1s",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MGp1bzcwcTZsZTB1dThjZG8yNmluazlxMXMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:37:49.000Z",
+      "updated": "2014-07-07T18:46:29.000Z",
+      "details": "When: Tue 22 Jul 2014 12:30 to 14:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze with Chloe de Buyl Pisco. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "egecn99vhl5sirej3n55cbghjk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/egecn99vhl5sirej3n55cbghjk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZWdlY245OXZobDVzaXJlajNuNTVjYmdoamsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Dance Trapeze",
+      "created": "2014-07-07T18:37:50.000Z",
+      "updated": "2014-07-07T18:46:23.000Z",
+      "details": "When: Tue 22 Jul 2014 14:00 to 15:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Dance Trapeze with Ria Murphy. Level: Explorer &amp; Improver",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "h0qmh94keloievfv1eogbm3jcc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/h0qmh94keloievfv1eogbm3jcc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aDBxbWg5NGtlbG9pZXZmdjFlb2dibTNqY2Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:37:54.000Z",
+      "updated": "2014-07-07T18:46:20.000Z",
+      "details": "When: Tue 22 Jul 2014 15:30 to 16:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop with Chloe de Buyl Pisco. Level: Improver &amp; Explorer",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "0cuk36k02duf3pf4a0qmjjk5f8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/0cuk36k02duf3pf4a0qmjjk5f8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MGN1azM2azAyZHVmM3BmNGEwcW1qams1Zjggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:37:55.000Z",
+      "updated": "2014-07-07T18:46:15.000Z",
+      "details": "When: Tue 22 Jul 2014 16:45 to 18:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop with Ria Murphy. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "5l8vju64qhhgr83q8rtkqvnkrk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/5l8vju64qhhgr83q8rtkqvnkrk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NWw4dmp1NjRxaGhncjgzcThydGtxdm5rcmsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:38:30.000Z",
+      "updated": "2014-07-07T18:44:46.000Z",
+      "details": "When: Fri 25 Jul 2014 16:45 to 18:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop with Ria Murphy. Level: Skilled",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "r99blfend548ns5h3a5uc3b1a8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/r99blfend548ns5h3a5uc3b1a8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cjk5YmxmZW5kNTQ4bnM1aDNhNXVjM2IxYTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Aerial Hoop",
+      "created": "2014-07-07T18:38:30.000Z",
+      "updated": "2014-07-07T18:44:42.000Z",
+      "details": "When: Fri 25 Jul 2014 15:30 to 16:45 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Aerial Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Aerial Hoop with Chloe de Buyl Pisco. Level: Improver &amp; Explorer",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "p8aji53qu0qpmvahe79i71e99k",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/p8aji53qu0qpmvahe79i71e99k",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cDhhamk1M3F1MHFwbXZhaGU3OWk3MWU5OWsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Parade",
+      "created": "2014-07-07T18:38:37.000Z",
+      "updated": "2014-07-07T18:38:37.000Z",
+      "details": "When: Sat 26 Jul 2014 13:30 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Millstreet\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Parade from the Site to the Town Park - main street Millstreet",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "r82nu89vpfmbuei0hkiqkdamto",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/r82nu89vpfmbuei0hkiqkdamto",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cjgybnU4OXZwZm1idWVpMGhraXFrZGFtdG8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:38:34.000Z",
+      "updated": "2014-07-07T18:38:34.000Z",
+      "details": "When: Sat 26 Jul 2014 10:00 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "jm96lb8rhkofi6oraon08tivj4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/jm96lb8rhkofi6oraon08tivj4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=am05NmxiOHJoa29maTZvcmFvbjA4dGl2ajQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Mikey and the Scalleywags",
+      "created": "2014-07-07T18:38:32.000Z",
+      "updated": "2014-07-07T18:38:32.000Z",
+      "details": "When: Fri 25 Jul 2014 22:30 to 23:59 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: The Hub\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Mikey and the Scalleywags [style of music/ent?]",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "foq9e96e1pvajblg45he001a7s",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/foq9e96e1pvajblg45he001a7s",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Zm9xOWU5NmUxcHZhamJsZzQ1aGUwMDFhN3Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:38:28.000Z",
+      "updated": "2014-07-07T18:38:28.000Z",
+      "details": "When: Fri 25 Jul 2014 14:00 to 19:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ikiukoev98nfoad39742k0rd5c",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ikiukoev98nfoad39742k0rd5c",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aWtpdWtvZXY5OG5mb2FkMzk3NDJrMHJkNWMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Acrobatics Masterclass with Felicia O&#39;Brien",
+      "created": "2014-07-07T18:38:27.000Z",
+      "updated": "2014-07-07T18:38:27.000Z",
+      "details": "When: Fri 25 Jul 2014 13:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Acrobatics Masterclass with Felicia O&#39;Brien",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "pqarog5fr6r493alplrtm03gmk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/pqarog5fr6r493alplrtm03gmk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cHFhcm9nNWZyNnI0OTNhbHBscnRtMDNnbWsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Circus Workshop",
+      "created": "2014-07-07T18:38:25.000Z",
+      "updated": "2014-07-07T18:38:26.000Z",
+      "details": "When: Fri 25 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Circus Workshop (outreach): (Ages 8 to 14)\nWalk on the tight-wire, balance plates, play the diabolo, spin balls,\n learn to hulahoop, tumble, roll and laugh. Be sure to come with \ncomfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ais5srlia886hvq8gt5c2uba5c",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ais5srlia886hvq8gt5c2uba5c",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YWlzNXNybGlhODg2aHZxOGd0NWMydWJhNWMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Staff Masterclass with Meast",
+      "created": "2014-07-07T18:38:25.000Z",
+      "updated": "2014-07-07T18:38:25.000Z",
+      "details": "When: Fri 25 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Staff Masterclass with Meast",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "5bdoapv7nal0o9j8v5f9d492e4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/5bdoapv7nal0o9j8v5f9d492e4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NWJkb2FwdjduYWwwbzlqOHY1ZjlkNDkyZTQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Juggling Masterclass with Marco Paoletti",
+      "created": "2014-07-07T18:38:25.000Z",
+      "updated": "2014-07-07T18:38:25.000Z",
+      "details": "When: Fri 25 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Juggling Masterclass with Marco Paoletti",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "lpkvhvmgl21hv7h52mco1pum0g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/lpkvhvmgl21hv7h52mco1pum0g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bHBrdmh2bWdsMjFodjdoNTJtY28xcHVtMGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "BCCS",
+      "created": "2014-07-07T18:38:24.000Z",
+      "updated": "2014-07-07T18:38:24.000Z",
+      "details": "When: Fri 25 Jul 2014 10:00 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: A taste of some serious circus for young people interested in undertaking intensive training in the future: tumbling and adagio masterclasses for 13-18 year olds",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "hdiqblj57004mraf4d64g5v5go",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/hdiqblj57004mraf4d64g5v5go",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aGRpcWJsajU3MDA0bXJhZjRkNjRnNXY1Z28gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Diabolo Masterclass with Priam",
+      "created": "2014-07-07T18:38:23.000Z",
+      "updated": "2014-07-07T18:38:23.000Z",
+      "details": "When: Fri 25 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Diabolo Masterclass with Priam",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "0gmg9j9gstgdehn3a501moa9tc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/0gmg9j9gstgdehn3a501moa9tc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MGdtZzlqOWdzdGdkZWhuM2E1MDFtb2E5dGMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Family Circus",
+      "created": "2014-07-07T18:38:23.000Z",
+      "updated": "2014-07-07T18:38:23.000Z",
+      "details": "When: Fri 25 Jul 2014 10:00 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Family Circus: (Ages 6 months to 77 yrs, with an adult)\nIt&#39;s a time and a space to get the whole family together involved in play. Be sure to come with comfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "sj20pe08t9repg8q15hn9qlod0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/sj20pe08t9repg8q15hn9qlod0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=c2oyMHBlMDh0OXJlcGc4cTE1aG45cWxvZDAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Fight Night Finals",
+      "created": "2014-07-07T18:38:22.000Z",
+      "updated": "2014-07-07T18:38:22.000Z",
+      "details": "When: Thu 24 Jul 2014 23:00 to 00:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Stage\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Fight Night Finals",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "la51auvdk9cn35mo699nb56pbc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/la51auvdk9cn35mo699nb56pbc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bGE1MWF1dmRrOWNuMzVtbzY5OW5iNTZwYmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Saxy Lady Boys",
+      "created": "2014-07-07T18:38:22.000Z",
+      "updated": "2014-07-07T18:38:22.000Z",
+      "details": "When: Thu 24 Jul 2014 22:00 to 23:59 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Saxy Lady Boys [style of music / ent?]",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "lmv3kk3mfqh7t14j3ejc4hjdt8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/lmv3kk3mfqh7t14j3ejc4hjdt8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bG12M2trM21mcWg3dDE0ajNlamM0aGpkdDggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Diabolo Battle",
+      "created": "2014-07-07T18:38:21.000Z",
+      "updated": "2014-07-07T18:38:21.000Z",
+      "details": "When: Thu 24 Jul 2014 18:00 to 20:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Diabolo Battle",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "30pcuog3lh6egauvr1blq8hr6k",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/30pcuog3lh6egauvr1blq8hr6k",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MzBwY3VvZzNsaDZlZ2F1dnIxYmxxOGhyNmsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:38:18.000Z",
+      "updated": "2014-07-07T18:38:18.000Z",
+      "details": "When: Thu 24 Jul 2014 14:00 to 19:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "1n8moqsj3q0u7un86nvk6ft6b0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/1n8moqsj3q0u7un86nvk6ft6b0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MW44bW9xc2ozcTB1N3VuODZudms2ZnQ2YjAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Fight Night Qualifiers",
+      "created": "2014-07-07T18:38:18.000Z",
+      "updated": "2014-07-07T18:38:18.000Z",
+      "details": "When: Thu 24 Jul 2014 14:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: The Hub\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Fight Night Qualifiers",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "p0e9qkk1sj5q6r0vdq8061mgok",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/p0e9qkk1sj5q6r0vdq8061mgok",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cDBlOXFrazFzajVxNnIwdmRxODA2MW1nb2sgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Hoop Masterclass with Emma Kenna",
+      "created": "2014-07-07T18:38:17.000Z",
+      "updated": "2014-07-07T18:38:17.000Z",
+      "details": "When: Thu 24 Jul 2014 13:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Hoop Masterclass with Emma Kenna",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "rbv6r6b0t196e8io89ta78ljfg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/rbv6r6b0t196e8io89ta78ljfg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cmJ2NnI2YjB0MTk2ZThpbzg5dGE3OGxqZmcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Acrobatics Masterclass with Felicia O&#39;Brien",
+      "created": "2014-07-07T18:38:17.000Z",
+      "updated": "2014-07-07T18:38:17.000Z",
+      "details": "When: Thu 24 Jul 2014 13:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Acrobatics Masterclass with Felicia O&#39;Brien",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "diqbbgo4cqb5eoc1pm32u80avg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/diqbbgo4cqb5eoc1pm32u80avg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZGlxYmJnbzRjcWI1ZW9jMXBtMzJ1ODBhdmcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "EJCYC",
+      "created": "2014-07-07T18:38:15.000Z",
+      "updated": "2014-07-07T18:38:15.000Z",
+      "details": "When: Thu 24 Jul 2014 12:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Mingle times, games, circus exercises, performance games, circus theatre activities, introductions to the world clowning, skill share and networking",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "3jnsaq025rq4v6h474nb2j52c4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/3jnsaq025rq4v6h474nb2j52c4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=M2puc2FxMDI1cnE0djZoNDc0bmIyajUyYzQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Circus Workshop",
+      "created": "2014-07-07T18:38:14.000Z",
+      "updated": "2014-07-07T18:38:15.000Z",
+      "details": "When: Thu 24 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Circus Workshop (outreach): (Ages 8 to 14)\nWalk on the tight-wire, balance plates, play the diabolo, spin balls,\n learn to hulahoop, tumble, roll and laugh. Be sure to come with \ncomfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "9fuq8f3hgquuoj606v5np5uv8k",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/9fuq8f3hgquuoj606v5np5uv8k",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OWZ1cThmM2hncXV1b2o2MDZ2NW5wNXV2OGsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "3 ball football Tournament",
+      "created": "2014-07-07T18:38:13.000Z",
+      "updated": "2014-07-07T18:38:13.000Z",
+      "details": "When: Thu 24 Jul 2014 11:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: 3 ball football Tournament",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "1phqemsn9kudir8cgsv74g31c4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/1phqemsn9kudir8cgsv74g31c4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MXBocWVtc245a3VkaXI4Y2dzdjc0ZzMxYzQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Staff Masterclass with Meast",
+      "created": "2014-07-07T18:38:12.000Z",
+      "updated": "2014-07-07T18:38:12.000Z",
+      "details": "When: Thu 24 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Staff Masterclass with Meast",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "hnto5gf1n86afrgc8k56u2k8vs",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/hnto5gf1n86afrgc8k56u2k8vs",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aG50bzVnZjFuODZhZnJnYzhrNTZ1Mms4dnMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Eccentric performing Masterclass with Iman Lizarazu",
+      "created": "2014-07-07T18:38:12.000Z",
+      "updated": "2014-07-07T18:38:12.000Z",
+      "details": "When: Thu 24 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Eccentric performing Masterclass with Iman Lizarazu",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "rof1dkngtgjjbi16i43ta641oc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/rof1dkngtgjjbi16i43ta641oc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cm9mMWRrbmd0Z2pqYmkxNmk0M3RhNjQxb2Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Juggling Masterclass with Marco Paoletti",
+      "created": "2014-07-07T18:38:12.000Z",
+      "updated": "2014-07-07T18:38:12.000Z",
+      "details": "When: Thu 24 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Juggling Masterclass with Marco Paoletti",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "e60fhfm1m29fmd3159ghm7btcc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/e60fhfm1m29fmd3159ghm7btcc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZTYwZmhmbTFtMjlmbWQzMTU5Z2htN2J0Y2Mgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "BCCS",
+      "created": "2014-07-07T18:38:10.000Z",
+      "updated": "2014-07-07T18:38:10.000Z",
+      "details": "When: Thu 24 Jul 2014 10:00 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: A taste of some serious circus for young people interested in undertaking intensive training in the future: tumbling and adagio masterclasses for 13-18 year olds",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "3ohm4vuqem0qnif8456imrunac",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/3ohm4vuqem0qnif8456imrunac",
+      "alternateLink": "http://www.google.com/calendar/event?eid=M29obTR2dXFlbTBxbmlmODQ1NmltcnVuYWMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Diabolo Masterclass with Priam",
+      "created": "2014-07-07T18:38:10.000Z",
+      "updated": "2014-07-07T18:38:10.000Z",
+      "details": "When: Thu 24 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Diabolo Masterclass with Priam",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "srn3h47t09hqlap9ttamklben4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/srn3h47t09hqlap9ttamklben4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=c3JuM2g0N3QwOWhxbGFwOXR0YW1rbGJlbjQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Family Circus",
+      "created": "2014-07-07T18:38:10.000Z",
+      "updated": "2014-07-07T18:38:10.000Z",
+      "details": "When: Thu 24 Jul 2014 10:00 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Family Circus: (Ages 6 months to 77 yrs, with an adult)\nIt&#39;s a time and a space to get the whole family together involved in play. Be sure to come with comfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "cdcdh2p5dksh541hiog49cuvi0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/cdcdh2p5dksh541hiog49cuvi0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y2RjZGgycDVka3NoNTQxaGlvZzQ5Y3V2aTAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Battlestick",
+      "created": "2014-07-07T18:38:09.000Z",
+      "updated": "2014-07-07T18:38:09.000Z",
+      "details": "When: Wed 23 Jul 2014 22:00 to 23:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Battlestick",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "holtdnfsrtadp2norqelo7n850",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/holtdnfsrtadp2norqelo7n850",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aG9sdGRuZnNydGFkcDJub3JxZWxvN244NTAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:38:06.000Z",
+      "updated": "2014-07-07T18:38:06.000Z",
+      "details": "When: Wed 23 Jul 2014 14:00 to 19:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "1g30pi62j6r4qj56f2pbmsp20g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/1g30pi62j6r4qj56f2pbmsp20g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MWczMHBpNjJqNnI0cWo1NmYycGJtc3AyMGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Masterclass with Michael Moschen",
+      "created": "2014-07-07T18:38:05.000Z",
+      "updated": "2014-07-07T18:38:05.000Z",
+      "details": "When: Wed 23 Jul 2014 13:30 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Moschen Masterclass with Michael Moschen",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ad915pmltcfksrq70toi04kf9c",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ad915pmltcfksrq70toi04kf9c",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YWQ5MTVwbWx0Y2Zrc3JxNzB0b2kwNGtmOWMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Hoop Masterclass with Hoop Hooligans",
+      "created": "2014-07-07T18:38:04.000Z",
+      "updated": "2014-07-07T18:38:05.000Z",
+      "details": "When: Wed 23 Jul 2014 13:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Hoop Masterclass with Hoop Hooligans",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "288n7qmjdr1l5700ssc94br5fc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/288n7qmjdr1l5700ssc94br5fc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Mjg4bjdxbWpkcjFsNTcwMHNzYzk0YnI1ZmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Acrobatics Masterclass with Felicia O&#39;Brien",
+      "created": "2014-07-07T18:38:04.000Z",
+      "updated": "2014-07-07T18:38:04.000Z",
+      "details": "When: Wed 23 Jul 2014 13:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Acrobatics Masterclass with Felicia O&#39;Brien",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "bmmf4kk5ub69qkf3hebt888o58",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/bmmf4kk5ub69qkf3hebt888o58",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Ym1tZjRrazV1YjY5cWtmM2hlYnQ4ODhvNTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Art of Juggling Masterclass with Viktor Kee",
+      "created": "2014-07-07T18:38:03.000Z",
+      "updated": "2014-07-07T18:38:03.000Z",
+      "details": "When: Wed 23 Jul 2014 13:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Art of Juggling Masterclass with Viktor Kee: note that preregistration is required (online)",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "96u3pf5u9capmgld5r878hhfg8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/96u3pf5u9capmgld5r878hhfg8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=OTZ1M3BmNXU5Y2FwbWdsZDVyODc4aGhmZzggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "EJCYC",
+      "created": "2014-07-07T18:38:02.000Z",
+      "updated": "2014-07-07T18:38:02.000Z",
+      "details": "When: Wed 23 Jul 2014 12:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Mingle times, games, circus exercises, conditioning games, conditioning exercises, tumbling and acrobatics, pyramids, skill share and networking",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "khnnijvnecq5ftuj1l1jmq9umc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/khnnijvnecq5ftuj1l1jmq9umc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=a2hubmlqdm5lY3E1ZnR1ajFsMWptcTl1bWMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Circus Workshop",
+      "created": "2014-07-07T18:38:02.000Z",
+      "updated": "2014-07-07T18:38:02.000Z",
+      "details": "When: Wed 23 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Circus Workshop (outreach): (Ages 8 to 14)\nWalk on the tight-wire, balance plates, play the diabolo, spin balls,\n learn to hulahoop, tumble, roll and laugh. Be sure to come with \ncomfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "tid4rmpgc1ikd1dknrj9jbncfo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/tid4rmpgc1ikd1dknrj9jbncfo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dGlkNHJtcGdjMWlrZDFka25yajlqYm5jZm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Volleyclub Tournament",
+      "created": "2014-07-07T18:38:01.000Z",
+      "updated": "2014-07-07T18:38:01.000Z",
+      "details": "When: Wed 23 Jul 2014 11:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Volleyclub Tournament",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "meb0ruprh8q6j0kheq2mkr5cp0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/meb0ruprh8q6j0kheq2mkr5cp0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bWViMHJ1cHJoOHE2ajBraGVxMm1rcjVjcDAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Staff Masterclass with Meast",
+      "created": "2014-07-07T18:38:01.000Z",
+      "updated": "2014-07-07T18:38:01.000Z",
+      "details": "When: Wed 23 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Staff Masterclass with Meast",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "cpvbcah6ro5qojs67mqgdcv6ag",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/cpvbcah6ro5qojs67mqgdcv6ag",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Y3B2YmNhaDZybzVxb2pzNjdtcWdkY3Y2YWcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Eccentric performing Masterclass with Iman Lizarazu",
+      "created": "2014-07-07T18:38:01.000Z",
+      "updated": "2014-07-07T18:38:01.000Z",
+      "details": "When: Wed 23 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Eccentric performing Masterclass with Iman Lizarazu",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "orh8r12a1m4355f2cqkaernq4g",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/orh8r12a1m4355f2cqkaernq4g",
+      "alternateLink": "http://www.google.com/calendar/event?eid=b3JoOHIxMmExbTQzNTVmMmNxa2Flcm5xNGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Juggling Masterclass with Marco Paoletti",
+      "created": "2014-07-07T18:38:00.000Z",
+      "updated": "2014-07-07T18:38:01.000Z",
+      "details": "When: Wed 23 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Juggling Masterclass with Marco Paoletti",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ff0k79nt1e87emnl8ccqiqbfe0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ff0k79nt1e87emnl8ccqiqbfe0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZmYwazc5bnQxZTg3ZW1ubDhjY3FpcWJmZTAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "BCCS",
+      "created": "2014-07-07T18:37:59.000Z",
+      "updated": "2014-07-07T18:37:59.000Z",
+      "details": "When: Wed 23 Jul 2014 10:00 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: A taste of some serious circus for young people interested in undertaking intensive training in the future: tumbling and adagio masterclasses for 13-18 year olds",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "4nbso9afci1hss610t89etr2eo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/4nbso9afci1hss610t89etr2eo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NG5ic285YWZjaTFoc3M2MTB0ODlldHIyZW8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Diabolo Masterclass with Priam",
+      "created": "2014-07-07T18:37:58.000Z",
+      "updated": "2014-07-07T18:37:58.000Z",
+      "details": "When: Wed 23 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Diabolo Masterclass with Priam",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "ba5f250d9qimcg928fhhm77gvc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/ba5f250d9qimcg928fhhm77gvc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=YmE1ZjI1MGQ5cWltY2c5MjhmaGhtNzdndmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Family Circus",
+      "created": "2014-07-07T18:37:57.000Z",
+      "updated": "2014-07-07T18:37:58.000Z",
+      "details": "When: Wed 23 Jul 2014 10:00 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Family Circus: (Ages 6 months to 77 yrs, with an adult)\nIt&#39;s a time and a space to get the whole family together involved in play. Be sure to come with comfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "sf9bbtlcv2p9531bo503o43vbo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/sf9bbtlcv2p9531bo503o43vbo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=c2Y5YmJ0bGN2MnA5NTMxYm81MDNvNDN2Ym8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Céilí Mór",
+      "created": "2014-07-07T18:37:56.000Z",
+      "updated": "2014-07-07T18:37:56.000Z",
+      "details": "When: Tue 22 Jul 2014 21:00 to 23:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: The Hub\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Céilí Mór",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "u9igij0q4cgrhp33i4o453jgi8",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/u9igij0q4cgrhp33i4o453jgi8",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dTlpZ2lqMHE0Y2dyaHAzM2k0bzQ1M2pnaTggdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Priam Diaboloshow",
+      "created": "2014-07-07T18:37:55.000Z",
+      "updated": "2014-07-07T18:37:55.000Z",
+      "details": "When: Tue 22 Jul 2014 16:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: TBC\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Priam Diaboloshow",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "edqapf7se4pkr1hs6met3qletk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/edqapf7se4pkr1hs6met3qletk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZWRxYXBmN3NlNHBrcjFoczZtZXQzcWxldGsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Dream State Circus",
+      "created": "2014-07-07T18:37:54.000Z",
+      "updated": "2014-07-07T18:37:54.000Z",
+      "details": "When: Tue 22 Jul 2014 15:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: TBC\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Dream State Circus",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "io0iivar4jbsfaprqtqj776iik",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/io0iivar4jbsfaprqtqj776iik",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aW8waWl2YXI0amJzZmFwcnF0cWo3NzZpaWsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Traders",
+      "created": "2014-07-07T18:37:51.000Z",
+      "updated": "2014-07-07T18:37:51.000Z",
+      "details": "When: Tue 22 Jul 2014 14:00 to 19:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Traders Area\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Traders Open",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "2g9560la4juft58q6n08tunqjc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/2g9560la4juft58q6n08tunqjc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=Mmc5NTYwbGE0anVmdDU4cTZuMDh0dW5xamMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Steve Mills",
+      "created": "2014-07-07T18:37:51.000Z",
+      "updated": "2014-07-07T18:37:51.000Z",
+      "details": "When: Tue 22 Jul 2014 14:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: TBC\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Steve Mills",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "efp98b0bo30719ubbjbbdnfsh0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/efp98b0bo30719ubbjbbdnfsh0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZWZwOThiMGJvMzA3MTl1YmJqYmJkbmZzaDAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Hoop Masterclass with Tiana Zoumer",
+      "created": "2014-07-07T18:37:50.000Z",
+      "updated": "2014-07-07T18:37:50.000Z",
+      "details": "When: Tue 22 Jul 2014 13:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Hoop Masterclass with Tiana Zoumer",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "kaun1oi8fs9u05rh9rccb0a8l0",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/kaun1oi8fs9u05rh9rccb0a8l0",
+      "alternateLink": "http://www.google.com/calendar/event?eid=a2F1bjFvaThmczl1MDVyaDlyY2NiMGE4bDAgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Acrobatics Masterclass with Felicia O&#39;Brien",
+      "created": "2014-07-07T18:37:49.000Z",
+      "updated": "2014-07-07T18:37:49.000Z",
+      "details": "When: Tue 22 Jul 2014 13:00 to 15:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: School Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Acrobatics Masterclass with Felicia O&#39;Brien",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "mfscujct9ssnaad7cdjpabo3ig",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/mfscujct9ssnaad7cdjpabo3ig",
+      "alternateLink": "http://www.google.com/calendar/event?eid=bWZzY3VqY3Q5c3NuYWFkN2NkanBhYm8zaWcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Art of Juggling Masterclass with Viktor Kee",
+      "created": "2014-07-07T18:37:49.000Z",
+      "updated": "2014-07-07T18:37:49.000Z",
+      "details": "When: Tue 22 Jul 2014 13:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Art of Juggling Masterclass with Viktor Kee: note that preregistration is required (online)",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "6dsqi6ralbm5kia6rguuvn9fso",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/6dsqi6ralbm5kia6rguuvn9fso",
+      "alternateLink": "http://www.google.com/calendar/event?eid=NmRzcWk2cmFsYm01a2lhNnJndXV2bjlmc28gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "EJCYC",
+      "created": "2014-07-07T18:37:48.000Z",
+      "updated": "2014-07-07T18:37:49.000Z",
+      "details": "When: Tue 22 Jul 2014 12:00 to 16:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Mingle times, games, circus exercises, skill development with tutors exploring circus technique and principles of manipulation, skill share, networking",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "rb390irrgqanpt3pjk2igrmrc4",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/rb390irrgqanpt3pjk2igrmrc4",
+      "alternateLink": "http://www.google.com/calendar/event?eid=cmIzOTBpcnJncWFucHQzcGprMmlncm1yYzQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Circus Game Fare",
+      "created": "2014-07-07T18:37:48.000Z",
+      "updated": "2014-07-07T18:37:48.000Z",
+      "details": "When: Tue 22 Jul 2014 11:30 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Circus Game Fare (outreach): (Ages 10 to 77 yrs)\nPlay circus and clown games based on cooperation, strategy and \noverall sillyness. Be sure to come with comfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "iaqgi7tcs58b0bco404sskqh54",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/iaqgi7tcs58b0bco404sskqh54",
+      "alternateLink": "http://www.google.com/calendar/event?eid=aWFxZ2k3dGNzNThiMGJjbzQwNHNza3FoNTQgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Staff Masterclass with MCP",
+      "created": "2014-07-07T18:37:47.000Z",
+      "updated": "2014-07-07T18:37:47.000Z",
+      "details": "When: Tue 22 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Secondary Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Staff Masterclass with MCP",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "vs17u163u18l1atq3pe3rv849k",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/vs17u163u18l1atq3pe3rv849k",
+      "alternateLink": "http://www.google.com/calendar/event?eid=dnMxN3UxNjN1MThsMWF0cTNwZTNydjg0OWsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Eccentric performing Masterclass with Iman Lizarazu",
+      "created": "2014-07-07T18:37:47.000Z",
+      "updated": "2014-07-07T18:37:47.000Z",
+      "details": "When: Tue 22 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Eccentric performing Masterclass with Iman Lizarazu",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "2245jv3cjibk2qc75lvfdlla5o",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/2245jv3cjibk2qc75lvfdlla5o",
+      "alternateLink": "http://www.google.com/calendar/event?eid=MjI0NWp2M2NqaWJrMnFjNzVsdmZkbGxhNW8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Juggling Masterclass with Marco Paoletti",
+      "created": "2014-07-07T18:37:46.000Z",
+      "updated": "2014-07-07T18:37:47.000Z",
+      "details": "When: Tue 22 Jul 2014 11:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Juggling Masterclass with Marco Paoletti",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "88ngq9d9s324ln2n7ftbq4bpjk",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/88ngq9d9s324ln2n7ftbq4bpjk",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ODhuZ3E5ZDlzMzI0bG4ybjdmdGJxNGJwamsgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "BCCS",
+      "created": "2014-07-07T18:37:45.000Z",
+      "updated": "2014-07-07T18:37:45.000Z",
+      "details": "When: Tue 22 Jul 2014 10:00 to 12:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Youth Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: A taste of some serious circus for young people interested in undertaking intensive training in the future: tumbling and adagio masterclasses for 13-18 year olds",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "elb2iq07233rksf1q11i6f34bc",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/elb2iq07233rksf1q11i6f34bc",
+      "alternateLink": "http://www.google.com/calendar/event?eid=ZWxiMmlxMDcyMzNya3NmMXExMWk2ZjM0YmMgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Diabolo Masterclass with Priam",
+      "created": "2014-07-07T18:37:45.000Z",
+      "updated": "2014-07-07T18:37:45.000Z",
+      "details": "When: Tue 22 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Diabolo Masterclass with Priam",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "on5fceqjr7sei9e9ap21eraepg",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/on5fceqjr7sei9e9ap21eraepg",
+      "alternateLink": "http://www.google.com/calendar/event?eid=b241ZmNlcWpyN3NlaTllOWFwMjFlcmFlcGcgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Poi Masterclass with Ronan McLoughlin",
+      "created": "2014-07-07T18:37:44.000Z",
+      "updated": "2014-07-07T18:37:44.000Z",
+      "details": "When: Tue 22 Jul 2014 10:00 to 13:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Main Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Poi Masterclass with Ronan McLoughlin",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "omld340icf3r7037uadgls2vvo",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/omld340icf3r7037uadgls2vvo",
+      "alternateLink": "http://www.google.com/calendar/event?eid=b21sZDM0MGljZjNyNzAzN3VhZGdsczJ2dm8gdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Toddler Circus",
+      "created": "2014-07-07T18:37:44.000Z",
+      "updated": "2014-07-07T18:37:44.000Z",
+      "details": "When: Tue 22 Jul 2014 10:00 to 11:30 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: GAA Hall\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Toddler Circus: (Ages 6 months to 3 yrs, with an adult)\nPlay games, sing songs, experience balance and explore movement. Be sure to come with comfortable clothing and water.",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }, {
+      "kind": "calendar#event",
+      "id": "jpeqhmtb83i2gigv8g8b1uvgck",
+      "selfLink": "http://www.google.com/calendar/feeds/volunteers%40ejc2014.org/public/basic/jpeqhmtb83i2gigv8g8b1uvgck",
+      "alternateLink": "http://www.google.com/calendar/event?eid=anBlcWhtdGI4M2kyZ2lndjhnOGIxdXZnY2sgdm9sdW50ZWVyc0BlamMyMDE0Lm9yZw",
+      "canEdit": false,
+      "title": "Art of Juggling Masterclass with Viktor Kee",
+      "created": "2014-07-07T18:37:38.000Z",
+      "updated": "2014-07-07T18:37:38.000Z",
+      "details": "When: Mon 21 Jul 2014 13:00 to 17:00 \nIST\u003cbr /\u003e\n\n\u003cbr /\u003eWhere: Massacre Tent\n\u003cbr /\u003eEvent Status: confirmed\n\u003cbr /\u003eEvent Description: Art of Juggling Masterclass with Viktor Kee: note that preregistration is required (online)",
+      "creator": {
+        "displayName": "EJC2014 Volunteers",
+        "email": "volunteers@ejc2014.org"
+      }
+    }]
+  }
+}
