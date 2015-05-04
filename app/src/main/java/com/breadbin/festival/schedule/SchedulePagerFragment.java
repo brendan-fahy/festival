@@ -3,7 +3,6 @@ package com.breadbin.festival.schedule;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
@@ -30,6 +29,7 @@ public class SchedulePagerFragment extends Fragment {
 	private ViewPager viewPager;
 	private Toolbar toolbar;
 	private SlidingTabLayout slidingTabLayout;
+	private FragmentStatePagerAdapter scheduleDaysPagerAdapter;
 
 	private Schedule schedule;
 
@@ -50,6 +50,7 @@ public class SchedulePagerFragment extends Fragment {
 
 		setupViews(viewGroup);
 		setupSchedule();
+		setupAdapter();
 		setupViewPager();
 		setupSlidingTabLayout();
 		setupTitle();
@@ -68,7 +69,7 @@ public class SchedulePagerFragment extends Fragment {
 	}
 
 	private void setupViewPager() {
-		viewPager.setAdapter(new ScheduleDaysPagerAdapter(getActivity().getSupportFragmentManager()));
+		viewPager.setAdapter(scheduleDaysPagerAdapter);
 	}
 
 	private void setupSlidingTabLayout() {
@@ -93,7 +94,7 @@ public class SchedulePagerFragment extends Fragment {
 
 	public void onEvent(ScheduleUpdatedEvent event) {
 		schedule = event.getSchedule();
-		setupViewPager();
+		scheduleDaysPagerAdapter.notifyDataSetChanged();
 		setupSlidingTabLayout();
 	}
 
@@ -104,6 +105,8 @@ public class SchedulePagerFragment extends Fragment {
 		((HomeActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
 		EventBus.getDefault().register(this);
+
+		setupAdapter();
 	}
 
 	@Override
@@ -113,28 +116,26 @@ public class SchedulePagerFragment extends Fragment {
 		EventBus.getDefault().unregister(this);
 	}
 
-	private class ScheduleDaysPagerAdapter extends FragmentStatePagerAdapter {
+	private void setupAdapter() {
+		scheduleDaysPagerAdapter = new FragmentStatePagerAdapter(getFragmentManager()) {
 
-		// TODO Maybe extract for more configurability?
-		private DateTimeFormatter DATE_FORMATTER = DateTimeFormat.forPattern("EEE dd MMMMMMMM");
+			// TODO Maybe extract for more configurability?
+			private DateTimeFormatter DATE_FORMATTER = DateTimeFormat.forPattern("EEE dd MMMMMMMM");
 
-		public ScheduleDaysPagerAdapter(FragmentManager fm) {
-			super(fm);
-		}
+			@Override
+			public Fragment getItem(int position) {
+				return ScheduleDayFragment.newInstance(schedule.getDays().get(position));
+			}
 
-		@Override
-		public Fragment getItem(int position) {
-			return ScheduleDayFragment.newInstance(schedule.getDays().get(position));
-		}
+			@Override
+			public int getCount() {
+				return schedule.getDays().size();
+			}
 
-		@Override
-		public int getCount() {
-			return schedule.getDays().size();
-		}
-
-		@Override
-		public CharSequence getPageTitle(int position) {
-			return DATE_FORMATTER.print(schedule.getDays().get(position).getDate());
-		}
+			@Override
+			public CharSequence getPageTitle(int position) {
+				return DATE_FORMATTER.print(schedule.getDays().get(position).getDate());
+			}
+		};
 	}
 }
