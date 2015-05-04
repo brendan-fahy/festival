@@ -42,8 +42,6 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 		mNavigationDrawerFragment.setUp(
 				R.id.navigation_drawer,
 				(DrawerLayout) findViewById(R.id.drawer_layout));
-
-		fetchNewsArticles();
 	}
 
 	private void fetchNewsArticles() {
@@ -69,6 +67,8 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 		super.onStart();
 
 		EventBus.getDefault().register(this);
+
+		fetchNewsArticles();
 	}
 
 	@Override
