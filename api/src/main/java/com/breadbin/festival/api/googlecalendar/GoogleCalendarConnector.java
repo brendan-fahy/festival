@@ -63,6 +63,9 @@ public class GoogleCalendarConnector {
 	}
 
 	private ErrorResponse getErrorResponseFromVolleyError(VolleyError volleyError) {
-		return new ErrorResponse(volleyError.networkResponse.statusCode, volleyError.getMessage());
+		return new ErrorResponse(
+				((volleyError.networkResponse != null) ? volleyError.networkResponse.statusCode : -1),
+				volleyError.getMessage()
+		);
 	}
 }
