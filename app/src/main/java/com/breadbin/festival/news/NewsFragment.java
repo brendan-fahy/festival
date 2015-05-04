@@ -1,5 +1,7 @@
 package com.breadbin.festival.news;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -7,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
@@ -53,8 +56,20 @@ public class NewsFragment extends Fragment {
 		articlesList = (List<Article>) getArguments().getSerializable(ARTICLES_ARG);
 		articlesAdapter.notifyDataSetChanged();
 		listView.setAdapter(articlesAdapter);
+		setupItemClickListener();
 
 		return viewGroup;
+	}
+
+	private void setupItemClickListener() {
+		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse(articlesList.get(position).getLink()));
+				startActivity(intent);
+			}
+		});
 	}
 
 	public void onEvent(ArticlesListRetrievedEvent event) {
