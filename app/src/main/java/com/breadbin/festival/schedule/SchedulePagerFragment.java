@@ -1,23 +1,30 @@
 package com.breadbin.festival.schedule;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
 
 import com.breadbin.festival.HomeActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
+import com.breadbin.festival.views.EventCard;
 import com.breadbin.festival.views.google.SlidingTabLayout;
+import com.model.events.Event;
 import com.model.events.Schedule;
 
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
+
+import java.util.List;
 
 import de.greenrobot.event.EventBus;
 
@@ -28,7 +35,7 @@ public class SchedulePagerFragment extends Fragment {
 	private ViewPager viewPager;
 	private Toolbar toolbar;
 	private SlidingTabLayout slidingTabLayout;
-	private FragmentStatePagerAdapter scheduleDaysPagerAdapter;
+	private PagerAdapter scheduleDaysPagerAdapter;
 
 	private Schedule schedule;
 
@@ -116,25 +123,75 @@ public class SchedulePagerFragment extends Fragment {
 	}
 
 	private void setupAdapter() {
-		scheduleDaysPagerAdapter = new FragmentStatePagerAdapter(getFragmentManager()) {
+		scheduleDaysPagerAdapter = new ListPagerAdapter();
+	}
 
-			// TODO Maybe extract for more configurability?
-			private DateTimeFormatter DATE_FORMATTER = DateTimeFormat.forPattern("EEE dd MMMMMMMM");
+	private class ListPagerAdapter extends PagerAdapter {
 
-			@Override
-			public Fragment getItem(int position) {
-				return ScheduleDayFragment.newInstance(schedule.getDays().get(position));
+		private DateTimeFormatter DATE_FORMATTER = DateTimeFormat.forPattern("EEE dd MMMMMMMM");
+
+		@Override
+		public int getCount() {
+			return schedule.getDays().size();
+		}
+
+		@Override
+		public CharSequence getPageTitle(int position) {
+			return DATE_FORMATTER.print(schedule.getDays().get(position).getDate());
+		}
+
+		@Override
+		public Object instantiateItem(ViewGroup container, int position) {
+			View view = ((LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.listview_for_cards, container, false);
+
+			((ListView) view).setAdapter(new EventsAdapter(schedule.getDays().get(position).getEventList()));
+
+			container.addView(view, 0);
+			return view;
+		}
+
+		@Override
+		public void destroyItem(ViewGroup container, int position, Object object) {
+			container.removeView((View) object);
+		}
+
+		@Override
+		public boolean isViewFromObject(View view, Object object) {
+			return view == object;
+		}
+	}
+
+	private class EventsAdapter extends BaseAdapter {
+
+		private List<Event> events;
+
+		public EventsAdapter(List<Event> events) {
+			this.events = events;
+		}
+
+		@Override
+		public int getCount() {
+			return events.size();
+		}
+
+		@Override
+		public Object getItem(int position) {
+			return events.get(position);
+		}
+
+		@Override
+		public long getItemId(int position) {
+			return position;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			if (convertView == null) {
+				convertView = EventCard.build(getActivity());
 			}
-
-			@Override
-			public int getCount() {
-				return schedule.getDays().size();
-			}
-
-			@Override
-			public CharSequence getPageTitle(int position) {
-				return DATE_FORMATTER.print(schedule.getDays().get(position).getDate());
-			}
-		};
+			EventCard eventCard = (EventCard) convertView;
+			eventCard.bindTo(events.get(position));
+			return eventCard;
+		}
 	}
 }
