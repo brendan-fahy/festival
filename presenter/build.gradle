@@ -28,4 +28,10 @@ dependencies {
     // Third-party dependencies
     compile 'de.greenrobot:eventbus:2.4.0'
     compile 'com.jakewharton:disklrucache:2.0.2'
+
+    testCompile 'junit:junit:4.12'
+    testCompile('org.robolectric:robolectric:3.0-rc2') {
+        exclude group: 'commons-logging', module: 'commons-logging'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
 }
