@@ -47,7 +47,7 @@ public class NewsFragment extends Fragment {
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_rss, container, false);
+		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_news, container, false);
 		toolbar = (Toolbar) viewGroup.findViewById(R.id.toolbar);
 		listView = (ListView) viewGroup.findViewById(R.id.listView);
 

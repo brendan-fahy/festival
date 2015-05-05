@@ -10,12 +10,14 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 import com.breadbin.festival.api.ContentRestClient;
 import com.breadbin.festival.navdrawer.NavigationDrawerFragment;
 import com.breadbin.festival.news.NewsFragment;
 import com.breadbin.festival.presenter.ContentPresenter;
 import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
+import com.breadbin.festival.presenter.busevents.OfflineEvent;
 import com.breadbin.festival.presenter.busevents.ScheduleRetrievedEvent;
 import com.breadbin.festival.schedule.SchedulePagerFragment;
 
@@ -66,24 +68,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 		getSupportFragmentManager().putFragment(outState, KEPT_FRAGMENT_KEY, currentFragment);
 	}
 
-	private void fetchNewsArticles() {
-		ContentPresenter.getInstance(this, restClientConfig).fetchNewsArticlesList();
-	}
-
-	private void fetchCalendarEvents() {
-		ContentPresenter.getInstance(this, restClientConfig).fetchEventsList();
-	}
-
-	public void onEvent(ArticlesListRetrievedEvent event) {
-		currentFragment = NewsFragment.newInstance(event.getArticleList());
-		updateCurrentFragment();
-	}
-
-	public void onEvent(ScheduleRetrievedEvent event) {
-		currentFragment = SchedulePagerFragment.newInstance(event.getSchedule());
-		updateCurrentFragment();
-	}
-
 	@Override
 	protected void onStart() {
 		super.onStart();
@@ -107,7 +91,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 	@Override
 	public void onNavigationDrawerItemSelected(int position) {
 		// Quick hack using a String array of the Fragment names, making sure to remember that the 0th element in the Nav Drawer list is the header, so have to do [position -1]
-		if (currentFragment != null && navDrawerOptions[position - 1] != currentFragment.getClass().getName()) {
+		if (currentFragment != null && !navDrawerOptions[position - 1].equals(currentFragment.getClass().getName())) {
 			switch (position) {
 				case 1:
 					fetchNewsArticles();
@@ -116,6 +100,31 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 					fetchCalendarEvents();
 					break;
 			}
+		}
+	}
+
+	private void fetchNewsArticles() {
+		ContentPresenter.getInstance(this, restClientConfig).fetchNewsArticlesList();
+	}
+
+	private void fetchCalendarEvents() {
+		ContentPresenter.getInstance(this, restClientConfig).fetchEventsList();
+	}
+
+	public void onEvent(ArticlesListRetrievedEvent event) {
+		currentFragment = NewsFragment.newInstance(event.getArticleList());
+		updateCurrentFragment();
+	}
+
+	public void onEvent(ScheduleRetrievedEvent event) {
+		currentFragment = SchedulePagerFragment.newInstance(event.getSchedule());
+		updateCurrentFragment();
+	}
+
+	public void onEvent(OfflineEvent event) {
+		TextView defaultText = ((TextView) findViewById(R.id.default_text));
+		if (defaultText != null) {
+			defaultText.setText(R.string.offline_error);
 		}
 	}
 

@@ -1,12 +1,15 @@
 package com.breadbin.festival.presenter;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 import com.breadbin.festival.api.ContentRestClient;
 import com.breadbin.festival.api.DefaultContentRestClient;
 import com.breadbin.festival.api.googlecalendar.CalendarCallback;
 import com.breadbin.festival.api.rss.ArticleCallback;
 import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
+import com.breadbin.festival.presenter.busevents.OfflineEvent;
 import com.breadbin.festival.presenter.busevents.ScheduleRetrievedEvent;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
 import com.breadbin.festival.presenter.storage.ArticlesStorage;
@@ -72,7 +75,11 @@ public class ContentPresenter {
 	}
 
 	private void checkNetworkForEventsList() {
-		restClient.getCalendarEvents(calendarCallback);
+		if (isConnectedOrConnecting()) {
+			restClient.getCalendarEvents(calendarCallback);
+		} else {
+			postOffLineEvent();
+		}
 	}
 
 	private CalendarCallback calendarCallback = new CalendarCallback() {
@@ -111,7 +118,11 @@ public class ContentPresenter {
 	}
 
 	private void checkNetworkForNewsArticlesList() {
-		restClient.getNewsArticles(articlesCallback);
+		if (isConnectedOrConnecting()) {
+			restClient.getNewsArticles(articlesCallback);
+		} else {
+			postOffLineEvent();
+		}
 	}
 
 	private ArticleCallback articlesCallback = new ArticleCallback() {
@@ -138,6 +149,16 @@ public class ContentPresenter {
 
 	private void postArticlesListDeliveredEvent(List<Article> retrievedArticles) {
 		EventBus.getDefault().post(new ArticlesListRetrievedEvent(retrievedArticles));
+	}
+
+	private boolean isConnectedOrConnecting() {
+		ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+		return (networkInfo != null && networkInfo.isConnectedOrConnecting());
+	}
+
+	private void postOffLineEvent() {
+		EventBus.getDefault().post(new OfflineEvent());
 	}
 
 }
