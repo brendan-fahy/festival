@@ -3,8 +3,11 @@ package com.breadbin.festival;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
@@ -18,8 +21,9 @@ import com.breadbin.festival.schedule.SchedulePagerFragment;
 
 import de.greenrobot.event.EventBus;
 
-public class HomeActivity extends BaseActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+public class HomeActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
+	private static final String KEPT_FRAGMENT_KEY = "keptFragment";
 	/**
 	 * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
 	 */
@@ -28,7 +32,12 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 	private DrawerLayout drawerLayout;
 	private boolean userLearnedDrawer;
 
-	private NavigationDrawerFragment.NavDrawerItem currentNavDrawerItem;
+	private String[] navDrawerOptions = new String[] {
+			NewsFragment.class.getName(),
+			SchedulePagerFragment.class.getName()
+	};
+
+	private Fragment currentFragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +52,18 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 		mNavigationDrawerFragment.setUp(
 				R.id.navigation_drawer,
 				(DrawerLayout) findViewById(R.id.drawer_layout));
+
+		// Check for an existing Fragment to restore
+		if (savedInstanceState != null) {
+			currentFragment = getSupportFragmentManager().getFragment(savedInstanceState, KEPT_FRAGMENT_KEY);
+		}
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+
+		getSupportFragmentManager().putFragment(outState, KEPT_FRAGMENT_KEY, currentFragment);
 	}
 
 	private void fetchNewsArticles() {
@@ -54,13 +75,13 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 	}
 
 	public void onEvent(ArticlesListRetrievedEvent event) {
-		currentNavDrawerItem = NavigationDrawerFragment.NavDrawerItem.values()[1];
-		replaceFragment(NewsFragment.newInstance(event.getArticleList()));
+		currentFragment = NewsFragment.newInstance(event.getArticleList());
+		updateCurrentFragment();
 	}
 
 	public void onEvent(ScheduleRetrievedEvent event) {
-		currentNavDrawerItem = NavigationDrawerFragment.NavDrawerItem.values()[2];
-		replaceFragment(SchedulePagerFragment.newInstance(event.getSchedule()));
+		currentFragment = SchedulePagerFragment.newInstance(event.getSchedule());
+		updateCurrentFragment();
 	}
 
 	@Override
@@ -69,7 +90,11 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 
 		EventBus.getDefault().register(this);
 
-		fetchNewsArticles();
+		if (currentFragment == null) {
+			fetchNewsArticles();
+		} else {
+			updateCurrentFragment();
+		}
 	}
 
 	@Override
@@ -81,14 +106,13 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 
 	@Override
 	public void onNavigationDrawerItemSelected(int position) {
-		// update the main content by replacing fragments
-		NavigationDrawerFragment.NavDrawerItem selectedItem = NavigationDrawerFragment.NavDrawerItem.values()[position];
-		if (selectedItem != currentNavDrawerItem) {
-			switch (selectedItem) {
-				case NEWS:
+		// Quick hack using a String array of the Fragment names, making sure to remember that the 0th element in the Nav Drawer list is the header, so have to do [position -1]
+		if (currentFragment != null && navDrawerOptions[position - 1] != currentFragment.getClass().getName()) {
+			switch (position) {
+				case 1:
 					fetchNewsArticles();
 					break;
-				case SCHEDULE:
+				case 2:
 					fetchCalendarEvents();
 					break;
 			}
@@ -143,5 +167,11 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 			return getString(R.string.rssEndpoint);
 		}
 	};
+
+	protected void updateCurrentFragment() {
+		FragmentManager fragmentManager = getSupportFragmentManager();
+		fragmentManager.beginTransaction()
+				.replace(R.id.container, currentFragment)
+				.commit();}
 
 }

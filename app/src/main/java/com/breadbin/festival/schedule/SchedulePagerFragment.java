@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.breadbin.festival.BaseActivity;
 import com.breadbin.festival.HomeActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
@@ -89,7 +88,7 @@ public class SchedulePagerFragment extends Fragment {
 	}
 
 	private void setupTitle() {
-		((BaseActivity) getActivity()).setSupportActionBar(toolbar);
+		((HomeActivity) getActivity()).setSupportActionBar(toolbar);
 	}
 
 	public void onEvent(ScheduleUpdatedEvent event) {

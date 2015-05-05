@@ -1,7 +1,6 @@
 package com.breadbin.festival.navdrawer;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -48,22 +47,6 @@ public class NavigationDrawerFragment extends Fragment {
 	private boolean mFromSavedInstanceState;
 	private boolean mUserLearnedDrawer;
 
-	public enum NavDrawerItem {
-		DEFAULT,
-		NEWS,
-		SCHEDULE;
-
-		public static String[] getTitleStringIds(Context context) {
-			return new String[] {
-				context.getString(R.string.nav_drawer_news),
-				context.getString(R.string.nav_drawer_schedule)
-			};
-		}
-	}
-
-	public NavigationDrawerFragment() {
-	}
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -105,7 +88,10 @@ public class NavigationDrawerFragment extends Fragment {
 				getActivity(),
 				android.R.layout.simple_list_item_activated_1,
 				android.R.id.text1,
-				NavDrawerItem.getTitleStringIds(getActivity())));
+				new String[] {
+						getString(R.string.nav_drawer_news),
+						getString(R.string.nav_drawer_schedule)
+				}));
 		mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 		return mDrawerListView;
 	}
