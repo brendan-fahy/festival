@@ -2,9 +2,7 @@ package com.breadbin.festival.api;
 
 import android.content.Context;
 
-import com.breadbin.festival.api.googlecalendar.CalendarCallback;
 import com.breadbin.festival.api.googlecalendar.GoogleCalendarConnector;
-import com.breadbin.festival.api.rss.ArticleCallback;
 import com.breadbin.festival.api.rss.RssConnector;
 
 public class DefaultContentRestClient extends ContentRestClient {
@@ -20,12 +18,12 @@ public class DefaultContentRestClient extends ContentRestClient {
 	}
 
 	@Override
-	public void getCalendarEvents(CalendarCallback callback) {
+	public void getCalendarEvents(Callback callback) {
 		calendarConnector.getCalendarEvents(callback);
 	}
 
 	@Override
-	public void getNewsArticles(ArticleCallback callback) {
+	public void getNewsArticles(Callback callback) {
 		rssConnector.getRssArticles(callback);
 	}
 

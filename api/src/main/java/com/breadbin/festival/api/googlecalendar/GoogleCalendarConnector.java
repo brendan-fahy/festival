@@ -9,6 +9,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
+import com.breadbin.festival.api.Callback;
 import com.model.error.ErrorResponse;
 import com.model.events.Event;
 import com.model.googlecalendarapi.CalendarResponse;
@@ -26,11 +27,11 @@ public class GoogleCalendarConnector {
 		this.endpoint = endpoint;
 	}
 
-	public void getCalendarEvents(CalendarCallback callback) {
+	public void getCalendarEvents(Callback callback) {
 		requestQueue.add(getCalendarGsonRequest(callback));
 	}
 
-	private GsonRequest<CalendarResponse> getCalendarGsonRequest(CalendarCallback callback) {
+	private GsonRequest<CalendarResponse> getCalendarGsonRequest(Callback callback) {
 		return new GsonRequest.Builder()
 				.withMethod(Request.Method.GET)
 				.withUri(Uri.parse(endpoint))
@@ -41,7 +42,7 @@ public class GoogleCalendarConnector {
 				.build();
 	}
 
-	private Response.Listener<CalendarResponse> getResponseListenerFromCallback(final CalendarCallback callback) {
+	private Response.Listener<CalendarResponse> getResponseListenerFromCallback(final Callback callback) {
 		return new Response.Listener<CalendarResponse>() {
 			@Override
 			public void onResponse(CalendarResponse calendarResponse) {
@@ -52,7 +53,7 @@ public class GoogleCalendarConnector {
 		};
 	}
 
-	private Response.ErrorListener getErrorResponseListenerFromCallback(final CalendarCallback callback) {
+	private Response.ErrorListener getErrorResponseListenerFromCallback(final Callback callback) {
 		return new Response.ErrorListener() {
 			@Override
 			public void onErrorResponse(VolleyError volleyError) {

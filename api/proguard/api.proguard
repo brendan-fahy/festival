@@ -21,7 +21,9 @@
 -keep class com.breadbin.festival.api.DefaultContentRestClient {
   *;
 }
--keep class com.breadbin.festival.api.googlecalendar.CalendarCallback
+-keep class com.breadbin.festival.api.Callback {
+  *;
+}
 
 -dontwarn com.breadbin.festival.api.GsonRequest
 -dontwarn com.breadbin.festival.api.GoogleCalendarConnector

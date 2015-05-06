@@ -2,6 +2,7 @@ package com.breadbin.festival.api.rss;
 
 import android.os.AsyncTask;
 
+import com.breadbin.festival.api.Callback;
 import com.model.error.ErrorResponse;
 import com.model.news.Article;
 
@@ -26,15 +27,15 @@ public class RssConnector {
 		this.rssEndpoint = rssEndpoint;
 	}
 
-	public void getRssArticles(ArticleCallback callback) {
+	public void getRssArticles(Callback callback) {
 		new RssTask(callback).execute(rssEndpoint);
 	}
 
 	private class RssTask extends AsyncTask<String, Void, ResponseWrapper> {
 
-		private ArticleCallback callback;
+		private Callback callback;
 
-		public RssTask(ArticleCallback callback) {
+		public RssTask(Callback callback) {
 			this.callback = callback;
 		}
 

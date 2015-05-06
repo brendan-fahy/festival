@@ -1,4 +1,4 @@
-package com.breadbin.festival.presenter;
+package com.breadbin.festival.presenter.calendar;
 
 import com.model.events.Event;
 import com.model.events.Schedule;
