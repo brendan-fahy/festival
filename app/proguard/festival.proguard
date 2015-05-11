@@ -1,12 +1,3 @@
-# Rename all packages
--flattenpackagehierarchy
-
-# Keep model classes
--keep class com.model.**.** {
+keep class com.breadbin.festival.view.NavigationDrawerActivity {
   *;
 }
--keep class com.breadbin.festival.api.googlecalendar.**.** {
-  *;
-}
--dontwarn com.breadbin.festival.api.GsonRequest
--dontwarn com.breadbin.festival.api.GoogleCalendarConnector

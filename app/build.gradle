@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 22
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.breadbin.festival"
+        applicationId "com.breadbin.festival.app"
         minSdkVersion 15
-        targetSdkVersion 21
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -38,10 +38,9 @@ android {
 }
 
 dependencies {
-    // In-house dependencies
-    compile project(':presenter')
+    // In-house Dependencies
+    compile project(':view')
 
-    // Google dependencies
-    compile 'com.android.support:appcompat-v7:22.1.0'
-    compile 'com.android.support:cardview-v7:22.1.0'
+    // Google Dependencies
+    compile 'com.android.support:appcompat-v7:22.1.1'
 }

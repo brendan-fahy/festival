@@ -13,7 +13,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.breadbin.festival.HomeActivity;
+import com.breadbin.festival.NavigationDrawerActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
 import com.breadbin.festival.views.ArticleCard;
@@ -51,7 +51,7 @@ public class NewsFragment extends Fragment {
 		toolbar = (Toolbar) viewGroup.findViewById(R.id.toolbar);
 		listView = (ListView) viewGroup.findViewById(R.id.listView);
 
-		((HomeActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
+		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
 		articlesList = (List<Article>) getArguments().getSerializable(ARTICLES_ARG);
 		articlesAdapter.notifyDataSetChanged();

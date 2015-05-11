@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.breadbin.festival.HomeActivity;
+import com.breadbin.festival.NavigationDrawerActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
 import com.breadbin.festival.views.EventCard;
@@ -95,7 +95,7 @@ public class SchedulePagerFragment extends Fragment {
 	}
 
 	private void setupTitle() {
-		((HomeActivity) getActivity()).setSupportActionBar(toolbar);
+		((NavigationDrawerActivity) getActivity()).setSupportActionBar(toolbar);
 	}
 
 	public void onEvent(ScheduleUpdatedEvent event) {
@@ -108,7 +108,7 @@ public class SchedulePagerFragment extends Fragment {
 	public void onStart() {
 		super.onStart();
 
-		((HomeActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
+		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
 		EventBus.getDefault().register(this);
 

@@ -23,7 +23,7 @@ import com.breadbin.festival.schedule.SchedulePagerFragment;
 
 import de.greenrobot.event.EventBus;
 
-public class HomeActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+public abstract class NavigationDrawerActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
 	private static final String KEPT_FRAGMENT_KEY = "keptFragment";
 	/**
@@ -40,6 +40,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 	};
 
 	private Fragment currentFragment;
+
+	public abstract ContentRestClient.ContentRestClientConfig getRestClientConfig();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -104,11 +106,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 	}
 
 	private void fetchNewsArticles() {
-		ContentPresenter.getInstance(this, restClientConfig).fetchNewsArticlesList();
+		ContentPresenter.getInstance(this, getRestClientConfig()).fetchNewsArticlesList();
 	}
 
 	private void fetchCalendarEvents() {
-		ContentPresenter.getInstance(this, restClientConfig).fetchEventsList();
+		ContentPresenter.getInstance(this, getRestClientConfig()).fetchEventsList();
 	}
 
 	public void onEvent(ArticlesListRetrievedEvent event) {
@@ -138,7 +140,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 	}
 
 	private ActionBarDrawerToggle getActionBarDrawerToggle(Toolbar toolbar, int stringId) {
-		userLearnedDrawer = PreferenceManager.getDefaultSharedPreferences(HomeActivity.this).getBoolean(NavigationDrawerFragment.PREF_USER_LEARNED_DRAWER, false);
+		userLearnedDrawer = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this).getBoolean(NavigationDrawerFragment.PREF_USER_LEARNED_DRAWER, false);
 
 		ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(
 				this,
@@ -153,7 +155,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 					// The user manually opened the drawer; store this flag to prevent auto-showing
 					// the navigation drawer automatically in the future.
 					userLearnedDrawer = true;
-					SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(HomeActivity.this);
+					SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this);
 					sp.edit().putBoolean(NavigationDrawerFragment.PREF_USER_LEARNED_DRAWER, true).apply();
 				}
 			}
@@ -164,18 +166,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
 
 		return drawerToggle;
 	}
-
-	private ContentRestClient.ContentRestClientConfig restClientConfig = new ContentRestClient.ContentRestClientConfig() {
-		@Override
-		public String getCalendarEndpoint() {
-			return getString(R.string.googleCalendarEndpoint);
-		}
-
-		@Override
-		public String getRssEndpoint() {
-			return getString(R.string.rssEndpoint);
-		}
-	};
 
 	protected void updateCurrentFragment() {
 		FragmentManager fragmentManager = getSupportFragmentManager();
