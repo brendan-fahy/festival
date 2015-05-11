@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name" >EJC 2014</string>
+	<string name="app_name" >EJC Millstreet 2014</string>
 
 	<string name="googleCalendarEndpoint">http://www.google.com/calendar/feeds/volunteers@ejc2014.org/public/basic?alt=jsonc&amp;max-results=2000</string>
 
