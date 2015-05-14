@@ -4,6 +4,11 @@
 
 -keepclassmembers public class org.joda.time.DateTime { *; }
 -keepclassmembers public class org.joda.time.DateTimeUtils { *; }
+-keepclassmembers public class org.joda.time.**.** {
+	*;
+}
 
 -dontwarn org.joda.convert.ToString
 -dontwarn org.joda.convert.FromString
+
+-dontwarn org.w3c.dom.bootstrap.DOMImplementationRegistry

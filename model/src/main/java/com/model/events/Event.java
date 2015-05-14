@@ -12,7 +12,7 @@ public class Event implements Comparable<Event>, Serializable {
 
   private String teacher;
 
-  private DateTime time;
+  private long time;
 
   private String location;
 
@@ -51,11 +51,11 @@ public class Event implements Comparable<Event>, Serializable {
   }
 
   public DateTime getTime() {
-    return time;
+    return new DateTime(time);
   }
 
   public void setTime(DateTime time) {
-    this.time = time;
+    this.time = time.getMillis();
   }
 
   public String getLocation() {
@@ -68,7 +68,7 @@ public class Event implements Comparable<Event>, Serializable {
 
 	@Override
 	public int compareTo(Event another) {
-		return (time.isBefore(another.time)) ? -1 : 1;
+		return (getTime().isBefore(another.getTime())) ? -1 : 1;
 	}
 
   @Override
@@ -78,12 +78,12 @@ public class Event implements Comparable<Event>, Serializable {
 
     Event event = (Event) o;
 
+    if (time != event.time) return false;
     if (allDayEvent != event.allDayEvent) return false;
     if (title != null ? !title.equals(event.title) : event.title != null) return false;
     if (description != null ? !description.equals(event.description) : event.description != null)
       return false;
     if (teacher != null ? !teacher.equals(event.teacher) : event.teacher != null) return false;
-    if (time != null ? !time.equals(event.time) : event.time != null) return false;
     return !(location != null ? !location.equals(event.location) : event.location != null);
 
   }
@@ -93,9 +93,21 @@ public class Event implements Comparable<Event>, Serializable {
     int result = title != null ? title.hashCode() : 0;
     result = 31 * result + (description != null ? description.hashCode() : 0);
     result = 31 * result + (teacher != null ? teacher.hashCode() : 0);
-    result = 31 * result + (time != null ? time.hashCode() : 0);
+    result = 31 * result + (int) (time ^ (time >>> 32));
     result = 31 * result + (location != null ? location.hashCode() : 0);
     result = 31 * result + (allDayEvent ? 1 : 0);
     return result;
+  }
+
+  @Override
+  public String toString() {
+    return "Event{" +
+        "title='" + title + '\'' +
+        ", description='" + description + '\'' +
+        ", teacher='" + teacher + '\'' +
+        ", time=" + time +
+        ", location='" + location + '\'' +
+        ", allDayEvent=" + allDayEvent +
+        '}';
   }
 }

@@ -8,19 +8,39 @@ android {
         applicationId "com.breadbin.festival.app"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 6
+        versionName '2.0'
     }
+
+    signingConfigs {
+        release {
+            storeFile file('storeFile')
+            storePassword 'storePassword'
+            keyAlias 'keyAlias'
+            keyPassword 'keyPassword'
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles fileTree(dir: 'proguard')
+        }
+
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
             proguardFiles fileTree(dir: 'proguard')
         }
     }
 
     productFlavors {
         ejc {
-            applicationId "com.breadbin.festival.ejc"
+            applicationId "com.breadbin.ejc"
         }
         wiremock {
             applicationId "com.breadbin.festival.mock"

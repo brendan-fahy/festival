@@ -1,6 +1,3 @@
-# Required for all library projects!
--dontshrink
-
 -keep class com.breadbin.festival.presenter.busevents.** {
 	*;
 }

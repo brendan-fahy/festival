@@ -1,3 +1,25 @@
-keep class com.breadbin.festival.view.NavigationDrawerActivity {
+-keep class com.breadbin.festival.view.NavigationDrawerActivity {
+  *;
+}
+-keep class com.breadbin.festival.app.HomeActivity {
+ *;
+}
+
+#Keeping all public class names and keep (prevent obfuscation) of their public and protected methods
+-keep public class * {
+    public protected <methods>;
+}
+
+# Keep (prevent obfuscation) all public and protected methods in non-public classes.
+# Notice that the non-public class names will still get obfuscated
+-keepclassmembers !public class * {
+    public protected <methods>;
+}
+
+# Keep model classes
+-keep class com.model.**.** {
+  *;
+}
+-keep class com.breadbin.festival.api.googlecalendar.**.** {
   *;
 }
