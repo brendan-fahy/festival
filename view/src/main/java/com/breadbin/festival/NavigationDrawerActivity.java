@@ -3,17 +3,18 @@ package com.breadbin.festival;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.breadbin.festival.api.ContentRestClient;
-import com.breadbin.festival.navdrawer.NavigationDrawerFragment;
 import com.breadbin.festival.news.NewsFragment;
 import com.breadbin.festival.presenter.ContentPresenter;
 import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
@@ -23,21 +24,14 @@ import com.breadbin.festival.schedule.SchedulePagerFragment;
 
 import de.greenrobot.event.EventBus;
 
-public abstract class NavigationDrawerActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+public abstract class NavigationDrawerActivity extends AppCompatActivity {
 
 	private static final String KEPT_FRAGMENT_KEY = "keptFragment";
-	/**
-	 * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
-	 */
-	private NavigationDrawerFragment mNavigationDrawerFragment;
+	private static final String PREF_USER_LEARNED_DRAWER = "PREF_USER_LEARNED_DRAWER";
 
 	private DrawerLayout drawerLayout;
+	private NavigationView navigationView;
 	private boolean userLearnedDrawer;
-
-	private String[] navDrawerOptions = new String[] {
-			NewsFragment.class.getName(),
-			SchedulePagerFragment.class.getName()
-	};
 
 	private Fragment currentFragment;
 
@@ -48,14 +42,10 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity impleme
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
-		mNavigationDrawerFragment = (NavigationDrawerFragment)
-				getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
 		drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+		navigationView = (NavigationView) findViewById(R.id.navigation_drawer);
 
-		// Set up the drawer.
-		mNavigationDrawerFragment.setUp(
-				R.id.navigation_drawer,
-				(DrawerLayout) findViewById(R.id.drawer_layout));
+		setupNavigationDrawer();
 
 		// Check for an existing Fragment to restore
 		if (savedInstanceState != null) {
@@ -90,19 +80,20 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity impleme
 		EventBus.getDefault().unregister(this);
 	}
 
-	@Override
-	public void onNavigationDrawerItemSelected(int position) {
-		// Quick hack using a String array of the Fragment names, making sure to remember that the 0th element in the Nav Drawer list is the header, so have to do [position -1]
-		if (currentFragment != null && !navDrawerOptions[position - 1].equals(currentFragment.getClass().getName())) {
-			switch (position) {
-				case 1:
+	private void setupNavigationDrawer() {
+		navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+			@Override
+			public boolean onNavigationItemSelected(MenuItem menuItem) {
+				if (R.id.nav_drawer_news == menuItem.getItemId()) {
 					fetchNewsArticles();
-					break;
-				case 2:
+				} else if (R.id.nav_drawer_schedule == menuItem.getItemId()) {
 					fetchCalendarEvents();
-					break;
+				}
+				menuItem.setChecked(true);
+				drawerLayout.closeDrawer(navigationView);
+				return true;
 			}
-		}
+		});
 	}
 
 	private void fetchNewsArticles() {
@@ -140,7 +131,7 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity impleme
 	}
 
 	private ActionBarDrawerToggle getActionBarDrawerToggle(Toolbar toolbar, int stringId) {
-		userLearnedDrawer = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this).getBoolean(NavigationDrawerFragment.PREF_USER_LEARNED_DRAWER, false);
+		userLearnedDrawer = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this).getBoolean(PREF_USER_LEARNED_DRAWER, false);
 
 		ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(
 				this,
@@ -156,7 +147,7 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity impleme
 					// the navigation drawer automatically in the future.
 					userLearnedDrawer = true;
 					SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(NavigationDrawerActivity.this);
-					sp.edit().putBoolean(NavigationDrawerFragment.PREF_USER_LEARNED_DRAWER, true).apply();
+					sp.edit().putBoolean(PREF_USER_LEARNED_DRAWER, true).apply();
 				}
 			}
 		};

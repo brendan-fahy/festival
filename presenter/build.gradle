@@ -22,7 +22,7 @@ dependencies {
     compile project(':api')
 
     // Google dependencies
-    compile 'com.android.support:appcompat-v7:22.1.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
 
     // Third-party dependencies
     compile 'de.greenrobot:eventbus:2.4.0'
