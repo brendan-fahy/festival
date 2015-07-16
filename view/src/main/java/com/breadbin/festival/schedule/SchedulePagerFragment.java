@@ -3,6 +3,7 @@ package com.breadbin.festival.schedule;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -17,7 +18,6 @@ import com.breadbin.festival.NavigationDrawerActivity;
 import com.breadbin.festival.R;
 import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
 import com.breadbin.festival.views.EventCard;
-import com.breadbin.festival.views.google.SlidingTabLayout;
 import com.model.events.Event;
 import com.model.events.Schedule;
 
@@ -34,7 +34,7 @@ public class SchedulePagerFragment extends Fragment {
 
 	private ViewPager viewPager;
 	private Toolbar toolbar;
-	private SlidingTabLayout slidingTabLayout;
+	private TabLayout tabLayout;
 	private PagerAdapter scheduleDaysPagerAdapter;
 
 	private Schedule schedule;
@@ -58,7 +58,7 @@ public class SchedulePagerFragment extends Fragment {
 		setupSchedule();
 		setupAdapter();
 		setupViewPager();
-		setupSlidingTabLayout();
+		setupTabLayout();
 		setupTitle();
 
 		return viewGroup;
@@ -67,7 +67,7 @@ public class SchedulePagerFragment extends Fragment {
 	private void setupViews(ViewGroup viewGroup) {
 		viewPager = (ViewPager) viewGroup.findViewById(R.id.viewPager);
 		toolbar = (Toolbar) viewGroup.findViewById(R.id.toolbar);
-		slidingTabLayout = (SlidingTabLayout) viewGroup.findViewById(R.id.slidingTabLayout);
+		tabLayout = (TabLayout) viewGroup.findViewById(R.id.tabLayout);
 	}
 
 	private void setupSchedule() {
@@ -78,20 +78,10 @@ public class SchedulePagerFragment extends Fragment {
 		viewPager.setAdapter(scheduleDaysPagerAdapter);
 	}
 
-	private void setupSlidingTabLayout() {
-		slidingTabLayout.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
-			@Override
-			public int getIndicatorColor(int position) {
-				return getResources().getColor(R.color.primaryDark);
-			}
-
-			@Override
-			public int getDividerColor(int position) {
-				return getResources().getColor(R.color.dividercolor);
-			}
-		});
-		slidingTabLayout.setCustomTabView(R.layout.tab_title_textview, R.id.tabTitleText);
-		slidingTabLayout.setViewPager(viewPager);
+	private void setupTabLayout() {
+		tabLayout.setupWithViewPager(viewPager);
+		tabLayout.setTabsFromPagerAdapter(scheduleDaysPagerAdapter);
+		tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
 	}
 
 	private void setupTitle() {
@@ -101,7 +91,7 @@ public class SchedulePagerFragment extends Fragment {
 	public void onEvent(ScheduleUpdatedEvent event) {
 		schedule = event.getSchedule();
 		scheduleDaysPagerAdapter.notifyDataSetChanged();
-		setupSlidingTabLayout();
+		setupTabLayout();
 	}
 
 	@Override
