@@ -2,7 +2,7 @@
 -flattenpackagehierarchy
 
 # Keep model classes
--keep class com.model.**.** {
+-keep class com.breadbin.festival.model.**.** {
   *;
 }
 

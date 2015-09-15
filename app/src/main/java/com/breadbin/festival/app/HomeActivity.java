@@ -1,7 +1,7 @@
 package com.breadbin.festival.app;
 
-import com.breadbin.festival.NavigationDrawerActivity;
 import com.breadbin.festival.api.ContentRestClient;
+import com.breadbin.festival.view.NavigationDrawerActivity;
 
 public class HomeActivity extends NavigationDrawerActivity {
 	@Override

@@ -1,8 +1,56 @@
 <resources>
 
 	<!-- Base application theme. -->
-	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-		<!-- Customize your theme here. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorPrimaryDark">@color/primaryDark</item>
+		<item name="colorAccent">@color/accent</item>
+		<item name="android:windowBackground">@color/window_background</item>
+	</style>
+
+	<style name="Toolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<item name="android:background">@color/primary</item>
+	</style>
+
+	<style name="ToolbarOverlay" parent="ThemeOverlay.AppCompat.Light">
+		<item name="android:background">@color/primary</item>
+	</style>
+
+	<style name="ToolbarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/textSlashIcons</item>
+		<item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title
+		</item>
+	</style>
+
+	<style name="CardPrimaryText">
+		<item name="android:textSize">@dimen/cardTextSize</item>
+		<item name="android:textColor">@color/primaryText</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="CardTitleText" parent="CardPrimaryText">
+		<item name="android:textSize">@dimen/cardTitleTextSize</item>
+	</style>
+
+	<style name="CardSecondaryText" parent="CardPrimaryText">
+		<item name="android:textColor">@color/secondaryText</item>
+	</style>
+
+	<style name="TabTitleText">
+		<item name="android:textSize">@dimen/tabTitleTextSize</item>
+		<item name="android:textColor">@color/textSlashIcons</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:padding">@dimen/tabTitleTextPadding</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="CardListView">
+		<item name="android:background">@color/primaryLight</item>
+		<item name="android:divider">@android:color/transparent</item>
+		<item name="android:dividerHeight">@dimen/card_list_padding</item>
+		<item name="android:paddingLeft">@dimen/card_list_padding</item>
+		<item name="android:paddingRight">@dimen/card_list_padding</item>
 	</style>
 
 </resources>
