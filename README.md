@@ -4,43 +4,30 @@
 This app retrieves, caches, and displays data from a configurable RSS feed and Google Calendar.
 
 ## Slightly More Detail
-This repo is intended more as a library than an app, providing several modules to allow easy
-setting up of an app for a festival-type event, by providing out-of-the-box functionality for common/generic features.
-In this case, the features are displaying news articles (pulled from an RSS feed), and displaying scheduled events (pulled from a Google Calendar API).
+This repo is intended as a testbed for me to play with new stuff. Originally it was meant to function 
+more as a library than an app, providing several modules to allow easy setting up of an app for a 
+festival-type event, by providing out-of-the-box functionality for common/generic features.
+In this case, the features are displaying news articles (pulled from an RSS feed), and displaying 
+scheduled events (pulled from a Google Calendar API).
+Now I'm more interested in using it to try out some of the Android technology I don't get to use 
+at work. 
 
 ## Brief History
 In early 2014 I wrote an app for a festival (the European Juggling Convention, or EJC) which was being run that year by some friends of mine.
 The app was very simple (not much more than RSS feed and Google Calendar events), but it was made in a rush and wasn't very good.
  I had always intended to go back and rewrite it from scratch, in a generic way, allowing for as much of it as possible to re-use.
- This app is the product of me finally getting around to doing that.
+ This app is the product of me finally getting around to doing that. And then several subsequent 
+ refactors.
 
 ## Architecture
-
-### Multiple Sub-Modules
-The modules are:
-
-1. Data model layer
-
-Holds dumb, no-logic POJO data model classes. There are classes to represent the network responses, and also the more useful `Event` and `Article` classes.
-
-2. API layer
-
-Handles connection to the RSS feed and Google Calendar. Uses Volley for the latter.
-
-3. Presenter layer
-
-This is where the real engine of the app is. The presenter layer provides the app/UI layer with the content to show.
-It sits between the API layer and the UI layer, and has built-in storage for news `Article`s and `Event`s, using Jake Wharton's `DiskLruCache` library.
-When the UI layer requests content from the `ContentPresenter`, the `ContentPresenter` checks in storage for content, and also requests the data from the network.
-If content is found in storage, this is presented to the UI layer. When the network response is received, this is presented to the UI layer.
-As the presenter layer is totally unaware of the App layer, delivery is achieved using the GreenRobot `EventBus` library.
-
-4. App layer
-
-The app layer is the actual app, not a library. It is made of core Android classes - Activities, Fragments, and Views, as well as XML layouts, values, etc.
-There are no non-Android classes in the app layer, and no logic that is not directly tied to the UI.
-The app initialises the Presenter layer, and requests content. All handling of storage, network calls, etc, is left up to the presenter.
-Responses from the presenter layer are received via `EventBus` events.
+My first refactor of this was an attempt to use a sort of MVP-by-module, with separate modules
+for the Model, View, and Presenter. It wasn't real MVP by-the-book, though I'm not sure that 
+actually exists. I have subsequently found that, at scale, that approach doesn't work very well. 
+Changes cross modules quite frequently, as code for any given feature can easily span all modules.
+I've since gone back to more of an MVP-by-feature sort of approach, wherein the MVP pattern exists 
+within a package. As I write this, I'm planning more massive refactoring, including the use of 
+Dagger and RxJava, so there's probably not too much point writing more about the current state of 
+affairs. Maybe I should sum it up with "in flux". 
 
 ### Build Flavours
 The build flavours are set up to allow flavours to configure:
@@ -55,13 +42,10 @@ It uses a real RSS feed and Google Calendar data.
 Wiremock is intended to use the wiremock server included in this repo.
 
 ## Testing :(
-Following the recent release of Android Studio 1.2, we now have full unit test support in the IDE.
-However, after several hours work I was still unable to get my tests to run successfully, which is hugely disappointing.
-They run, but don't appear to be able to access any of the main source code.
-This is a pity, because one of the main reasons for, and benefits of, this module architecture is that it separates UI logic
-from "business" logic, which is the stuff that is really key to test.
-I have found Espresso to be the best of a bad lot in terms of UI testing, but ultimately too flaky and unreliable to be worth
-the investment of time required, at least in short term.
+TODO - get unit tests working.
+
+TODO - add Espresso tests.
+
 
 ## Wiremock Server
 This is the simplest possible mock server - one response for each of the two endpoints, no variation.
@@ -81,17 +65,26 @@ I used www.materialpalette.com to generate a colour scheme.
 This library has plenty of room for additional development, in terms of both more features, and improving what's already here.
  Some areas that spring to mind are:
 
- 1. Get unit tests working.
+ 0. "Proper" MVP!
+ 
+ 1. Dagger
+ 
+ 2. RxJava
+ 
+ 3. SyncAdapter
+ 
+ 4. Android JodaTime (as per Dan Lew) instead of regular JodaTime
 
- 2. Extract News and Schedule Fragments from App layer - meaning an app consuming the library would not be forced to take the whole HomeActivity + Nav Drawer + Fragments structure, and could arrange them as desired.
+ 5. Get unit tests working.
 
- 3. Better handling of the "before any content has been delivered" scenario - though this is more of a job for the consuming app rather than the library.
+ 6. Better handling of the "before any content has been delivered" scenario - though this is more of a job for the consuming app rather than the library.
 
- 4. Better handling of the updating of content. At the moment it's a rather "nuclear" kind of approach.
+ 7. Better handling of the updating of content. At the moment it's a rather "nuclear" kind of approach.
 
- 5. Custom landscape layout on schedule view. Cards stretching to the width of the screen don't look great, a grid might be better.
+ 8. Custom landscape layout on schedule view. Cards stretching to the width of the screen don't look great, a grid might be better.
 
- 6. Add "Add to My Calendar" functionality, to either remind users of imminent events they've subscribed to, or add them into the user's own calendar.
+ 9. Add "Add to My Calendar" functionality, to either remind users of imminent events they've subscribed to, or add them into the user's own calendar.
 
- 7. Add Twitter feed functionality.
+ 10. Add Twitter feed functionality.
+ 
 
