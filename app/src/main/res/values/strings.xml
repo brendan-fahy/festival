@@ -4,5 +4,5 @@
 	<string name="nav_drawer_schedule">Schedule</string>
 	<string name="nav_drawer_news">News</string>
 	<string name="default_text">Loading latest news</string>
-	<string name="offline_error">No internet connection and no cached data! Please try again when you have an internet connection.</string>
+	<string name="offline_no_data_error">No internet connection and no cached data! Please try again when you have an internet connection.</string>
 </resources>

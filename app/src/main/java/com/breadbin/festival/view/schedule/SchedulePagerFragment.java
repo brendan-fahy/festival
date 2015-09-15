@@ -17,7 +17,6 @@ import android.widget.ListView;
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.model.events.Event;
 import com.breadbin.festival.model.events.Schedule;
-import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
 import com.breadbin.festival.view.NavigationDrawerActivity;
 import com.breadbin.festival.view.views.EventCard;
 
@@ -25,8 +24,6 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 import java.util.List;
-
-import de.greenrobot.event.EventBus;
 
 public class SchedulePagerFragment extends Fragment {
 
@@ -88,28 +85,13 @@ public class SchedulePagerFragment extends Fragment {
 		((NavigationDrawerActivity) getActivity()).setSupportActionBar(toolbar);
 	}
 
-	public void onEvent(ScheduleUpdatedEvent event) {
-		schedule = event.getSchedule();
-		scheduleDaysPagerAdapter.notifyDataSetChanged();
-		setupTabLayout();
-	}
-
 	@Override
 	public void onStart() {
 		super.onStart();
 
 		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
-		EventBus.getDefault().register(this);
-
 		setupAdapter();
-	}
-
-	@Override
-	public void onStop() {
-		super.onStop();
-
-		EventBus.getDefault().unregister(this);
 	}
 
 	private void setupAdapter() {

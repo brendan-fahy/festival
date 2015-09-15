@@ -15,14 +15,11 @@ import android.widget.ListView;
 
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.model.news.Article;
-import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
 import com.breadbin.festival.view.NavigationDrawerActivity;
 import com.breadbin.festival.view.views.ArticleCard;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import de.greenrobot.event.EventBus;
 
 public class NewsFragment extends Fragment {
 
@@ -72,11 +69,6 @@ public class NewsFragment extends Fragment {
 		});
 	}
 
-	public void onEvent(ArticlesListRetrievedEvent event) {
-		articlesList = event.getArticleList();
-		articlesAdapter.notifyDataSetChanged();
-	}
-
 	private BaseAdapter articlesAdapter = new BaseAdapter() {
 		@Override
 		public int getCount() {
@@ -103,18 +95,4 @@ public class NewsFragment extends Fragment {
 			return articleCard;
 		}
 	};
-
-	@Override
-	public void onStart() {
-		super.onStart();
-
-		EventBus.getDefault().register(this);
-	}
-
-	@Override
-	public void onStop() {
-		super.onStop();
-
-		EventBus.getDefault().unregister(this);
-	}
 }

@@ -2,18 +2,20 @@ package com.breadbin.festival.presenter.calendar;
 
 import android.content.Context;
 
-import com.breadbin.festival.api.Callback;
 import com.breadbin.festival.api.ContentRestClient;
-import com.breadbin.festival.model.error.ErrorResponse;
+import com.breadbin.festival.api.NoDataException;
+import com.breadbin.festival.api.googlecalendar.CalendarConverter;
 import com.breadbin.festival.model.events.Event;
+import com.breadbin.festival.model.googlecalendarapi.CalendarResponse;
 import com.breadbin.festival.presenter.Presenter;
-import com.breadbin.festival.presenter.busevents.ScheduleRetrievedEvent;
-import com.breadbin.festival.presenter.busevents.ScheduleUpdatedEvent;
 import com.breadbin.festival.presenter.storage.EventsStorage;
 
 import java.util.List;
 
-import de.greenrobot.event.EventBus;
+import rx.Observable;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class CalendarPresenter extends Presenter<List<Event>> {
 
@@ -21,53 +23,45 @@ public class CalendarPresenter extends Presenter<List<Event>> {
 		super(context, restClient);
 	}
 
-	@Override
-	public void getFromStorage() {
-		List<Event> eventList = EventsStorage.getInstance(context).readEvents();
-		if (eventList != null && !eventList.isEmpty()) {
-			postDeliveredEvent(eventList);
-		}
-	}
+  @Override
+  public Observable<List<Event>> getObservable() {
+    return Observable
+        .create(new Observable.OnSubscribe<List<Event>>() {
+          @Override
+          public void call(final Subscriber<? super List<Event>> subscriber) {
+            final EventsStorage storage = EventsStorage.getInstance(context);
 
-	@Override
-	protected void requestFromNetwork() {
-		restClient.getCalendarEvents(calendarCallback);
-	}
+            List<Event> eventList = storage.readEvents();
+            if (eventList != null && !eventList.isEmpty()) {
+              subscriber.onNext(eventList);
+            } else if (!isConnectedOrConnecting()) {
+              subscriber.onError(new NoDataException());
+            }
 
-	private Callback calendarCallback = new Callback<List<Event>>() {
-		@Override
-		public void onSuccess(List<Event> eventList) {
-			handleSuccessResponse(eventList);
-		}
+            restClient.getCalendarEvents().subscribe(new Subscriber<CalendarResponse>() {
+              @Override
+              public void onCompleted() {
 
-		@Override
-		public void onFailure(ErrorResponse errorResponse) {
-			// TODO
-		}
+              }
 
-		@Override
-		public void onFinish() {
-			// TODO
-		}
-	};
+              @Override
+              public void onError(Throwable e) {
+                subscriber.onError(e);
+              }
 
-	@Override
-	public void postDeliveredEvent(List<Event> eventList) {
-		EventBus.getDefault().post(new ScheduleRetrievedEvent(ScheduleTransformer.getOrderedSchedule(eventList)));
-	}
-
-	@Override
-	public void postUpdatedEvent(List<Event> eventList) {
-		EventBus.getDefault().post(new ScheduleUpdatedEvent(ScheduleTransformer.getOrderedSchedule(eventList)));
-	}
-
-	public void handleSuccessResponse(List<Event> eventList) {
-		EventsStorage storage = EventsStorage.getInstance(context);
-		if (storage.readEvents() == null) {
-			postDeliveredEvent(eventList);
-		} else if (EventsListUtils.eventsHaveChanged(storage.readEvents(), eventList)) {
-			postUpdatedEvent(eventList);
-		}
-		storage.saveEvents(eventList);
-	}
+              @Override
+              public void onNext(CalendarResponse calendarResponse) {
+                List<Event> eventList = CalendarConverter.convertToEvents(calendarResponse.getData());
+                if (EventsListUtils.eventsHaveChanged(storage.readEvents(), eventList)) {
+                  storage.saveEvents(eventList);
+                  subscriber.onNext(eventList);
+                }
+              }
+            });
+            subscriber.onCompleted();
+          }
+        })
+        .subscribeOn(Schedulers.newThread())
+        .observeOn(AndroidSchedulers.mainThread());
+  }
 }

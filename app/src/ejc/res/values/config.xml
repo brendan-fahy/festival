@@ -3,7 +3,9 @@
 
 	<string name="app_name" >EJC Millstreet 2014</string>
 
-	<string name="googleCalendarEndpoint">http://www.google.com/calendar/feeds/volunteers@ejc2014.org/public/basic?alt=jsonc&amp;max-results=2000</string>
+	<string name="googleCalendarBaseUrl">http://www.google.com/calendar/feeds/</string>
+
+	<string name="googleCalendarEndpoint">volunteers@ejc2014.org/public/basic?alt=jsonc&amp;max-results=2000</string>
 
 	<string name="rssEndpoint">http://www.ejc2014.org/?option=com_content&amp;view=category&amp;layout=blog&amp;id=43&amp;format=fe%20ed&amp;type=rss&amp;utm_campaign=apps&amp;utm_medium=android&amp;utm_source=rss_feed</string>
 

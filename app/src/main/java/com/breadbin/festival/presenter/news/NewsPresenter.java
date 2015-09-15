@@ -2,66 +2,62 @@ package com.breadbin.festival.presenter.news;
 
 import android.content.Context;
 
-import com.breadbin.festival.api.Callback;
 import com.breadbin.festival.api.ContentRestClient;
-import com.breadbin.festival.model.error.ErrorResponse;
+import com.breadbin.festival.api.NoDataException;
 import com.breadbin.festival.model.news.Article;
 import com.breadbin.festival.presenter.Presenter;
-import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
 import com.breadbin.festival.presenter.storage.ArticlesStorage;
 
 import java.util.List;
 
-import de.greenrobot.event.EventBus;
+import rx.Observable;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class NewsPresenter extends Presenter<List<Article>> {
 
-	public NewsPresenter(Context context, ContentRestClient restClient) {
-		super(context, restClient);
-	}
+  public NewsPresenter(Context context, ContentRestClient restClient) {
+    super(context, restClient);
+  }
 
-	@Override
-	public void getFromStorage() {
-		List<Article> articleList = ArticlesStorage.getInstance(context).readArticles();
-		if (articleList != null && !articleList.isEmpty()) {
-			postDeliveredEvent(articleList);
-		}
-	}
+  @Override
+  public Observable<List<Article>> getObservable() {
+    return Observable
+        .create(new Observable.OnSubscribe<List<Article>>() {
+          @Override
+          public void call(final Subscriber<? super List<Article>> subscriber) {
+            final ArticlesStorage storage = ArticlesStorage.getInstance(context);
+            final List<Article> articleList = storage.readArticles();
+            if (articleList != null && !articleList.isEmpty()) {
+              subscriber.onNext(articleList);
+            } else if (!isConnectedOrConnecting()) {
+              subscriber.onError(new NoDataException());
+            }
 
-	@Override
-	protected void requestFromNetwork() {
-		restClient.getNewsArticles(articlesCallback);
-	}
+            restClient.getNewsArticles().subscribe(new Subscriber<List<Article>>() {
+              @Override
+              public void onCompleted() {
 
-	private Callback articlesCallback = new Callback<List<Article>>() {
-		@Override
-		public void onSuccess(List<Article> articleList) {
-			handleSuccessResponse(articleList);
-		}
+              }
 
-		@Override
-		public void onFailure(ErrorResponse errorResponse) {
-			// TODO
-		}
+              @Override
+              public void onError(Throwable e) {
+                subscriber.onError(e);
+              }
 
-		@Override
-		public void onFinish() {
-			// TODO
-		}
-	};
-
-	@Override
-	public void postDeliveredEvent(List<Article> articleList) {
-		EventBus.getDefault().post(new ArticlesListRetrievedEvent(articleList));
-	}
-
-	@Override
-	public void postUpdatedEvent(List<Article> articleList) {
-		// Not used.
-	}
-
-	private void handleSuccessResponse(List<Article> retrievedArticles) {
-		ArticlesStorage.getInstance(context).saveArticles(retrievedArticles);
-		postDeliveredEvent(retrievedArticles);
-	}
+              @Override
+              public void onNext(List<Article> articles) {
+                if (articles != null && !articles.isEmpty()) {
+                  storage.saveArticles(articles);
+                  subscriber.onNext(articles);
+                }
+              }
+            });
+            subscriber.onCompleted();
+          }
+        })
+        .subscribeOn(Schedulers.newThread())
+        .observeOn(AndroidSchedulers.mainThread());
+  }
 }

@@ -10,20 +10,23 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.breadbin.festival.api.ContentRestClient;
+import com.breadbin.festival.api.NoDataException;
 import com.breadbin.festival.app.R;
+import com.breadbin.festival.model.events.Schedule;
+import com.breadbin.festival.model.news.Article;
 import com.breadbin.festival.presenter.ContentPresenter;
-import com.breadbin.festival.presenter.busevents.ArticlesListRetrievedEvent;
-import com.breadbin.festival.presenter.busevents.OfflineEvent;
-import com.breadbin.festival.presenter.busevents.ScheduleRetrievedEvent;
 import com.breadbin.festival.view.news.NewsFragment;
 import com.breadbin.festival.view.schedule.SchedulePagerFragment;
 
-import de.greenrobot.event.EventBus;
+import java.util.List;
+
+import rx.functions.Action1;
 
 public abstract class NavigationDrawerActivity extends AppCompatActivity {
 
@@ -65,8 +68,6 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity {
 	protected void onStart() {
 		super.onStart();
 
-		EventBus.getDefault().register(this);
-
 		if (currentFragment == null) {
 			fetchNewsArticles();
 		} else {
@@ -74,53 +75,56 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity {
 		}
 	}
 
-	@Override
-	protected void onStop() {
-		super.onStop();
-
-		EventBus.getDefault().unregister(this);
-	}
-
 	private void setupNavigationDrawer() {
 		navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-			@Override
-			public boolean onNavigationItemSelected(MenuItem menuItem) {
-				if (R.id.nav_drawer_news == menuItem.getItemId()) {
-					fetchNewsArticles();
-				} else if (R.id.nav_drawer_schedule == menuItem.getItemId()) {
-					fetchCalendarEvents();
-				}
-				menuItem.setChecked(true);
-				drawerLayout.closeDrawer(navigationView);
-				return true;
-			}
-		});
+      @Override
+      public boolean onNavigationItemSelected(MenuItem menuItem) {
+        if (R.id.nav_drawer_news == menuItem.getItemId()) {
+          fetchNewsArticles();
+        } else if (R.id.nav_drawer_schedule == menuItem.getItemId()) {
+          fetchCalendarEvents();
+        }
+        menuItem.setChecked(true);
+        drawerLayout.closeDrawer(navigationView);
+        return true;
+      }
+    });
 	}
 
-	private void fetchNewsArticles() {
-		ContentPresenter.getInstance(this, getRestClientConfig()).fetchNewsArticlesList();
-	}
+  private void fetchNewsArticles() {
+    ContentPresenter.getInstance(this, getRestClientConfig()).fetchNewsArticlesList()
+        .subscribe(new Action1<List<Article>>() {
+          @Override
+          public void call(List<Article> articles) {
+            currentFragment = NewsFragment.newInstance(articles);
+            updateCurrentFragment();
+          }
+        }, onErrorAction);
+  }
 
-	private void fetchCalendarEvents() {
-		ContentPresenter.getInstance(this, getRestClientConfig()).fetchEventsList();
-	}
+  private Action1<Throwable> onErrorAction = new Action1<Throwable>() {
+    @Override
+    public void call(Throwable e) {
+      if (e instanceof NoDataException) {
+        TextView defaultText = ((TextView) findViewById(R.id.default_text));
+        if (defaultText != null) {
+          defaultText.setText(R.string.offline_no_data_error);
+        }
+        Log.d("NavDrawerActivity", "Observable onError, " + e.getMessage());
+      }
+    }
+  };
 
-	public void onEvent(ArticlesListRetrievedEvent event) {
-		currentFragment = NewsFragment.newInstance(event.getArticleList());
-		updateCurrentFragment();
-	}
-
-	public void onEvent(ScheduleRetrievedEvent event) {
-		currentFragment = SchedulePagerFragment.newInstance(event.getSchedule());
-		updateCurrentFragment();
-	}
-
-	public void onEvent(OfflineEvent event) {
-		TextView defaultText = ((TextView) findViewById(R.id.default_text));
-		if (defaultText != null) {
-			defaultText.setText(R.string.offline_error);
-		}
-	}
+  private void fetchCalendarEvents() {
+    ContentPresenter.getInstance(this, getRestClientConfig()).fetchEventsList()
+        .subscribe(new Action1<Schedule>() {
+          @Override
+          public void call(Schedule schedule) {
+            currentFragment = SchedulePagerFragment.newInstance(schedule);
+            updateCurrentFragment();
+          }
+        }, onErrorAction);
+  }
 
 	public void updateToolbarForNavDrawer(Toolbar toolbar, int titleStringId) {
 		setSupportActionBar(toolbar);

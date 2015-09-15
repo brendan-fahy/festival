@@ -1,3 +1,7 @@
+# Shrink the output APK by removing unused classes and methods
+# but don't obfuscate methods names so that we retain meaningful stack traces
+-dontobfuscate
+
 -keep class com.breadbin.festival.view.NavigationDrawerActivity {
   *;
 }

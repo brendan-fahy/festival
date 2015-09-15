@@ -69,7 +69,7 @@ This library has plenty of room for additional development, in terms of both mor
  
  1. Dagger
  
- 2. RxJava
+ 2. More/better RxJava.
  
  3. SyncAdapter
  

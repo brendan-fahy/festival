@@ -7,7 +7,12 @@ public class HomeActivity extends NavigationDrawerActivity {
 	@Override
 	public ContentRestClient.ContentRestClientConfig getRestClientConfig() {
 		return new ContentRestClient.ContentRestClientConfig() {
-			@Override
+      @Override
+      public String getCalendarBaseUrl() {
+        return getString(R.string.googleCalendarBaseUrl);
+      }
+
+      @Override
 			public String getCalendarEndpoint() {
 				return getString(R.string.googleCalendarEndpoint);
 			}
