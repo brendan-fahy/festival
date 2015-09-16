@@ -1,3 +1,0 @@
--dontwarn com.breadbin.festival.api.GsonRequest
--dontwarn com.breadbin.festival.api.GoogleCalendarConnector
-

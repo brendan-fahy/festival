@@ -2,10 +2,10 @@
 # but don't obfuscate methods names so that we retain meaningful stack traces
 -dontobfuscate
 
--keep class com.breadbin.festival.view.NavigationDrawerActivity {
+-keep class com.breadbin.festival.NavigationDrawerActivity {
   *;
 }
--keep class com.breadbin.festival.app.HomeActivity {
+-keep class com.breadbin.festival.HomeActivity {
  *;
 }
 
@@ -20,6 +20,6 @@
     public protected <methods>;
 }
 
--keep class com.breadbin.festival.api.googlecalendar.**.** {
+-keep class com.breadbin.festival.common.api.googlecalendar.**.** {
   *;
 }

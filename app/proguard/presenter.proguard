@@ -1,6 +1,3 @@
--keep class com.breadbin.festival.presenter.busevents.** {
-	*;
-}
--keep class com.breadbin.festival.presenter.ContentPresenter {
+-keep class com.breadbin.festival.common.ContentPresenter {
 	*;
 }

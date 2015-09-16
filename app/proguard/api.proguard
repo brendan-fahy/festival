@@ -7,22 +7,19 @@
 }
 
 # Keep API classes
--keep class com.breadbin.festival.api.**.** {
+-keep class com.breadbin.festival.common.api.**.** {
   *;
 }
 
 -keepattributes InnerClasses
--keep class com.breadbin.festival.api.ContentRestClient$* {
+-keep class com.breadbin.festival.common.api.ContentRestClient$* {
 	*;
 }
--keep class com.breadbin.festival.api.DefaultContentRestClient {
-  *;
-}
--keep class com.breadbin.festival.api.Callback {
+-keep class com.breadbin.festival.common.api.DefaultContentRestClient {
   *;
 }
 
--dontwarn com.breadbin.festival.api.GsonRequest
--dontwarn com.breadbin.festival.api.GoogleCalendarConnector
+-dontwarn com.breadbin.festival.common.api.GsonRequest
+-dontwarn com.breadbin.festival.common.api.GoogleCalendarConnector
 
 
