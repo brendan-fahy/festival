@@ -78,5 +78,5 @@ dependencies {
     compile 'com.squareup.retrofit:converter-gson:2.0.0-beta1'
 
     // JodaTime
-    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.3.0'
+    compile 'net.danlew:android.joda:2.8.2'
 }
