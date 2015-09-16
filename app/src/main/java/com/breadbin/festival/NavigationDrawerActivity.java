@@ -26,6 +26,8 @@ import com.breadbin.festival.schedule.model.Schedule;
 
 import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 import rx.functions.Action1;
 
 public abstract class NavigationDrawerActivity extends AppCompatActivity {
@@ -33,8 +35,11 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity {
 	private static final String KEPT_FRAGMENT_KEY = "keptFragment";
 	private static final String PREF_USER_LEARNED_DRAWER = "PREF_USER_LEARNED_DRAWER";
 
-	private DrawerLayout drawerLayout;
-	private NavigationView navigationView;
+  @InjectView(R.id.drawer_layout)
+	DrawerLayout drawerLayout;
+  @InjectView(R.id.navigation_drawer)
+	NavigationView navigationView;
+
 	private boolean userLearnedDrawer;
 
 	private Fragment currentFragment;
@@ -46,8 +51,7 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
-		drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-		navigationView = (NavigationView) findViewById(R.id.navigation_drawer);
+    ButterKnife.inject(this);
 
 		setupNavigationDrawer();
 

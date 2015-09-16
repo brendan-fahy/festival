@@ -20,13 +20,17 @@ import com.breadbin.festival.news.model.Article;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 public class NewsFragment extends Fragment {
 
 	private static final String ARTICLES_ARG = "articles_arg";
 
-	private Toolbar toolbar;
-
-	private ListView listView;
+  @InjectView(R.id.toolbar)
+	Toolbar toolbar;
+  @InjectView(R.id.listView)
+	ListView listView;
 
 	private List<Article> articlesList = new ArrayList<>();
 
@@ -44,8 +48,7 @@ public class NewsFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_news, container, false);
-		toolbar = (Toolbar) viewGroup.findViewById(R.id.toolbar);
-		listView = (ListView) viewGroup.findViewById(R.id.listView);
+    ButterKnife.inject(this, viewGroup);
 
 		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 

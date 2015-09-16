@@ -24,13 +24,20 @@ import org.joda.time.format.DateTimeFormatter;
 
 import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 public class SchedulePagerFragment extends Fragment {
 
 	private static final String EVENTS_ARG = "schedule";
 
-	private ViewPager viewPager;
-	private Toolbar toolbar;
-	private TabLayout tabLayout;
+  @InjectView(R.id.viewPager)
+	ViewPager viewPager;
+  @InjectView(R.id.toolbar)
+	Toolbar toolbar;
+  @InjectView(R.id.tabLayout)
+	TabLayout tabLayout;
+
 	private PagerAdapter scheduleDaysPagerAdapter;
 
 	private Schedule schedule;
@@ -50,7 +57,8 @@ public class SchedulePagerFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_schedule_pager, container, false);
 
-		setupViews(viewGroup);
+    ButterKnife.inject(this, viewGroup);
+
 		setupSchedule();
 		setupAdapter();
 		setupViewPager();
@@ -58,12 +66,6 @@ public class SchedulePagerFragment extends Fragment {
 		setupTitle();
 
 		return viewGroup;
-	}
-
-	private void setupViews(ViewGroup viewGroup) {
-		viewPager = (ViewPager) viewGroup.findViewById(R.id.viewPager);
-		toolbar = (Toolbar) viewGroup.findViewById(R.id.toolbar);
-		tabLayout = (TabLayout) viewGroup.findViewById(R.id.tabLayout);
 	}
 
 	private void setupSchedule() {
