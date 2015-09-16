@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.breadbin.festival.app.R;
-import com.breadbin.festival.common.ContentPresenter;
+import com.breadbin.festival.common.ContentModel;
 import com.breadbin.festival.common.api.ContentRestClient;
 import com.breadbin.festival.common.api.NoDataException;
 import com.breadbin.festival.news.NewsFragment;
@@ -96,7 +96,7 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity {
 	}
 
   private void fetchNewsArticles() {
-    ContentPresenter.getInstance(this, getRestClientConfig()).fetchNewsArticlesList()
+    ContentModel.getInstance(this, getRestClientConfig()).fetchNewsArticlesList()
         .subscribe(new Action1<List<Article>>() {
           @Override
           public void call(List<Article> articles) {
@@ -120,7 +120,7 @@ public abstract class NavigationDrawerActivity extends AppCompatActivity {
   };
 
   private void fetchCalendarEvents() {
-    ContentPresenter.getInstance(this, getRestClientConfig()).fetchEventsList()
+    ContentModel.getInstance(this, getRestClientConfig()).fetchEventsList()
         .subscribe(new Action1<Schedule>() {
           @Override
           public void call(Schedule schedule) {

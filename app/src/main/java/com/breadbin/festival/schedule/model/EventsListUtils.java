@@ -1,8 +1,6 @@
-package com.breadbin.festival.schedule.presenter;
+package com.breadbin.festival.schedule.model;
 
 import android.util.Log;
-
-import com.breadbin.festival.schedule.model.Event;
 
 import java.util.List;
 

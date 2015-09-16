@@ -23,7 +23,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class NewsFragment extends Fragment {
+public class NewsFragment extends Fragment implements NewsWidget {
 
 	private static final String ARTICLES_ARG = "articles_arg";
 
@@ -31,8 +31,6 @@ public class NewsFragment extends Fragment {
 	Toolbar toolbar;
   @InjectView(R.id.listView)
 	ListView listView;
-
-	private List<Article> articlesList = new ArrayList<>();
 
 	public static NewsFragment newInstance(List<Article> articles) {
 		Bundle bundle = new Bundle();
@@ -52,49 +50,32 @@ public class NewsFragment extends Fragment {
 
 		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
-		articlesList = (List<Article>) getArguments().getSerializable(ARTICLES_ARG);
-		articlesAdapter.notifyDataSetChanged();
-		listView.setAdapter(articlesAdapter);
-		setupItemClickListener();
+    NewsPresenter presenter = new NewsPresenter(this);
+    presenter.onStart((List<Article>) getArguments().getSerializable(ARTICLES_ARG));
 
 		return viewGroup;
 	}
 
-	private void setupItemClickListener() {
+  @Override
+  public void setupTitle() {
+    ((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
+  }
+
+  @Override
+  public void setAdapter(BaseAdapter adapter) {
+    listView.setAdapter(adapter);
+  }
+
+  @Override
+	public void setItemClickListener(final List<Article> articles) {
 		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse(articlesList.get(position).getLink()));
+				intent.setData(Uri.parse(articles.get(position).getLink()));
 				startActivity(intent);
 			}
 		});
 	}
 
-	private BaseAdapter articlesAdapter = new BaseAdapter() {
-		@Override
-		public int getCount() {
-			return articlesList.size();
-		}
-
-		@Override
-		public Object getItem(int position) {
-			return articlesList.get(position);
-		}
-
-		@Override
-		public long getItemId(int position) {
-			return position;
-		}
-
-		@Override
-		public View getView(int position, View convertView, ViewGroup parent) {
-			if (convertView == null) {
-				convertView = ArticleCard.build(getActivity());
-			}
-			ArticleCard articleCard = (ArticleCard) convertView;
-			articleCard.bindTo(articlesList.get(position));
-			return articleCard;
-		}
-	};
 }

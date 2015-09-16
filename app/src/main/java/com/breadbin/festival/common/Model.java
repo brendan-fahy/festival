@@ -8,13 +8,13 @@ import com.breadbin.festival.common.api.ContentRestClient;
 
 import rx.Observable;
 
-public abstract class Presenter<T> {
+public abstract class Model<T> {
 
 	protected Context context;
 
 	protected ContentRestClient restClient;
 
-	public Presenter(Context context, ContentRestClient restClient) {
+	public Model(Context context, ContentRestClient restClient) {
 		this.context = context;
 		this.restClient = restClient;
 	}

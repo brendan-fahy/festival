@@ -1,12 +1,10 @@
-package com.breadbin.festival.news.presenter;
+package com.breadbin.festival.news.model;
 
 import android.content.Context;
 
-import com.breadbin.festival.common.Presenter;
+import com.breadbin.festival.common.Model;
 import com.breadbin.festival.common.api.ContentRestClient;
 import com.breadbin.festival.common.api.NoDataException;
-import com.breadbin.festival.news.model.Article;
-import com.breadbin.festival.news.model.ArticlesStorage;
 
 import java.util.List;
 
@@ -15,9 +13,9 @@ import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class NewsPresenter extends Presenter<List<Article>> {
+public class NewsModel extends Model<List<Article>> {
 
-  public NewsPresenter(Context context, ContentRestClient restClient) {
+  public NewsModel(Context context, ContentRestClient restClient) {
     super(context, restClient);
   }
 

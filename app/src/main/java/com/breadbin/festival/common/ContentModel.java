@@ -5,11 +5,11 @@ import android.content.Context;
 import com.breadbin.festival.common.api.ContentRestClient;
 import com.breadbin.festival.common.api.DefaultContentRestClient;
 import com.breadbin.festival.news.model.Article;
-import com.breadbin.festival.news.presenter.NewsPresenter;
+import com.breadbin.festival.news.model.NewsModel;
+import com.breadbin.festival.schedule.model.CalendarModel;
 import com.breadbin.festival.schedule.model.Event;
 import com.breadbin.festival.schedule.model.Schedule;
-import com.breadbin.festival.schedule.presenter.CalendarPresenter;
-import com.breadbin.festival.schedule.presenter.ScheduleTransformer;
+import com.breadbin.festival.schedule.model.ScheduleTransformer;
 
 import java.util.List;
 
@@ -18,31 +18,31 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-public class ContentPresenter {
+public class ContentModel {
 
-	private static ContentPresenter instance;
+	private static ContentModel instance;
 
-	private Presenter<List<Event>> calendarPresenter;
+	private Model<List<Event>> calendarModel;
 
-	private Presenter<List<Article>> newsPresenter;
+	private Model<List<Article>> newsModel;
 
 	// Singleton accessor method
-	public static ContentPresenter getInstance(Context context, ContentRestClient.ContentRestClientConfig clientConfig) {
+	public static ContentModel getInstance(Context context, ContentRestClient.ContentRestClientConfig clientConfig) {
 		if (instance == null) {
-			instance = new ContentPresenter(context, clientConfig);
+			instance = new ContentModel(context, clientConfig);
 		}
 		return instance;
 	}
 
 	// Private constructor
-	private ContentPresenter(Context context, ContentRestClient.ContentRestClientConfig clientConfig) {
+	private ContentModel(Context context, ContentRestClient.ContentRestClientConfig clientConfig) {
 		ContentRestClient restClient = new DefaultContentRestClient(clientConfig);
-		this.calendarPresenter = new CalendarPresenter(context, restClient);
-		this.newsPresenter = new NewsPresenter(context, restClient);
+		this.calendarModel = new CalendarModel(context, restClient);
+		this.newsModel = new NewsModel(context, restClient);
 	}
 
   public Observable<Schedule> fetchEventsList() {
-    return calendarPresenter.getObservable()
+    return calendarModel.getObservable()
         .map(new Func1<List<Event>, Schedule>() {
           @Override
           public Schedule call(List<Event> events) {
@@ -54,7 +54,7 @@ public class ContentPresenter {
   }
 
 	public Observable<List<Article>> fetchNewsArticlesList() {
-    return newsPresenter.getObservable();
+    return newsModel.getObservable();
 	}
 
 }

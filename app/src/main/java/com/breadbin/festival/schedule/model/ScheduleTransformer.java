@@ -1,8 +1,4 @@
-package com.breadbin.festival.schedule.presenter;
-
-import com.breadbin.festival.schedule.model.Event;
-import com.breadbin.festival.schedule.model.Schedule;
-import com.breadbin.festival.schedule.model.ScheduleDay;
+package com.breadbin.festival.schedule.model;
 
 import java.util.ArrayList;
 import java.util.Collections;

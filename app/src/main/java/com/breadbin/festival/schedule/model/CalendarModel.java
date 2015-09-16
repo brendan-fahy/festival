@@ -1,12 +1,10 @@
-package com.breadbin.festival.schedule.presenter;
+package com.breadbin.festival.schedule.model;
 
 import android.content.Context;
 
-import com.breadbin.festival.common.Presenter;
+import com.breadbin.festival.common.Model;
 import com.breadbin.festival.common.api.ContentRestClient;
 import com.breadbin.festival.common.api.NoDataException;
-import com.breadbin.festival.schedule.model.Event;
-import com.breadbin.festival.schedule.model.EventsStorage;
 import com.breadbin.festival.schedule.model.api.CalendarConverter;
 import com.breadbin.festival.schedule.model.api.CalendarResponse;
 
@@ -15,9 +13,9 @@ import java.util.List;
 import rx.Observable;
 import rx.Subscriber;
 
-public class CalendarPresenter extends Presenter<List<Event>> {
+public class CalendarModel extends Model<List<Event>> {
 
-	public CalendarPresenter(Context context, ContentRestClient restClient) {
+	public CalendarModel(Context context, ContentRestClient restClient) {
 		super(context, restClient);
 	}
 
