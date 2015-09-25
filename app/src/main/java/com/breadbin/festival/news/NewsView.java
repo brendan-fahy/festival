@@ -7,7 +7,7 @@ import com.breadbin.festival.news.model.Article;
 
 import java.util.List;
 
-public interface NewsWidget {
+public interface NewsView {
 
   Context getContext();
 

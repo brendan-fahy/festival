@@ -23,7 +23,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class NewsFragment extends Fragment implements NewsWidget {
+public class NewsFragment extends Fragment implements NewsView {
 
 	private static final String ARTICLES_ARG = "articles_arg";
 
@@ -50,7 +50,7 @@ public class NewsFragment extends Fragment implements NewsWidget {
 
 		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 
-    NewsPresenter presenter = new NewsPresenter(this);
+    NewsPresenter presenter = new NewsPresenterImpl(this);
     presenter.onStart((List<Article>) getArguments().getSerializable(ARTICLES_ARG));
 
 		return viewGroup;
