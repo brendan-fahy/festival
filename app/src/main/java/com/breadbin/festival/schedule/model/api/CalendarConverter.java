@@ -4,12 +4,12 @@ import android.text.Html;
 
 import com.breadbin.festival.schedule.model.Event;
 
-import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -60,28 +60,31 @@ public class CalendarConverter {
 	public static Event convertToEvent(CalendarItem item) {
     String itemDetails = item.getDetails();
 
-    Event event = new Event();
-    event.setTime(getDate(itemDetails));
-		event.setAllDayEvent(isAllDayEvent(itemDetails));
+    Event.Builder builder = new Event.Builder();
+    builder = builder.withTime(getDate(itemDetails));
+    builder = builder.withAllDayEvent(isAllDayEvent(itemDetails));
 		try {
-			event.setLocation(Html.fromHtml(URLDecoder.decode(getLocation(itemDetails), "UTF-8")).toString());
-			event.setTitle(Html.fromHtml(URLDecoder.decode(item.getTitle(), "UTF-8")).toString());
+			builder = builder.withLocation(Html.fromHtml(URLDecoder.decode(getLocation(itemDetails),
+          Charset.defaultCharset().name())).toString());
+			builder = builder.withTitle(Html.fromHtml(URLDecoder.decode(item.getTitle(),
+          Charset.defaultCharset().name())).toString());
 			if (hasDescription(item.getDetails())) {
-				event.setDescription(Html.fromHtml(getDescription(URLDecoder.decode(itemDetails, "UTF-8"))).toString());
+				builder = builder.withDescription(Html.fromHtml(getDescription(URLDecoder.decode(
+            itemDetails, Charset.defaultCharset().name()))).toString());
 			}
 		} catch (UnsupportedEncodingException e) {
 			// Broken VM doesn't support UTF-8
 		}
-    return event;
+    return builder.build();
   }
 
-  private static DateTime getDate(String itemDetails) {
+  private static long getDate(String itemDetails) {
 		if (isRecurringEvent(itemDetails)) {
-			return parseRecurringEventTimes(itemDetails);
+			return getRecurringEventTimeMillis(itemDetails);
 		} else if (isAllDayEvent(itemDetails)) {
-			return createDateTimeWithoutTime(itemDetails);
+			return getTimeMillisWithoutTimeOfDay(itemDetails);
 		} else {
-			return createDateTime(itemDetails);
+			return getTimeMillis(itemDetails);
 		}
   }
 
@@ -89,24 +92,24 @@ public class CalendarConverter {
 		return itemDetails.contains(RECURRING_EVENT);
 	}
 
-	private static DateTime parseRecurringEventTimes(String itemDetails) {
+	private static long getRecurringEventTimeMillis(String itemDetails) {
 		String rawDate = itemDetails.substring(indexAfter(itemDetails, RECURRING_FIRST_START), itemDetails.indexOf(" IST\n" +
 				"<br"));
-		return FIRST_START_FORMATTER.parseDateTime(rawDate);
+		return FIRST_START_FORMATTER.parseDateTime(rawDate).getMillis();
 	}
 
 	private static boolean isAllDayEvent(String dateLine) {
 		return (!dateLine.contains(TO));
 	}
 
-	private static DateTime createDateTimeWithoutTime(String dateLine) {
+	private static long getTimeMillisWithoutTimeOfDay(String dateLine) {
 		String rawDate = dateLine.substring(indexAfter(dateLine, WHEN), dateLine.indexOf("<br"));
-		return DATETIME_NO_TIME_FORMATTER.parseDateTime(rawDate);
+		return DATETIME_NO_TIME_FORMATTER.parseDateTime(rawDate).getMillis();
 	}
 
-	private static DateTime createDateTime(String itemDetails) {
+	private static long getTimeMillis(String itemDetails) {
 		String rawDate = itemDetails.substring(indexAfter(itemDetails, WHEN), itemDetails.indexOf(TO));
-		return DATETIME_FORMATTER.parseDateTime(rawDate);
+		return DATETIME_FORMATTER.parseDateTime(rawDate).getMillis();
 	}
 
 	private static String getLocation(String itemDetails) {

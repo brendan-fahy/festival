@@ -1,8 +1,6 @@
 package com.breadbin.festival.schedule.model.api;
 
-import java.io.Serializable;
-
-public class Creator implements Serializable {
+public class Creator {
 
   private String displayName;
 

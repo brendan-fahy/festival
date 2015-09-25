@@ -1,8 +1,6 @@
 package com.breadbin.festival.schedule.model.api;
 
-import java.io.Serializable;
-
-public class CalendarResponse implements Serializable {
+public class CalendarResponse {
 
   private String apiVersion;
 

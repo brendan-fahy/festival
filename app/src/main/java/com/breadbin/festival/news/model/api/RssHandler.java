@@ -22,7 +22,7 @@ public class RssHandler extends DefaultHandler {
   public static final String CATEGORY = "category";
   public static final String LINK = "link";
   public static final String ITEM = "item";
-  private Article currentArticle = new Article();
+  private Article.Builder builder = new Article.Builder();
   private List<Article> articleList = new ArrayList<>();
 
   private int articlesAdded = 0;
@@ -42,29 +42,29 @@ public class RssHandler extends DefaultHandler {
   public void endElement(String uri, String localName, String qName) throws SAXException {
 
     if (localName.equalsIgnoreCase(TITLE)){
-      currentArticle.setTitle(chars.toString());
+      builder = builder.withTitle(chars.toString());
     } else if (localName.equalsIgnoreCase(DESCRIPTION)){
-      currentArticle.setDescription(Normalizer
+      builder = builder.withDescription(Normalizer
           .normalize(Html.fromHtml(chars.toString()).toString(), Normalizer.Form.NFD)
           .replaceAll("[^\\p{ASCII}]", ""));
     } else if (localName.equalsIgnoreCase(PUB_DATE)){
-      currentArticle.setPubDate(chars.toString());
+      builder = builder.withPubDate(chars.toString());
     } else if (localName.equalsIgnoreCase(GUID)){
-      currentArticle.setGuid(chars.toString());
+      builder = builder.withGuid(chars.toString());
     } else if (localName.equalsIgnoreCase(AUTHOR)){
-      currentArticle.setAuthor(chars.toString());
+      builder = builder.withAuthor(chars.toString());
     } else if (localName.equalsIgnoreCase(CATEGORY)){
-      currentArticle.setCategory(chars.toString());
+      builder = builder.withCategory(chars.toString());
     } else if (localName.equalsIgnoreCase(LINK)) {
-      currentArticle.setLink(chars.toString());
+      builder = builder.withLink(chars.toString());
     }
 
     // Check if looking for article, and if article is complete
     if (localName.equalsIgnoreCase(ITEM)) {
 
-      articleList.add(currentArticle);
+      articleList.add(builder.build());
 
-      currentArticle = new Article();
+      builder = new Article.Builder();
 
       // Lets check if we've hit our limit on number of articleList
       articlesAdded++;

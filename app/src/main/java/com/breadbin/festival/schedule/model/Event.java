@@ -1,10 +1,11 @@
 package com.breadbin.festival.schedule.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import org.joda.time.DateTime;
 
-import java.io.Serializable;
-
-public class Event implements Comparable<Event>, Serializable {
+public class Event implements Comparable<Event>, Parcelable {
 
   private String title;
 
@@ -16,17 +17,27 @@ public class Event implements Comparable<Event>, Serializable {
 
   private String location;
 
-	private boolean allDayEvent;
+  private boolean allDayEvent;
 
-	public boolean isAllDayEvent() {
-		return allDayEvent;
-	}
+  private Event(String title, String description, String teacher, long time, String location,
+                boolean allDayEvent) {
+    this.title = title;
+    this.description = description;
+    this.teacher = teacher;
+    this.time = time;
+    this.location = location;
+    this.allDayEvent = allDayEvent;
+  }
 
-	public void setAllDayEvent(boolean allDayEvent) {
-		this.allDayEvent = allDayEvent;
-	}
+  public boolean isAllDayEvent() {
+    return allDayEvent;
+  }
 
-	public String getTitle() {
+  public void setAllDayEvent(boolean allDayEvent) {
+    this.allDayEvent = allDayEvent;
+  }
+
+  public String getTitle() {
     return title;
   }
 
@@ -66,10 +77,53 @@ public class Event implements Comparable<Event>, Serializable {
     this.location = location;
   }
 
-	@Override
-	public int compareTo(Event another) {
-		return (getTime().isBefore(another.getTime())) ? -1 : 1;
-	}
+  public static class Builder {
+    private String title;
+    private String description;
+    private String teacher;
+    private long time;
+    private String location;
+    private boolean allDayEvent;
+
+    public Builder withTitle(String title) {
+      this.title = title;
+      return this;
+    }
+
+    public Builder withDescription(String description) {
+      this.description = description;
+      return this;
+    }
+
+    public Builder withTeacher(String teacher) {
+      this.teacher = teacher;
+      return this;
+    }
+
+    public Builder withTime(long time) {
+      this.time = time;
+      return this;
+    }
+
+    public Builder withLocation(String location) {
+      this.location = location;
+      return this;
+    }
+
+    public Builder withAllDayEvent(boolean allDayEvent) {
+      this.allDayEvent = allDayEvent;
+      return this;
+    }
+
+    public Event build() {
+      return new Event(title, description, teacher, time, location, allDayEvent);
+    }
+  }
+
+  @Override
+  public int compareTo(Event another) {
+    return (getTime().isBefore(another.getTime())) ? -1 : 1;
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -110,4 +164,41 @@ public class Event implements Comparable<Event>, Serializable {
         ", allDayEvent=" + allDayEvent +
         '}';
   }
+
+  protected Event(Parcel in) {
+    title = in.readString();
+    description = in.readString();
+    teacher = in.readString();
+    time = in.readLong();
+    location = in.readString();
+    allDayEvent = in.readByte() != 0x00;
+  }
+
+  @Override
+  public int describeContents() {
+    return 0;
+  }
+
+  @Override
+  public void writeToParcel(Parcel dest, int flags) {
+    dest.writeString(title);
+    dest.writeString(description);
+    dest.writeString(teacher);
+    dest.writeLong(time);
+    dest.writeString(location);
+    dest.writeByte((byte) (allDayEvent ? 0x01 : 0x00));
+  }
+
+  @SuppressWarnings("unused")
+  public static final Parcelable.Creator<Event> CREATOR = new Parcelable.Creator<Event>() {
+    @Override
+    public Event createFromParcel(Parcel in) {
+      return new Event(in);
+    }
+
+    @Override
+    public Event[] newArray(int size) {
+      return new Event[size];
+    }
+  };
 }

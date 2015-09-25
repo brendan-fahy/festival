@@ -2,33 +2,41 @@ package com.breadbin.festival.schedule.model;
 
 import android.content.Context;
 
-import com.breadbin.festival.common.InternalStorageAdapter;
+import com.breadbin.festival.common.storage.CachedObject;
+import com.breadbin.festival.common.storage.ObjectCacher;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class EventsStorage extends InternalStorageAdapter<List<Event>> {
+public class EventsStorage {
 
 	public static final String EVENTS_STORAGE_NAME = "events_storage";
-	public static final String EVENTS_KEY = "events";
 
 	private static EventsStorage instance;
 
+  private ObjectCacher<List<Event>> eventsCacher;
+
 	public static EventsStorage getInstance(Context context) {
-		if (instance == null || instance.isClosed()) {
+		if (instance == null) {
 			instance = new EventsStorage(context);
 		}
 		return instance;
 	}
 
 	public EventsStorage(Context context) {
-		super(context, EVENTS_STORAGE_NAME);
+    eventsCacher = new ObjectCacher<>(context.getApplicationContext().getCacheDir(),
+        EVENTS_STORAGE_NAME);
 	}
 
 	public boolean saveEvents(List<Event> events) {
-		return super.save(EVENTS_KEY, events);
+    return eventsCacher.save(events);
 	}
 
 	public List<Event> readEvents() {
-		return super.find(EVENTS_KEY);
+    CachedObject<List<Event>> cachedEvents = eventsCacher.get(CachedEvents.class);
+    if (cachedEvents == null || cachedEvents.get() == null) {
+      return new ArrayList<>(0);
+    }
+		return cachedEvents.get();
 	}
 }

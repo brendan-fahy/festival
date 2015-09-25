@@ -1,9 +1,8 @@
 package com.breadbin.festival.schedule.model.api;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class CalendarData implements Serializable {
+public class CalendarData {
 
   private String kind;
 

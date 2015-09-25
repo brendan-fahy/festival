@@ -31,7 +31,7 @@ public class SchedulePagerFragment extends Fragment implements SchedulePagerView
 
 	public static SchedulePagerFragment newInstance(Schedule schedule) {
 		Bundle bundle = new Bundle();
-		bundle.putSerializable(EVENTS_ARG, schedule);
+		bundle.putParcelable(EVENTS_ARG, schedule);
 
 		SchedulePagerFragment fragment = new SchedulePagerFragment();
 		fragment.setArguments(bundle);
@@ -54,7 +54,7 @@ public class SchedulePagerFragment extends Fragment implements SchedulePagerView
     super.onStart();
 
     SchedulePagerPresenter presenter = new SchedulePagerPresenterImpl(
-        this, (Schedule) getArguments().getSerializable(EVENTS_ARG));
+        this, (Schedule) getArguments().getParcelable(EVENTS_ARG));
 
     presenter.onStart();
   }

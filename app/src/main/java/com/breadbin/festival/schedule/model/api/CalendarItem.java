@@ -2,9 +2,7 @@ package com.breadbin.festival.schedule.model.api;
 
 import org.joda.time.DateTime;
 
-import java.io.Serializable;
-
-public class CalendarItem implements Serializable {
+public class CalendarItem {
 
   private String kind;
 

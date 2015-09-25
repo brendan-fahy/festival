@@ -34,7 +34,7 @@ public class NewsFragment extends Fragment implements NewsView {
 
 	public static NewsFragment newInstance(List<Article> articles) {
 		Bundle bundle = new Bundle();
-		bundle.putSerializable(ARTICLES_ARG, new ArrayList<>(articles));
+		bundle.putParcelableArrayList(ARTICLES_ARG, new ArrayList<>(articles));
 
 		NewsFragment newsFragment = new NewsFragment();
 		newsFragment.setArguments(bundle);
@@ -49,7 +49,8 @@ public class NewsFragment extends Fragment implements NewsView {
     ButterKnife.inject(this, viewGroup);
 
     NewsPresenter presenter = new NewsPresenterImpl(this);
-    presenter.onStart((List<Article>) getArguments().getSerializable(ARTICLES_ARG));
+    ArrayList<Article> articles = getArguments().getParcelableArrayList(ARTICLES_ARG);
+    presenter.onStart(articles);
 
 		return viewGroup;
 	}
