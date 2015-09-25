@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.breadbin.festival.NavigationDrawerActivity;
+import com.breadbin.festival.HomescreenView;
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.schedule.model.Schedule;
 
@@ -73,9 +73,7 @@ public class SchedulePagerFragment extends Fragment implements SchedulePagerView
 
   @Override
 	public void setupTitle() {
-    NavigationDrawerActivity activity = ((NavigationDrawerActivity) getActivity());
-    activity.setSupportActionBar(toolbar);
-    activity.updateToolbarForNavDrawer(toolbar, R.string.app_name);
+    ((HomescreenView) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
 	}
 
 }

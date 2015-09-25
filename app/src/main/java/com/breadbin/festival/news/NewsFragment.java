@@ -13,7 +13,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.breadbin.festival.NavigationDrawerActivity;
+import com.breadbin.festival.AbsHomescreenActivity;
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.news.model.Article;
 
@@ -48,8 +48,6 @@ public class NewsFragment extends Fragment implements NewsView {
 		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_news, container, false);
     ButterKnife.inject(this, viewGroup);
 
-		((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
-
     NewsPresenter presenter = new NewsPresenterImpl(this);
     presenter.onStart((List<Article>) getArguments().getSerializable(ARTICLES_ARG));
 
@@ -58,7 +56,7 @@ public class NewsFragment extends Fragment implements NewsView {
 
   @Override
   public void setupTitle() {
-    ((NavigationDrawerActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
+    ((AbsHomescreenActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
   }
 
   @Override

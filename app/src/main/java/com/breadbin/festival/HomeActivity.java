@@ -3,7 +3,7 @@ package com.breadbin.festival;
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.common.api.ContentRestClient;
 
-public class HomeActivity extends NavigationDrawerActivity {
+public class HomeActivity extends AbsHomescreenActivity {
 	@Override
 	public ContentRestClient.ContentRestClientConfig getRestClientConfig() {
 		return new ContentRestClient.ContentRestClientConfig() {

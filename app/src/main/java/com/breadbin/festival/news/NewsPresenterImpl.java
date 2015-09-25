@@ -17,6 +17,7 @@ public class NewsPresenterImpl implements NewsPresenter {
   }
 
   public void onStart(final List<Article> articles) {
+    view.setupTitle();
     view.setAdapter(new ArticlesAdapter(articles));
     view.setItemClickListener(articles);
   }
