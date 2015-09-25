@@ -18,7 +18,7 @@ import com.breadbin.festival.schedule.model.Schedule;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class SchedulePagerFragment extends Fragment implements SchedulePagerWidget {
+public class SchedulePagerFragment extends Fragment implements SchedulePagerView {
 
 	private static final String EVENTS_ARG = "schedule";
 
@@ -28,8 +28,6 @@ public class SchedulePagerFragment extends Fragment implements SchedulePagerWidg
 	Toolbar toolbar;
   @InjectView(R.id.tabLayout)
 	TabLayout tabLayout;
-
-  private SchedulePagerPresenter presenter;
 
 	public static SchedulePagerFragment newInstance(Schedule schedule) {
 		Bundle bundle = new Bundle();
@@ -55,7 +53,9 @@ public class SchedulePagerFragment extends Fragment implements SchedulePagerWidg
   public void onStart() {
     super.onStart();
 
-    presenter = new SchedulePagerPresenter(this, (Schedule) getArguments().getSerializable(EVENTS_ARG));
+    SchedulePagerPresenter presenter = new SchedulePagerPresenterImpl(
+        this, (Schedule) getArguments().getSerializable(EVENTS_ARG));
+
     presenter.onStart();
   }
 
