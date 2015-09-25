@@ -64,8 +64,6 @@ I used www.materialpalette.com to generate a colour scheme.
 ## Future Enhancements/Room For Improvements
 This library has plenty of room for additional development, in terms of both more features, and improving what's already here.
  Some areas that spring to mind are:
-
- 0. "Proper" MVP!
  
  1. Dagger
  
@@ -73,9 +71,9 @@ This library has plenty of room for additional development, in terms of both mor
  
  3. SyncAdapter
  
- 4. Android JodaTime (as per Dan Lew) instead of regular JodaTime
+ 4. Add unit tests.
 
- 5. Get unit tests working.
+ 5. Add instrumentation tests.
 
  6. Better handling of the "before any content has been delivered" scenario - though this is more of a job for the consuming app rather than the library.
 
