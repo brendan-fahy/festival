@@ -10,8 +10,6 @@ import java.util.List;
 
 import rx.Observable;
 import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 public class NewsModel extends Model<List<Article>> {
 
@@ -54,8 +52,6 @@ public class NewsModel extends Model<List<Article>> {
             });
             subscriber.onCompleted();
           }
-        })
-        .subscribeOn(Schedulers.newThread())
-        .observeOn(AndroidSchedulers.mainThread());
+        });
   }
 }

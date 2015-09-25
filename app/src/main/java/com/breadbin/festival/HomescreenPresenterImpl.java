@@ -13,7 +13,9 @@ import com.breadbin.festival.schedule.model.Schedule;
 
 import java.util.List;
 
+import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 
 public class HomescreenPresenterImpl implements HomescreenPresenter {
 
@@ -42,6 +44,8 @@ public class HomescreenPresenterImpl implements HomescreenPresenter {
   @Override
   public void fetchNewsArticles() {
     ContentModel.getInstance(view.getContext(), restClientConfig).fetchNewsArticlesList()
+        .subscribeOn(Schedulers.newThread())
+        .observeOn(AndroidSchedulers.mainThread())
         .subscribe(new Action1<List<Article>>() {
           @Override
           public void call(List<Article> articles) {
@@ -53,6 +57,8 @@ public class HomescreenPresenterImpl implements HomescreenPresenter {
   @Override
   public void fetchCalendarEvents() {
     ContentModel.getInstance(view.getContext(), restClientConfig).fetchEventsList()
+        .subscribeOn(Schedulers.newThread())
+        .observeOn(AndroidSchedulers.mainThread())
         .subscribe(new Action1<Schedule>() {
           @Override
           public void call(Schedule schedule) {

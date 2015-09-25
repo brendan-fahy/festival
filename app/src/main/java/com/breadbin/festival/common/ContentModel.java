@@ -14,9 +14,7 @@ import com.breadbin.festival.schedule.model.ScheduleTransformer;
 import java.util.List;
 
 import rx.Observable;
-import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
-import rx.schedulers.Schedulers;
 
 public class ContentModel {
 
@@ -48,9 +46,7 @@ public class ContentModel {
           public Schedule call(List<Event> events) {
             return ScheduleTransformer.getOrderedSchedule(events);
           }
-        })
-        .subscribeOn(Schedulers.computation())
-        .observeOn(AndroidSchedulers.mainThread());
+        });
   }
 
 	public Observable<List<Article>> fetchNewsArticlesList() {
