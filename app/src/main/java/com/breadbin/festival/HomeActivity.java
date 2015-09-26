@@ -1,5 +1,7 @@
 package com.breadbin.festival;
 
+import android.support.annotation.VisibleForTesting;
+
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.common.api.ContentRestClient;
 
@@ -23,4 +25,9 @@ public class HomeActivity extends AbsHomescreenActivity {
 			}
 		};
 	}
+
+  @VisibleForTesting
+  protected String getDummyString() {
+    return "test String";
+  }
 }

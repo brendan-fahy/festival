@@ -4,7 +4,9 @@
 	<string name="app_name">Wiremock</string>
 
 	<!-- Use 10.0.3.2 if using a Genymotion emulator, to access wiremock server running on host machine. -->
-	<string name="googleCalendarEndpoint">http://10.0.3.2:9999/calendar/feeds/volunteers@ejc2014.org/public/basic?alt=jsonc&amp;max-results=2000</string>
+	<string name="googleCalendarBaseUrl">http://10.0.3.2:9999/calendar/feeds/</string>
+
+	<string name="googleCalendarEndpoint">volunteers@ejc2014.org</string>
 
 	<string name="rssEndpoint">http://10.0.3.2:9999/?option=com_content&amp;view=category&amp;layout=blog&amp;id=43&amp;format=fe%20ed&amp;type=rss&amp;utm_campaign=apps&amp;utm_medium=android&amp;utm_source=rss_feed</string>
 

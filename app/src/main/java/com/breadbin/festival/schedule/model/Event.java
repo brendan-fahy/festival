@@ -33,48 +33,24 @@ public class Event implements Comparable<Event>, Parcelable {
     return allDayEvent;
   }
 
-  public void setAllDayEvent(boolean allDayEvent) {
-    this.allDayEvent = allDayEvent;
-  }
-
   public String getTitle() {
     return title;
-  }
-
-  public void setTitle(String title) {
-    this.title = title;
   }
 
   public String getDescription() {
     return description;
   }
 
-  public void setDescription(String description) {
-    this.description = description;
-  }
-
   public String getTeacher() {
     return teacher;
-  }
-
-  public void setTeacher(String teacher) {
-    this.teacher = teacher;
   }
 
   public DateTime getTime() {
     return new DateTime(time);
   }
 
-  public void setTime(DateTime time) {
-    this.time = time.getMillis();
-  }
-
   public String getLocation() {
     return location;
-  }
-
-  public void setLocation(String location) {
-    this.location = location;
   }
 
   public static class Builder {

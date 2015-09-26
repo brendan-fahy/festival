@@ -38,7 +38,6 @@ public class HomescreenPresenterImpl implements HomescreenPresenter {
     } else {
       view.updateCurrentView(fragment);
     }
-
   }
 
   @Override

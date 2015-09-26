@@ -41,10 +41,18 @@ It uses a real RSS feed and Google Calendar data.
 
 Wiremock is intended to use the wiremock server included in this repo.
 
-## Testing :(
-TODO - get unit tests working.
+## Testing 
+There are some basic unit tests in place, mostly to establish the framework in place so I can 
+build on that. They're not testing anything significant at the moment.
+Integration of Dagger 2 will be one of the next improvements to be put in place. The use of custom/
+overridden Dagger modules will facilitate testing in a big way, particularly with the RxJava 
+ scheduling stuff.
+  
+I've added some Instrumentation tests (again quite basic for the moment), but it's occurred to me 
+that in an MVP world, Instrumentation tests don't do much that couldn't/shouldn't/can't already be 
+handled by unit tests and Espresso tests. Speaking of which...  
 
-TODO - add Espresso tests.
+`//TODO - add Espresso tests.`
 
 
 ## Wiremock Server
@@ -64,25 +72,30 @@ I used www.materialpalette.com to generate a colour scheme.
 ## Future Enhancements/Room For Improvements
 This library has plenty of room for additional development, in terms of both more features, and improving what's already here.
  Some areas that spring to mind are:
+
+### Code Improvements
  
  1. Dagger
  
- 2. More/better RxJava.
+ 2. RecyclerView instead of ListView. Shouldn't take long.
  
- 3. SyncAdapter
+ 3. More/better RxJava.
  
- 4. Add unit tests.
+ 4. Use SyncAdapter for Calendar/RSS data.
+ 
+ 5. More unit tests.
 
- 5. Add instrumentation tests.
+ 6. More instrumentation/Espresso tests.
 
- 6. Better handling of the "before any content has been delivered" scenario - though this is more of a job for the consuming app rather than the library.
+### Feature Enhancements
+ 1. Better handling of the "before any content has been delivered" scenario
 
- 7. Better handling of the updating of content. At the moment it's a rather "nuclear" kind of approach.
+ 2. Better handling of the updating of content. At the moment it's a rather "nuclear" kind of approach.
 
- 8. Custom landscape layout on schedule view. Cards stretching to the width of the screen don't look great, a grid might be better.
+ 3. Custom landscape layout on schedule view. Cards stretching to the width of the screen don't look great, a grid might be better.
 
- 9. Add "Add to My Calendar" functionality, to either remind users of imminent events they've subscribed to, or add them into the user's own calendar.
+ 4. Add "Add to My Calendar" functionality, to either remind users of imminent events they've subscribed to, or add them into the user's own calendar.
 
- 10. Add Twitter feed functionality.
+ 5. Add Twitter feed functionality.
  
 
