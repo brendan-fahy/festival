@@ -2,11 +2,12 @@ package com.breadbin.festival.news.model;
 
 import android.content.Context;
 
-import com.breadbin.festival.common.storage.CachedObject;
 import com.breadbin.festival.common.storage.ObjectCacher;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import rx.Observable;
+import rx.Subscriber;
 
 public class ArticlesStorage {
 
@@ -28,15 +29,18 @@ public class ArticlesStorage {
         ARTICLE_STORAGE_NAME);
 	}
 
-	public CachedObject<List<Article>> saveArticles(List<Article> articles) {
-    return articleCacher.save(articles);
+	public CachedArticles saveArticles(List<Article> articles) {
+    return new CachedArticles(articleCacher.save(articles));
 	}
 
-	public List<Article> readArticles() {
-    CachedObject<List<Article>> cachedObject = articleCacher.get(CachedArticles.class);
-    if (cachedObject == null || cachedObject.get() == null) {
-      return new ArrayList<>(0);
-    }
-    return cachedObject.get();
+	public Observable<CachedArticles> readArticles() {
+    return Observable.create(new Observable.OnSubscribe<CachedArticles>() {
+      @Override
+      public void call(Subscriber<? super CachedArticles> subscriber) {
+        CachedArticles cachedArticles = (CachedArticles) articleCacher.get(CachedArticles.class);
+        subscriber.onNext(cachedArticles);
+        subscriber.onCompleted();
+      }
+    });
 	}
 }

@@ -11,4 +11,8 @@ public class CachedArticles extends CachedObject<List<Article>> {
     super(object, cacheStatus);
   }
 
+  public CachedArticles(CachedObject<List<Article>> cachedObject) {
+    this(cachedObject.get(), cachedObject.getCacheStatus());
+  }
+
 }

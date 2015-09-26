@@ -6,6 +6,10 @@ import android.net.NetworkInfo;
 
 import com.breadbin.festival.common.api.ContentRestClient;
 
+import org.joda.time.DateTime;
+import org.joda.time.Duration;
+import org.joda.time.Hours;
+
 import rx.Observable;
 
 public abstract class Model<T> {
@@ -26,5 +30,10 @@ public abstract class Model<T> {
 		NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 		return (networkInfo != null && networkInfo.isConnectedOrConnecting());
 	}
+
+  protected boolean isUpToDate(long lastRefreshTime) {
+    return (new Duration(DateTime.now().getMillis() - lastRefreshTime)
+        .isShorterThan(Hours.ONE.toStandardDuration()));
+  }
 
 }

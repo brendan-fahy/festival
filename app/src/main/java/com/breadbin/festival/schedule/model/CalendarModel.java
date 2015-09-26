@@ -7,10 +7,6 @@ import com.breadbin.festival.common.api.ContentRestClient;
 import com.breadbin.festival.schedule.model.api.CalendarConverter;
 import com.breadbin.festival.schedule.model.api.CalendarResponse;
 
-import org.joda.time.DateTime;
-import org.joda.time.Duration;
-import org.joda.time.Hours;
-
 import java.util.List;
 
 import rx.Observable;
@@ -51,10 +47,5 @@ public class CalendarModel extends Model<List<Event>> {
             return cachedEvents.get();
           }
         });
-  }
-
-  private boolean isUpToDate(long lastRefreshTime) {
-    return (new Duration(DateTime.now().getMillis() - lastRefreshTime)
-        .isShorterThan(Hours.ONE.toStandardDuration()));
   }
 }
