@@ -4,14 +4,17 @@ import android.content.Context;
 
 import com.breadbin.festival.common.Model;
 import com.breadbin.festival.common.api.ContentRestClient;
-import com.breadbin.festival.common.api.NoDataException;
 import com.breadbin.festival.schedule.model.api.CalendarConverter;
 import com.breadbin.festival.schedule.model.api.CalendarResponse;
+
+import org.joda.time.DateTime;
+import org.joda.time.Duration;
+import org.joda.time.Hours;
 
 import java.util.List;
 
 import rx.Observable;
-import rx.Subscriber;
+import rx.functions.Func1;
 
 public class CalendarModel extends Model<List<Event>> {
 
@@ -21,40 +24,37 @@ public class CalendarModel extends Model<List<Event>> {
 
   @Override
   public Observable<List<Event>> getObservable() {
-    return Observable
-        .create(new Observable.OnSubscribe<List<Event>>() {
+    final EventsStorage storage = EventsStorage.getInstance(context);
+
+    Observable<CachedEvents> storageData = storage.readEvents();
+
+    Observable<CachedEvents> networkWithSave = restClient.getCalendarEvents()
+        .map(new Func1<CalendarResponse, CachedEvents>() {
           @Override
-          public void call(final Subscriber<? super List<Event>> subscriber) {
-            final EventsStorage storage = EventsStorage.getInstance(context);
-
-            List<Event> eventList = storage.readEvents();
-            if (eventList != null && !eventList.isEmpty()) {
-              subscriber.onNext(eventList);
-            } else if (!isConnectedOrConnecting()) {
-              subscriber.onError(new NoDataException());
-            }
-
-            restClient.getCalendarEvents().subscribe(new Subscriber<CalendarResponse>() {
-              @Override
-              public void onCompleted() {
-
-              }
-
-              @Override
-              public void onError(Throwable e) {
-                subscriber.onError(e);
-              }
-
-              @Override
-              public void onNext(CalendarResponse calendarResponse) {
-                List<Event> eventList = CalendarConverter.convertToEvents(calendarResponse.getData());
-                if (EventsListUtils.eventsHaveChanged(storage.readEvents(), eventList)) {
-                  storage.saveEvents(eventList);
-                  subscriber.onNext(eventList);
-                }
-              }
-            });
+          public CachedEvents call(CalendarResponse calendarResponse) {
+            List<Event> eventList = CalendarConverter.convertToEvents(calendarResponse.getData());
+            return storage.saveEvents(eventList);
           }
         });
+
+    return Observable
+        .concat(storageData, networkWithSave)
+        .first(new Func1<CachedEvents, Boolean>() {
+          @Override
+          public Boolean call(CachedEvents events) {
+            return events != null && isUpToDate(events.getCacheStatus().getLastRefreshTime());
+          }
+        })
+        .map(new Func1<CachedEvents, List<Event>>() {
+          @Override
+          public List<Event> call(CachedEvents cachedEvents) {
+            return cachedEvents.get();
+          }
+        });
+  }
+
+  private boolean isUpToDate(long lastRefreshTime) {
+    return (new Duration(DateTime.now().getMillis() - lastRefreshTime)
+        .isShorterThan(Hours.ONE.toStandardDuration()));
   }
 }

@@ -11,4 +11,8 @@ public class CachedEvents extends CachedObject<List<Event>> {
     super(object, cacheStatus);
   }
 
+  public CachedEvents(CachedObject<List<Event>> cachedObject) {
+    this(cachedObject.get(), cachedObject.getCacheStatus());
+  }
+
 }

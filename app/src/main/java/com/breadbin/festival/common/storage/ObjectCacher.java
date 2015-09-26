@@ -26,11 +26,10 @@ public class ObjectCacher<T> {
     this.gson = gson;
   }
 
-  public boolean save(T object) {
+  public CachedObject<T> save(T object) {
     FileOutputStream fos = null;
     try {
       fos = new FileOutputStream(file);
-
 
       CacheStatus cacheStatus = new CacheStatus(CachedObject.Source.CACHE, new Date().getTime());
       CachedObject<T> cachedObject = new CachedObject<>(object, cacheStatus);
@@ -40,7 +39,7 @@ public class ObjectCacher<T> {
       os.writeObject(cachedObjectJson);
 
       os.close();
-      return true;
+      return cachedObject;
     } catch (IOException e) {
       e.printStackTrace();
     } finally {
@@ -52,10 +51,13 @@ public class ObjectCacher<T> {
         }
       }
     }
-    return false;
+    return null;
   }
 
   public CachedObject<T> get(Class type) {
+    if (!file.exists()) {
+      return null;
+    }
     FileInputStream fis = null;
     try {
       fis = new FileInputStream(file);

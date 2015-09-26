@@ -2,11 +2,12 @@ package com.breadbin.festival.schedule.model;
 
 import android.content.Context;
 
-import com.breadbin.festival.common.storage.CachedObject;
 import com.breadbin.festival.common.storage.ObjectCacher;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import rx.Observable;
+import rx.Subscriber;
 
 public class EventsStorage {
 
@@ -28,15 +29,18 @@ public class EventsStorage {
         EVENTS_STORAGE_NAME);
 	}
 
-	public boolean saveEvents(List<Event> events) {
-    return eventsCacher.save(events);
+	public CachedEvents saveEvents(List<Event> events) {
+    return new CachedEvents(eventsCacher.save(events));
 	}
 
-	public List<Event> readEvents() {
-    CachedObject<List<Event>> cachedEvents = eventsCacher.get(CachedEvents.class);
-    if (cachedEvents == null || cachedEvents.get() == null) {
-      return new ArrayList<>(0);
-    }
-		return cachedEvents.get();
+	public Observable<CachedEvents> readEvents() {
+    return Observable.create(new Observable.OnSubscribe<CachedEvents>() {
+      @Override
+      public void call(Subscriber<? super CachedEvents> subscriber) {
+        CachedEvents cachedEvents = (CachedEvents) eventsCacher.get(CachedEvents.class);
+        subscriber.onNext(cachedEvents);
+        subscriber.onCompleted();
+      }
+    });
 	}
 }

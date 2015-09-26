@@ -28,7 +28,7 @@ public class ArticlesStorage {
         ARTICLE_STORAGE_NAME);
 	}
 
-	public boolean saveArticles(List<Article> articles) {
+	public CachedObject<List<Article>> saveArticles(List<Article> articles) {
     return articleCacher.save(articles);
 	}
 
