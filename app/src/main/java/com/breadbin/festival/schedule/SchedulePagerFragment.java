@@ -15,18 +15,18 @@ import com.breadbin.festival.HomescreenView;
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.schedule.model.Schedule;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 public class SchedulePagerFragment extends Fragment implements SchedulePagerView {
 
 	private static final String EVENTS_ARG = "schedule";
 
-  @InjectView(R.id.viewPager)
+  @Bind(R.id.viewPager)
 	ViewPager viewPager;
-  @InjectView(R.id.toolbar)
+  @Bind(R.id.toolbar)
 	Toolbar toolbar;
-  @InjectView(R.id.tabLayout)
+  @Bind(R.id.tabLayout)
 	TabLayout tabLayout;
 
 	public static SchedulePagerFragment newInstance(Schedule schedule) {
@@ -44,7 +44,7 @@ public class SchedulePagerFragment extends Fragment implements SchedulePagerView
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_schedule_pager, container, false);
 
-    ButterKnife.inject(this, viewGroup);
+    ButterKnife.bind( this, viewGroup);
 
 		return viewGroup;
 	}

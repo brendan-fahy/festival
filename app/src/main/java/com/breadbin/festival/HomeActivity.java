@@ -17,19 +17,19 @@ import android.widget.TextView;
 
 import com.breadbin.festival.app.R;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 public class HomeActivity extends AppCompatActivity implements HomescreenView {
 
 	private static final String KEPT_FRAGMENT_KEY = "keptFragment";
 	private static final String PREF_USER_LEARNED_DRAWER = "PREF_USER_LEARNED_DRAWER";
 
-  @InjectView(R.id.drawer_layout)
+  @Bind(R.id.drawer_layout)
 	DrawerLayout drawerLayout;
-  @InjectView(R.id.navigation_drawer)
+  @Bind(R.id.navigation_drawer)
 	NavigationView navigationView;
-  @InjectView(R.id.default_text)
+  @Bind(R.id.default_text)
   TextView defaultText;
 
 	private boolean userLearnedDrawer;
@@ -43,7 +43,7 @@ public class HomeActivity extends AppCompatActivity implements HomescreenView {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
-    ButterKnife.inject(this);
+    ButterKnife.bind(this);
 
 		setupNavigationDrawer();
 
