@@ -13,20 +13,22 @@ import com.breadbin.festival.schedule.model.Schedule;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
 public class HomescreenPresenterImpl implements HomescreenPresenter {
 
+  @Inject
+  ContentRestClient.ContentRestClientConfig restClientConfig;
+
   private HomescreenView view;
 
-  private ContentRestClient.ContentRestClientConfig restClientConfig;
-
-  public HomescreenPresenterImpl(HomescreenView view,
-                                 ContentRestClient.ContentRestClientConfig restClientConfig) {
+  public HomescreenPresenterImpl(HomescreenView view) {
     this.view = view;
-    this.restClientConfig = restClientConfig;
+    FestivalApplication.getAppComponent(view.getContext()).inject(this);
   }
 
   @Override

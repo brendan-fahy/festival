@@ -13,7 +13,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.breadbin.festival.AbsHomescreenActivity;
+import com.breadbin.festival.HomeActivity;
 import com.breadbin.festival.app.R;
 import com.breadbin.festival.news.model.Article;
 
@@ -57,7 +57,7 @@ public class NewsFragment extends Fragment implements NewsView {
 
   @Override
   public void setupTitle() {
-    ((AbsHomescreenActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
+    ((HomeActivity) getActivity()).updateToolbarForNavDrawer(toolbar, R.string.app_name);
   }
 
   @Override
